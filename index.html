@@ -13,18 +13,25 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: { 
-                            50: '#FFF5E6', 100: '#FFE8CC', 200: '#FFD9B3', 300: '#FFCA99', 
-                            400: '#F28C46', 500: '#D95D39', 600: '#B84A2E', 700: '#973823', 
-                            800: '#762618', 900: '#4A2E2A', 950: '#322120' 
+                        primary: {
+                            50: '#E8FFF3', 100: '#CCFFE6', 200: '#99FFCC', 300: '#66FFB3',
+                            400: '#33FF99', 500: '#00F279', 600: '#00D96C', 700: '#00B75C',
+                            800: '#008F48', 900: '#046236', 950: '#033D22'
                         },
                         accent: {
-                            50: '#FFFBF0', 100: '#FFF6DD', 200: '#FFEDC4', 300: '#FFE3A8',
-                            400: '#FFD699', 500: '#ECB558', 600: '#D9A043', 700: '#C08F3A',
-                            800: '#9D7530', 900: '#7A5B25', 950: '#5A4419'
+                            50: '#FFE6F7', 100: '#FFCCF0', 200: '#FFA6E6', 300: '#FF80DB',
+                            400: '#FF55CE', 500: '#FF2EBF', 600: '#E022A9', 700: '#C21890',
+                            800: '#9A106F', 900: '#6B0A4B', 950: '#43062F'
                         },
                         warm: {
-                            cream: '#FFF5E6', brown: '#322120', chocolate: '#4A2E2A'
+                            cream: '#FFF2E0',
+                            brown: '#6B4F3A',
+                            chocolate: '#4A2E2A'
+                        },
+                        neon: {
+                            50: '#E9FCFF', 100: '#CFF7FF', 200: '#9FF0FF', 300: '#6FE9FF',
+                            400: '#3FE2FF', 500: '#00DBFF', 600: '#00C5E6', 700: '#00A5BF',
+                            800: '#007A8F', 900: '#004B57', 950: '#002D35'
                         }
                     },
                     fontFamily: {
@@ -59,7 +66,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="bg-gradient-to-b from-primary-300 via-primary-200 to-accent-200 dark:from-primary-950 dark:via-primary-900 dark:to-primary-950 text-primary-900 dark:text-white font-sans overflow-x-hidden">
+<body class="bg-gradient-to-b from-primary-800 via-primary-600 to-accent-600 dark:from-primary-950 dark:via-primary-900 dark:to-accent-950 text-primary-50 dark:text-white font-sans overflow-x-hidden">
     
     <!-- Header Moderno e Minimalista -->
     <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/70 dark:bg-slate-900/70 border-b border-slate-200/50 dark:border-slate-700/50 shadow-sm transition-all duration-300" id="main-header">
@@ -91,7 +98,7 @@
                     <button id="theme-toggle" aria-label="Alternar tema" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
                         <span class="material-symbols-rounded text-slate-700 dark:text-slate-300">dark_mode</span>
                     </button>
-                    <a href="https://wa.me/5535984687353" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-accent-500 hover:bg-accent-600 text-white rounded-xl font-medium shadow-lg shadow-accent-500/30 hover:shadow-xl hover:shadow-accent-500/40 transition-all duration-300">
+                    <a href="https://wa.me/5535984687353" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-accent-500 to-neon-500 hover:from-accent-400 hover:to-neon-400 text-white rounded-xl font-medium shadow-lg shadow-accent-500/30 hover:shadow-xl hover:shadow-neon-500/40 transition-all duration-300">
                         <span class="material-symbols-rounded text-xl">chat</span>
                         <span>WhatsApp</span>
                     </a>
@@ -176,14 +183,14 @@
 
                 <!-- CTAs -->
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                    <a href="https://wa.me/5535984687353" target="_blank" 
-                       class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-400 hover:to-primary-500 text-white rounded-2xl font-bold text-lg shadow-2xl shadow-primary-500/50 hover:shadow-primary-500/70 hover:scale-105 transition-all duration-300">
+                          <a href="https://wa.me/5535984687353" target="_blank" 
+                              class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-primary-500 to-neon-500 hover:from-primary-400 hover:to-neon-400 text-white rounded-2xl font-bold text-lg shadow-2xl shadow-neon-500/50 hover:shadow-neon-500/70 hover:scale-105 transition-all duration-300">
                         <span class="material-symbols-rounded text-2xl">chat</span>
                         <span>Reservar Agora</span>
                         <span class="material-symbols-rounded text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </a>
-                    <a href="#galeria" 
-                       class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-400 hover:to-accent-500 backdrop-blur-md border-2 border-white/30 hover:border-white/50 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300">
+                          <a href="#galeria" 
+                              class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-accent-500 to-primary-500 hover:from-accent-400 hover:to-primary-400 backdrop-blur-md border-2 border-white/30 hover:border-white/50 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300">
                         <span class="material-symbols-rounded text-2xl">photo_library</span>
                         <span>Ver Galeria</span>
                     </a>
@@ -219,7 +226,7 @@
     </section>
 
     <!-- Main Content -->
-    <main class="relative z-20 -mt-16 bg-gradient-to-b from-primary-200 via-accent-100 to-primary-200">
+    <main class="relative z-20 -mt-16 bg-gradient-to-b from-primary-700 via-primary-600 to-accent-600">
         <!-- Cards de Informações -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-6 bg-primary-100/60 rounded-3xl">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -337,7 +344,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="font-display font-bold text-4xl md:text-5xl text-primary-900 dark:text-white mb-4">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-primary-400 to-accent-500">Galeria de Aventuras</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 via-neon-500 to-primary-400">Galeria de Aventuras</span>
                     </h2>
                     <p class="text-lg text-primary-800 dark:text-slate-300">
                         Momentos incríveis registrados nas trilhas
@@ -397,7 +404,7 @@
 
                 <div class="text-center mt-12">
                     <a href="https://wa.me/5535984687353" target="_blank" 
-                       class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-500 via-accent-500 to-neon-500 hover:from-primary-400 hover:via-accent-400 hover:to-neon-400 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300">
+                       class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-accent-500 via-neon-500 to-primary-500 hover:from-accent-400 hover:via-neon-400 hover:to-primary-400 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300">
                         <span class="material-symbols-rounded text-2xl">photo_camera</span>
                         <span>Faça Parte da Galeria</span>
                     </a>
@@ -418,7 +425,7 @@
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-primary-50 dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-primary-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
+                    <div class="bg-warm-cream dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-warm-cream/60 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
                         <div class="flex gap-1 text-primary-500 mb-4">
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
@@ -440,7 +447,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-primary-50 dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-primary-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
+                    <div class="bg-warm-cream dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-warm-cream/60 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
                         <div class="flex gap-1 text-primary-500 mb-4">
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
@@ -462,7 +469,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-primary-50 dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-primary-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
+                    <div class="bg-warm-cream dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-warm-cream/60 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
                         <div class="flex gap-1 text-primary-500 mb-4">
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
@@ -488,7 +495,7 @@
         </section>
 
         <!-- CTA Final -->
-        <section class="py-20 bg-gradient-to-br from-primary-500 via-primary-600 to-accent-600 relative overflow-hidden">
+        <section class="py-20 bg-gradient-to-br from-accent-600 via-neon-500 to-primary-600 relative overflow-hidden">
             <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjEiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30"></div>
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <h2 class="font-display font-black text-4xl md:text-5xl text-white mb-6 drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
