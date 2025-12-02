@@ -56,6 +56,47 @@ body {
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: var(--base-900); /* Ensure dark base */
+}
+
+/* Force dark backgrounds for structure to avoid white gaps */
+main {
+    background-color: var(--base-900);
+}
+
+section {
+    background-color: transparent; /* allow Tailwind gradients; prevents default white */
+}
+
+/* Prevent accidental white overlays */
+.loading::after {
+    background: rgba(26, 26, 26, 0.6); /* was white; make semi-dark to avoid full white screen */
+}
+
+/* Footer Visibility & Contrast Fix */
+footer {
+    background: var(--base-900); /* #1A1A1A */
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: var(--accent-500); /* neon pink hover */
+}
+
+footer .border-t {
+    border-top-color: rgba(255, 255, 255, 0.12) !important; /* ensure visible on dark base */
+}
+
+footer .text-slate-400 {
+    color: rgba(255, 255, 255, 0.7) !important; /* improve readability on dark base */
+}
+
+footer .bg-primary-900\/50 {
+    background-color: rgba(26, 26, 26, 0.5) !important; /* keep dark tile buttons */
 }
 
 /* Material Symbols */
