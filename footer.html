@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contato e Localização - Hyguinho Quadriciclos MV</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1,40..48&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/footer.js"></script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <!-- TopAppBar -->
+        <header
+            class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-200 dark:border-gray-800">
+            <button
+                class="text-gray-800 dark:text-gray-200 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+                <span class="material-symbols-outlined text-2xl"><-</span>
+            </button>
+            <h1 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">Contato e
+                Localização</h1>
+        </header>
+        <main class="flex-grow">
+            <!-- Map -->
+            <div class="flex px-4 py-3 mt-2">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover shadow-sm"
+                    data-alt="Interactive map showing the location of the meeting point in Monte Verde, MG"
+                    data-location="Monte Verde, MG"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDBMNqtYUs_ZT3-YbXJkztCTaymY_9wPvVBGwSghvYmKUsR0VJbMnXdquvr87j9IHn5h9zzCOaIxQgxvlGitYD461Ljdtp2RW2X_oOjel95daPMeuRwQLzYRTOh58aW1uRgNZAHAy8nhrslvVHVEOx26NVweRvaKm343JDfrnGKdRww1UZCjp__V8n2m7YYuPv3qmBipfatnH13KEwmz5-33sdWWtA2Sq0sMU5MNDfWk7gO8cUbg7Lw6GxT-6wQGHtrK0Q--ELs4Q");'>
+                </div>
+            </div>
+            <!-- SectionHeader: Meeting Point -->
+            <h2
+                class="text-gray-900 dark:text-gray-100 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-1 pt-5">
+                Nosso Ponto de Encontro</h2>
+            <!-- BodyText: Address -->
+            <p class="text-gray-700 dark:text-gray-300 text-base font-normal leading-normal px-4">Rua das Quadras, 123,
+                Monte Verde, MG <br /> Próximo à entrada principal da cidade.</p>
+            <!-- SectionHeader: Send us a Message -->
+            <h2
+                class="text-gray-900 dark:text-gray-100 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8">
+                Envie uma Mensagem</h2>
+            <!-- Contact Form -->
+            <form class="px-4 space-y-4">
+                <div>
+                    <label class="sr-only" for="name">Nome</label>
+                    <input
+                        class="w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary focus:ring-primary focus:ring-opacity-50 text-gray-800 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-500"
+                        id="name" placeholder="Seu nome" type="text" />
+                </div>
+                <div>
+                    <label class="sr-only" for="contact">Email ou Telefone</label>
+                    <input
+                        class="w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary focus:ring-primary focus:ring-opacity-50 text-gray-800 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-500"
+                        id="contact" placeholder="Email ou telefone" type="text" />
+                </div>
+                <div>
+                    <label class="sr-only" for="message">Mensagem</label>
+                    <textarea
+                        class="w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary focus:ring-primary focus:ring-opacity-50 text-gray-800 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-500"
+                        id="message" placeholder="Sua mensagem..." rows="4"></textarea>
+                </div>
+                <button
+                    class="w-full bg-primary text-gray-900 font-bold py-3 px-4 rounded-xl hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-colors"
+                    type="submit">Enviar Mensagem</button>
+            </form>
+            <!-- Quick Contact Buttons -->
+            <div class="px-4 pt-8 pb-4">
+                <h3 class="text-center text-sm font-medium text-gray-600 dark:text-gray-400 mb-4">Ou entre em contato
+                    diretamente</h3>
+                <div class="grid grid-cols-3 gap-4">
+                    <a class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
+                        href="#">
+                        <svg class="h-6 w-6 text-green-500" fill="currentColor" viewbox="0 0 24 24">
+                            <path
+                                d="M16.75 13.96c.25.13.41.38.41.66v2.51c0 .41-.33.74-.74.74C11.93 17.65 8 13.56 8 8.7c0-.41.33-.74.74-.74h2.51c.28 0 .53.16.66.41l1.11 2.22a.75.75 0 01-.19.85l-1.42 1.42a.5.5 0 00-.11.59c.56 1.43 1.76 2.63 3.19 3.19a.5.5 0 00.59-.11l1.42-1.42a.75.75 0 01.85-.19l2.22 1.11zM12 2a10 10 0 100 20 10 10 0 000-20zm0 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17z">
+                            </path>
+                        </svg>
+                        <span class="text-xs font-medium text-gray-700 dark:text-gray-300">WhatsApp</span>
+                    </a>
+                    <a class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
+                        href="#">
+                        <span class="material-symbols-outlined text-blue-500" style="font-size: 24px;">call</span>
+                        <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Ligar</span>
+                    </a>
+                    <a class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
+                        href="#">
+                        <svg class="h-6 w-6 text-pink-500" fill="currentColor" viewbox="0 0 24 24">
+                            <path clip-rule="evenodd"
+                                d="M12 2.75a9.25 9.25 0 100 18.5 9.25 9.25 0 000-18.5zM1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12 17.937 22.75 12 22.75 1.25 17.937 1.25 12z"
+                                fill-rule="evenodd"></path>
+                            <path
+                                d="M16 8.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15a3 3 0 100-6 3 3 0 000 6zm-5 3a5 5 0 1010 0 5 5 0 00-10 0z">
+                            </path>
+                        </svg>
+                        <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer
+            class="bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 mt-8 px-4 py-6">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a class="text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200" href="#">
+                    <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                        <path clip-rule="evenodd"
+                            d="M12 2.75a9.25 9.25 0 100 18.5 9.25 9.25 0 000-18.5zM1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12 17.937 22.75 12 22.75 1.25 17.937 1.25 12z"
+                            fill-rule="evenodd"></path>
+                        <path
+                            d="M16 8.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15a3 3 0 100-6 3 3 0 000 6zm-5 3a5 5 0 1010 0 5 5 0 00-10 0z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200" href="#">
+                    <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                        <path
+                            d="M22.675 0h-21.35C.59 0 0 .59 0 1.325v21.35C0 23.41.59 24 1.325 24H12.82v-9.29H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h5.698C23.41 24 24 23.41 24 22.675V1.325C24 .59 23.41 0 22.675 0z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="flex justify-center space-x-4 text-xs font-medium text-gray-600 dark:text-gray-400 mb-4">
+                <a class="hover:text-primary" href="#">Aviso de Segurança</a>
+                <span>•</span>
+                <a class="hover:text-primary" href="#">Termos de Responsabilidade</a>
+            </div>
+            <p class="text-center text-xs text-gray-500 dark:text-gray-500">© 2024 Hyguinho Quadriciclos MV. Todos os
+                direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

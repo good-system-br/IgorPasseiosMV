@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Página Inicial - Hyguinho Quadriciclos MV</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <!-- TopAppBar -->
+        <header class="flex items-center bg-surface dark:bg-surface-dark p-4 pb-2 justify-between sticky top-0 z-10">
+            <h1
+                class="text-text-primary-light dark:text-text-primary-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1">
+                Hyguinho Quadriciclos MV</h1>
+                <button id="menu-toggle" aria-label="Abrir menu" class="text-text-primary-light dark:text-text-primary-dark flex size-12 shrink-0 items-center justify-end" data-size="24px" data-weight="regular" style="background:none;border:none;">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+        </header>
+        <!-- HeroSection -->
+        <main class="flex-grow">
+            <div class="@container">
+                <div class="@[480px]:p-4">
+                    <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+                        data-alt="A person riding a quadricycle on a dirt trail at sunset with beautiful natural landscape in the background."
+                        style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUgWIftePgjz_QLNoa7dpyZD_Vmv4nlIMjbj_pm067pyOZEeOweDQcFRla75ojHWe791xbHo_3RkRZ2pKeHIaMfy1xal_RFGxk1k7FSMKzSHWeOJJ__a2-XoAacxvApRfuhvmBXujVDstrpo6dZ3sUBDrdvM2VQ0Fq9yUzeEcBZ7OkzUI7fIuXx0m6a5RmroUbSXJLunMdBqK8F8Q-UYOm8QRDrPGQrp3XCPWZwzgysfoV0HBmQfCXs6VoTyTkDNxe_M2fCvjy-Gk");'>
+                        <div class="flex flex-col gap-2 text-center">
+                            <h2
+                                class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                Aventura sobre 4 rodas</h2>
+                            <p
+                                class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                Explore as paisagens mais incríveis com segurança e emoção.</p>
+                        </div>
+                        <button
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-text-primary-light text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                            <span class="truncate">Reservar Agora</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+                <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-surface dark:bg-surface-dark z-50 flex flex-col items-center justify-center text-center transition-transform duration-300" style="transform: translateY(-100%);">
+                    <button id="menu-close" aria-label="Fechar menu" class="absolute top-4 right-4 text-2xl text-text-primary-light dark:text-text-primary-dark" style="background:none;border:none;">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                    <a href="#" class="text-lg font-bold mb-6">Início</a>
+                    <a href="section.html" class="text-lg font-bold mb-6">Sobre</a>
+                    <a href="footer.html" class="text-lg font-bold mb-6">Contato</a>
+                    <a href="https://wa.me/5535984687353" target="_blank" class="text-lg font-bold mb-6 text-green-600">WhatsApp</a>
+                </nav>
+            <!-- SectionHeader -->
+            <h3
+                class="text-text-primary-light dark:text-text-primary-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+                Passeio em Destaque</h3>
+            <!-- Card -->
+            <div class="p-4 @container pt-0">
+                <div
+                    class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-lg shadow-gray-200/50 dark:shadow-black/20 bg-surface dark:bg-surface-dark overflow-hidden">
+                    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                        data-alt="A stunning view of the sunset over a hilly landscape, seen from a viewpoint on a trail."
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBch6QFu6rCjM4HTusE_nm5CiecLKUYJT3AcgIv30E1lv-3H9xN7yGIeBK5QweD7zGSrbpMQwEpRzU18EAw6K-38lSwg8VmSMQade8lvwOsgWqnMN9W95vWoRWXJrO-kOVhfpv2ZtgdQLM9bv5v20a_vKlNl-4dYPLNmwz0GnFC60MdeDoUfuXgly0c81hcUvcfOCN0QhEeM0VY_46DGYSlgi2LFQrhBocUnkhrHodQdER_ZsQRPzJA9zIwl8OowEwKrzwvFXJNdz4");'>
+                    </div>
+                    <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4 @xl:px-4">
+                        <p
+                            class="text-text-primary-light dark:text-text-primary-dark text-lg font-bold leading-tight tracking-[-0.015em]">
+                            Passeio Pôr do Sol</p>
+                        <div class="flex items-end gap-3 justify-between">
+                            <div class="flex flex-col gap-1 flex-1">
+                                <p
+                                    class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">
+                                    Uma experiência inesquecível pelas trilhas com a vista do pôr do sol.</p>
+                                <p
+                                    class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">
+                                    A partir de R$ 250</p>
+                            </div>
+                            <button
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-primary text-text-primary-light text-sm font-medium leading-normal">
+                                <span class="truncate">Saiba Mais</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TextGrid -->
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                <div
+                    class="flex flex-1 gap-3 rounded-xl border border-border-light dark:border-border-dark bg-surface dark:bg-surface-dark p-4 flex-col">
+                    <div class="text-text-primary-light dark:text-text-primary-dark">
+                        <span class="material-symbols-outlined">verified_user</span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <h4
+                            class="text-text-primary-light dark:text-text-primary-dark text-base font-bold leading-tight">
+                            Segurança Certificada</h4>
+                        <p
+                            class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
+                            Equipamentos revisados e seguros para sua tranquilidade.</p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-1 gap-3 rounded-xl border border-border-light dark:border-border-dark bg-surface dark:bg-surface-dark p-4 flex-col">
+                    <div class="text-text-primary-light dark:text-text-primary-dark">
+                        <span class="material-symbols-outlined">map</span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <h4
+                            class="text-text-primary-light dark:text-text-primary-dark text-base font-bold leading-tight">
+                            Guias Experientes</h4>
+                        <p
+                            class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
+                            Nossos guias conhecem cada trilha para garantir a melhor aventura.</p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-1 gap-3 rounded-xl border border-border-light dark:border-border-dark bg-surface dark:bg-surface-dark p-4 flex-col col-span-full">
+                    <div class="text-text-primary-light dark:text-text-primary-dark">
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <h4
+                            class="text-text-primary-light dark:text-text-primary-dark text-base font-bold leading-tight">
+                            Avaliação 5 Estrelas</h4>
+                        <p
+                            class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
+                            Clientes satisfeitos são a nossa maior recompensa.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Gallery -->
+            <h3
+                class="text-text-primary-light dark:text-text-primary-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-2">
+                Nossos Momentos</h3>
+            <div class="flex gap-3 overflow-x-auto px-4 pb-4">
+                <div class="h-40 w-40 flex-shrink-0 rounded-lg bg-cover bg-center"
+                    data-alt="Group of friends smiling on their quadricycles."
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDunrMIp7Jr-NXAbYV8iKWjGROTH3yzV76x00vVTGyPdBAwPSwFEjovK1sJQA0PbPMsrqChdD7hnTAYCWJiU2dA1otJszmp5M05HUli3qIVtSwlH5j9VIdhQYu0Sb8B3CiMAupEbMQtta2SzckKS9ppuY-3s4E5mUwg2NH65y-31VA0p0UobZFHTzyBa5QxWu1KlAv_5pxxMbXZP8K2xgN9_1hmXFwRr25GT8nutSUpCksIVPOeTy2x0dYzxPp32LgIPjkheVnNPPU");'>
+                </div>
+                <div class="h-40 w-40 flex-shrink-0 rounded-lg bg-cover bg-center"
+                    data-alt="Close up of a quadricycle tire splashing mud on a trail."
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUu0yxKLHOVb0AJweuZJKPlNMJ9xpHpUa-ysw7wmxFJr_M8xU9kotNFllFUw_AifnnXR7z_d6zjYvFFedqqg6qnmdSL4MXtkC7E40usrRSSH7IaT5I17Hq7RlTA_xlJO3gyGQZAA1SrHm3cN5GEHO8ftLq0fjBEdwjeAMrn2gfYg831zdGKnLdkbCsfL7PaSjeQqyhZkXQpaclNHrVy1xehMfRuzH-V9Rg5NF_zs1B2FmDTb-FhYte3FJmO23oXwy7nEwyxppWbbE");'>
+                </div>
+                <div class="h-40 w-40 flex-shrink-0 rounded-lg bg-cover bg-center"
+                    data-alt="A beautiful waterfall view from one of the tour routes."
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrcVMi35DJhB-VUegpHkZHpeaZb-3jZzPaLyzKvEzqgsgy9FGgtrJId9l-ImyO52o7QwJU22mIglchRzL3EfFUfl6LedzMZcjd7UQGuYMA1S1aacLTEBbF9O618LvN9Q0GnI9GSX2t5KTVagFEb981y-q2NkWo8FqgwEmnclLAEPuydefypcUbcXql1cWX41j1tlv3j8uDhucLnUW2pmjAIwFA0IiFsNUV53y06LfTC5ZS0hdSD7BXXWO8yplin2df6ZcrCyQcOzU");'>
+                </div>
+                <div class="h-40 w-40 flex-shrink-0 rounded-lg bg-cover bg-center"
+                    data-alt="A couple posing for a photo with a quadricycle in front of a scenic view."
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCb7EQ_VDPcaB4vXtTHGrBD2Dtb_ObYI_DGSSfjcIKKPNB7hi9i9TtlVkX9nDt4LK4Zzj2ZgSzX2yyNL45tcNHsclKExOEs-Cx8MkxC4qpo_aT5VcXXUnu4CGoDHhDkfpkSY8vxOrVoqz2FQcMVq5BlYYXhAFfFknML0H0HrHagTaSKg61CB7cDGpjCJlP1CaW_I-FH1vXsz2wTrM1nlaZupFjshOIR-fo4ZuLeMdeLlHeQI7XrsbNWYk55yO9Tx6wOr5sQa9QVs5U");'>
+                </div>
+            </div>
+        </main>
+        <!-- Quick Contact Bar -->
+        <footer
+            class="sticky bottom-0 z-10 bg-surface/80 dark:bg-surface-dark/80 backdrop-blur-sm p-3 mt-4 border-t border-border-light dark:border-border-dark">
+            <div class="flex justify-around items-center">
+                <a aria-label="Contact via WhatsApp"
+                    class="flex flex-col items-center gap-1 text-text-primary-light dark:text-text-primary-dark"
+                    href="https://wa.me/5535984687353" target="_blank">
+                    <svg class="text-green-500" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                        <path d="M14.05 2a9 9 0 0 1 8 7.94"></path>
+                        <path d="M14.05 6A5 5 0 0 1 18 10"></path>
+                    </svg>
+                    <span class="text-xs font-medium">WhatsApp</span>
+                </a>
+                <a aria-label="Visit our Instagram"
+                    class="flex flex-col items-center gap-1 text-text-primary-light dark:text-text-primary-dark"
+                    href="#">
+                    <svg class="text-pink-500" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                    <span class="text-xs font-medium">Instagram</span>
+                </a>
+                <a aria-label="Call Us"
+                    class="flex flex-col items-center gap-1 text-text-primary-light dark:text-text-primary-dark"
+                    href="#">
+                    <span class="material-symbols-outlined text-blue-500">call</span>
+                    <span class="text-xs font-medium">Ligar</span>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
