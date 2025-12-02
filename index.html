@@ -8,31 +8,60 @@
     
     <!-- Tailwind CDN com configuração -->
     <script>
-        tailwind = {
+        // Corrige inicialização: Tailwind CDN espera tailwind.config
+        tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        primary: {
-                            50: '#E8FFF3', 100: '#CCFFE6', 200: '#99FFCC', 300: '#66FFB3',
-                            400: '#33FF99', 500: '#00F279', 600: '#00D96C', 700: '#00B75C',
-                            800: '#008F48', 900: '#046236', 950: '#033D22'
+                        // Paleta viva solicitada (neon/alto contraste)
+                        primary: { // Azul Elétrico
+                            400: '#3399FF',
+                            500: '#007BFF',
+                            600: '#0062CC',
+                            700: '#004EA6',
+                            800: '#003D80',
+                            900: '#002C5C'
                         },
-                        accent: {
-                            50: '#FFE6F7', 100: '#FFCCF0', 200: '#FFA6E6', 300: '#FF80DB',
-                            400: '#FF55CE', 500: '#FF2EBF', 600: '#E022A9', 700: '#C21890',
-                            800: '#9A106F', 900: '#6B0A4B', 950: '#43062F'
+                        accent: { // Rosa Neon
+                            400: '#FF3399',
+                            500: '#FF007F',
+                            600: '#CC0066',
+                            700: '#99004D',
+                            800: '#73003A',
+                            900: '#520029'
                         },
-                        warm: {
-                            cream: '#FFF2E0',
-                            brown: '#6B4F3A',
-                            chocolate: '#4A2E2A'
+                        neon: { // Verde Lima Forte
+                            400: '#33FF75',
+                            500: '#00FF4C',
+                            600: '#00CC3D',
+                            700: '#00A32F',
+                            800: '#007A23',
+                            900: '#005216'
                         },
-                        neon: {
-                            50: '#E9FCFF', 100: '#CFF7FF', 200: '#9FF0FF', 300: '#6FE9FF',
-                            400: '#3FE2FF', 500: '#00DBFF', 600: '#00C5E6', 700: '#00A5BF',
-                            800: '#007A8F', 900: '#004B57', 950: '#002D35'
-                        }
+                        yellow: { // Amarelo Vibrante
+                            400: '#FFF04D',
+                            500: '#FFEA00',
+                            600: '#E6D300',
+                            700: '#B3A500'
+                        },
+                        purple: { // Roxo Neon
+                            400: '#BB33FF',
+                            500: '#A400FF',
+                            600: '#8400CC',
+                            700: '#660099'
+                        },
+                        orange: { // Laranja Intenso
+                            400: '#FF8C33',
+                            500: '#FF6A00',
+                            600: '#CC5500',
+                            700: '#993F00'
+                        },
+                        base: { // Fundos escuros
+                            900: '#1A1A1A',
+                            950: '#0F0F0F'
+                        },
+                        white: '#FFFFFF'
                     },
                     fontFamily: {
                         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -66,10 +95,10 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="bg-gradient-to-b from-primary-800 via-primary-600 to-accent-600 dark:from-primary-950 dark:via-primary-900 dark:to-accent-950 text-primary-50 dark:text-white font-sans overflow-x-hidden">
+<body class="bg-base-900 text-white font-sans overflow-x-hidden">
     
     <!-- Header Moderno e Minimalista -->
-    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/70 dark:bg-slate-900/70 border-b border-slate-200/50 dark:border-slate-700/50 shadow-sm transition-all duration-300" id="main-header">
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-gradient-to-b from-accent-900/80 to-primary-900/70 dark:from-slate-900/80 dark:to-slate-800/70 border-b border-slate-200/20 dark:border-slate-700/50 shadow-sm transition-all duration-300" id="main-header">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 md:h-20">
                 <!-- Logo -->
@@ -87,10 +116,10 @@
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center gap-8">
-                    <a href="index.html" class="nav-link text-sm font-medium text-slate-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Início</a>
-                    <a href="section.html" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Sobre</a>
-                    <a href="gallery.html" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Galeria</a>
-                    <a href="footer.html" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contato</a>
+                    <a href="index.html" class="nav-link text-sm font-medium text-white hover:text-neon-400 transition-colors">Início</a>
+                    <a href="section.html" class="nav-link text-sm font-medium text-white/90 hover:text-neon-400 transition-colors">Sobre</a>
+                    <a href="gallery.html" class="nav-link text-sm font-medium text-white/90 hover:text-neon-400 transition-colors">Galeria</a>
+                    <a href="footer.html" class="nav-link text-sm font-medium text-white/90 hover:text-neon-400 transition-colors">Contato</a>
                 </nav>
 
                 <!-- Actions -->
@@ -226,49 +255,49 @@
     </section>
 
     <!-- Main Content -->
-    <main class="relative z-20 -mt-16 bg-gradient-to-b from-primary-700 via-primary-600 to-accent-600">
+    <main class="relative z-20 -mt-16 bg-gradient-to-b from-primary-900 via-primary-800 to-accent-800">
         <!-- Cards de Informações -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-6 bg-primary-100/60 rounded-3xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-6 bg-white/5 rounded-3xl">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="group bg-primary-50 dark:bg-slate-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 border-primary-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-primary-500/30">
+                <div class="group bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 border-white/20 hover:border-primary-400 transition-all duration-300 hover:-translate-y-2 hover:shadow-primary-500/30">
                     <div class="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary-500/40 group-hover:shadow-xl group-hover:shadow-primary-500/60">
                         <span class="material-symbols-rounded text-white text-3xl">schedule</span>
                     </div>
-                    <h3 class="font-display font-bold text-xl text-primary-900 dark:text-white mb-2">Horários</h3>
-                    <p class="text-primary-800 dark:text-slate-300">Todos os dias<br>9:00 às 17:00</p>
+                    <h3 class="font-display font-bold text-xl text-white mb-2">Horários</h3>
+                    <p class="text-white/90">Todos os dias<br>9:00 às 17:00</p>
                 </div>
 
-                <div class="group bg-primary-50 dark:bg-slate-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 border-primary-200 dark:border-slate-700 hover:border-accent-500 dark:hover:border-accent-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-accent-500/30">
+                <div class="group bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 border-white/20 hover:border-accent-400 transition-all duration-300 hover:-translate-y-2 hover:shadow-accent-500/30">
                     <div class="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent-500/40 group-hover:shadow-xl group-hover:shadow-accent-500/60">
                         <span class="material-symbols-rounded text-white text-3xl">location_on</span>
                     </div>
-                    <h3 class="font-display font-bold text-xl text-primary-900 dark:text-white mb-2">Local</h3>
-                    <p class="text-primary-800 dark:text-slate-300">Fazenda Adrenalina<br>Monte Verde, MG</p>
+                    <h3 class="font-display font-bold text-xl text-white mb-2">Local</h3>
+                    <p class="text-white/90">Fazenda Adrenalina<br>Monte Verde, MG</p>
                 </div>
 
-                <div class="group bg-primary-50 dark:bg-slate-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 border-primary-200 dark:border-slate-700 hover:border-primary-400 dark:hover:border-primary-400 transition-all duration-300 hover:-translate-y-2 hover:shadow-primary-400/30">
+                <div class="group bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 border-white/20 hover:border-primary-300 transition-all duration-300 hover:-translate-y-2 hover:shadow-primary-400/30">
                     <div class="w-14 h-14 bg-gradient-to-br from-primary-400 to-primary-500 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary-400/40 group-hover:shadow-xl group-hover:shadow-primary-400/60">
                         <span class="material-symbols-rounded text-white text-3xl">explore</span>
                     </div>
-                    <h3 class="font-display font-bold text-xl text-primary-900 dark:text-white mb-2">Duração</h3>
-                    <p class="text-primary-800 dark:text-slate-300">Normal: 40-60 min<br>Pôr do Sol: 60-90 min</p>
+                    <h3 class="font-display font-bold text-xl text-white mb-2">Duração</h3>
+                    <p class="text-white/90">Normal: 40-60 min<br>Pôr do Sol: 60-90 min</p>
                 </div>
             </div>
         </div>
 
         <!-- Passeio em Destaque -->
-        <section class="py-20 bg-gradient-to-b from-accent-100 via-primary-100 to-accent-200 dark:bg-slate-900/50">
+        <section class="py-20 bg-gradient-to-b from-primary-900 via-primary-800 to-accent-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="font-display font-bold text-4xl md:text-5xl text-primary-900 dark:text-white mb-4">
+                    <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-4">
                         Passeio em Destaque
                     </h2>
-                    <p class="text-lg text-primary-800 dark:text-slate-300 max-w-2xl mx-auto">
+                    <p class="text-lg text-white/90 max-w-2xl mx-auto">
                         Viva uma experiência única com as melhores trilhas e vistas panorâmicas
                     </p>
                 </div>
 
-                <div class="bg-primary-50 dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden border border-primary-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-500 hover:shadow-primary-500/20">
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden border border-white/20 hover:border-primary-400 transition-all duration-500 hover:shadow-primary-500/20">
                     <div class="grid md:grid-cols-2 gap-0">
                         <!-- Imagem -->
                         <div class="relative h-80 md:h-full overflow-hidden">
@@ -340,13 +369,13 @@
         </section>
 
         <!-- Galeria de Fotos -->
-        <section id="galeria" class="py-20 bg-gradient-to-b from-primary-200 via-accent-100 to-primary-200 dark:bg-slate-900/50">
+        <section id="galeria" class="py-20 bg-gradient-to-b from-primary-900 via-primary-800 to-accent-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="font-display font-bold text-4xl md:text-5xl text-primary-900 dark:text-white mb-4">
+                    <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-4">
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 via-neon-500 to-primary-400">Galeria de Aventuras</span>
                     </h2>
-                    <p class="text-lg text-primary-800 dark:text-slate-300">
+                    <p class="text-lg text-white/90">
                         Momentos incríveis registrados nas trilhas
                     </p>
                 </div>
@@ -413,27 +442,27 @@
         </section>
 
         <!-- Depoimentos -->
-        <section class="py-20 bg-gradient-to-b from-primary-200 via-accent-100 to-primary-200">
+        <section class="py-20 bg-gradient-to-b from-primary-800 via-primary-700 to-accent-700">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="font-display font-bold text-4xl md:text-5xl text-primary-900 dark:text-white mb-4">
+                    <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-4">
                         O que dizem nossos clientes
                     </h2>
-                    <p class="text-lg text-primary-800 dark:text-slate-300">
+                    <p class="text-lg text-white/90">
                         Experiências reais de quem viveu a aventura
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-warm-cream dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-warm-cream/60 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
-                        <div class="flex gap-1 text-primary-500 mb-4">
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20 hover:border-neon-400/50 transition-all duration-300 hover:-translate-y-2">
+                        <div class="flex gap-1 text-neon-400 mb-4">
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                         </div>
-                        <p class="text-primary-900 dark:text-slate-200 mb-6 leading-relaxed">
+                        <p class="text-white mb-6 leading-relaxed">
                             "Experiência incrível! A equipe é super atenciosa e as trilhas são sensacionais. Voltaremos com certeza!"
                         </p>
                         <div class="flex items-center gap-3">
@@ -441,21 +470,21 @@
                                 MS
                             </div>
                             <div>
-                                <p class="font-bold text-primary-900 dark:text-white">Maria Silva</p>
-                                <p class="text-sm text-slate-500 dark:text-slate-400">São Paulo, SP</p>
+                                <p class="font-bold text-white">Maria Silva</p>
+                                <p class="text-sm text-white/80">São Paulo, SP</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="bg-warm-cream dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-warm-cream/60 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
-                        <div class="flex gap-1 text-primary-500 mb-4">
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20 hover:border-neon-400/50 transition-all duration-300 hover:-translate-y-2">
+                        <div class="flex gap-1 text-neon-400 mb-4">
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                         </div>
-                        <p class="text-primary-900 dark:text-slate-200 mb-6 leading-relaxed">
+                        <p class="text-white mb-6 leading-relaxed">
                             "Seguro e muito divertido! O passeio do pôr do sol é imperdível. Vista maravilhosa!"
                         </p>
                         <div class="flex items-center gap-3">
@@ -463,21 +492,21 @@
                                 JP
                             </div>
                             <div>
-                                <p class="font-bold text-primary-900 dark:text-white">João Paulo</p>
-                                <p class="text-sm text-slate-500 dark:text-slate-400">Belo Horizonte, MG</p>
+                                <p class="font-bold text-white">João Paulo</p>
+                                <p class="text-sm text-white/80">Belo Horizonte, MG</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="bg-warm-cream dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-warm-cream/60 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
-                        <div class="flex gap-1 text-primary-500 mb-4">
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20 hover:border-neon-400/50 transition-all duration-300 hover:-translate-y-2">
+                        <div class="flex gap-1 text-neon-400 mb-4">
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                             <span class="material-symbols-rounded">star</span>
                         </div>
-                        <p class="text-primary-900 dark:text-slate-200 mb-6 leading-relaxed">
+                        <p class="text-white mb-6 leading-relaxed">
                             "Paisagens fantásticas! As fotos ficaram incríveis. Uma aventura que vale muito a pena!"
                         </p>
                         <div class="flex items-center gap-3">
@@ -485,8 +514,8 @@
                                 AL
                             </div>
                             <div>
-                                <p class="font-bold text-primary-900 dark:text-white">Ana Lima</p>
-                                <p class="text-sm text-slate-500 dark:text-slate-400">Rio de Janeiro, RJ</p>
+                                <p class="font-bold text-white">Ana Lima</p>
+                                <p class="text-sm text-white/80">Rio de Janeiro, RJ</p>
                             </div>
                         </div>
                     </div>
@@ -495,7 +524,7 @@
         </section>
 
         <!-- CTA Final -->
-        <section class="py-20 bg-gradient-to-br from-accent-600 via-neon-500 to-primary-600 relative overflow-hidden">
+        <section class="py-20 bg-gradient-to-br from-accent-700 via-neon-600 to-primary-700 relative overflow-hidden">
             <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjEiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30"></div>
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <h2 class="font-display font-black text-4xl md:text-5xl text-white mb-6 drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
@@ -505,8 +534,8 @@
                     Reserve seu passeio agora e garanta momentos inesquecíveis nas trilhas de Monte Verde
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="https://wa.me/5535984687353" target="_blank" 
-                       class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-white hover:bg-primary-50 text-primary-600 hover:text-primary-700 rounded-2xl font-bold text-lg shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-white/20">
+                          <a href="https://wa.me/5535984687353" target="_blank" 
+                              class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-primary-500 to-neon-500 hover:from-primary-400 hover:to-neon-400 text-white rounded-2xl font-bold text-lg shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-white/20">
                         <span class="material-symbols-rounded text-2xl">chat</span>
                         <span>Falar no WhatsApp</span>
                     </a>

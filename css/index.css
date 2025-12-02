@@ -11,21 +11,31 @@
 }
 
 :root {
-    /* Cores Terrosas de Outono */
-    --primary-50: #FFF5E6;
-    --primary-400: #F28C46;
-    --primary-500: #D95D39;
-    --primary-600: #B84A2E;
-    --primary-900: #4A2E2A;
-    --accent-500: #ECB558;
-    --accent-600: #D9A043;
-    --warm-cream: #FFF5E6;
-    --warm-brown: #322120;
-    --warm-chocolate: #4A2E2A;
+    /* Paleta Neon/Viva */
+    --primary-400: #3399FF; /* Azul Elétrico (light) */
+    --primary-500: #007BFF; /* Azul Elétrico */
+    --primary-600: #0062CC;
+    --primary-900: #002C5C;
     
-    /* Neutros */
-    --slate-50: #FFF5E6;
-    --slate-900: #322120;
+    --accent-400: #FF3399; /* Rosa Neon (light) */
+    --accent-500: #FF007F; /* Rosa Neon */
+    --accent-600: #CC0066;
+    
+    --neon-400: #33FF75; /* Verde Lima (light) */
+    --neon-500: #00FF4C; /* Verde Lima Forte */
+    --neon-600: #00CC3D;
+    
+    --yellow-500: #FFEA00; /* Amarelo Vibrante */
+    --purple-500: #A400FF; /* Roxo Neon */
+    --orange-500: #FF6A00; /* Laranja Intenso */
+    
+    /* Bases */
+    --base-900: #1A1A1A; /* Fundo escuro principal */
+    --base-950: #0F0F0F;
+    
+    /* Neutros (ajustados para base escura) */
+    --slate-50: #262626;
+    --slate-900: #1A1A1A;
     
     /* Sombras */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -60,7 +70,7 @@ body {
 }
 
 #main-header.scrolled {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(26, 26, 26, 0.95);
     backdrop-filter: blur(20px);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
@@ -167,7 +177,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--slate-50);
+    background: var(--base-900);
 }
 
 ::-webkit-scrollbar-thumb {
