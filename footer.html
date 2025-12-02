@@ -6,81 +6,132 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Contato e Localização - Hyguinho Quadriciclos MV</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1,40..48&amp;display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="css/footer.css">
-    <script src="js/footer.js"></script>
-</head>
+    <script>
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
+            darkMode: "class",
+            <!DOCTYPE html>
+            <html lang="pt-BR">
+                <head>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <title>Contato - Hyguinho Quadriciclos MV</title>
+                    <script>
+                        tailwind = {
+                            darkMode: 'class',
+                            theme: {
+                                extend: {
+                                    colors: {
+                                        primary: {
+                                            50: '#fff7ed',
+                                            100: '#ffedd5',
+                                            200: '#fed7aa',
+                                            300: '#fdba74',
+                                            400: '#fb923c',
+                                            500: '#f97316',
+                                            600: '#ea580c',
+                                            700: '#c2410c',
+                                            800: '#9a3412',
+                                            900: '#7c2d12'
+                                        }
+                                    },
+                                    fontFamily: {
+                                        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
+                                    }
+                                }
+                            }
+                        }
+                    </script>
+                    <script src="https://cdn.tailwindcss.com"></script>
+                    <link rel="preconnect" href="https://fonts.googleapis.com" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,0" rel="stylesheet" />
+                    <link rel="stylesheet" href="css/index.css" />
+                </head>
+                <body class="font-sans bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+                    <header class="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md border-b border-gray-200 dark:bg-gray-900/60 dark:border-gray-800">
+                        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+                            <a href="index.html" class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary-600">terrain</span>
+                                <span class="font-semibold">Hyguinho Quadriciclos MV</span>
+                            </a>
+                            <nav class="hidden md:flex items-center gap-6">
+                                <a href="index.html" class="hover:text-primary-600">Início</a>
+                                <a href="section.html" class="hover:text-primary-600">Sobre</a>
+                                <a href="footer.html" class="hover:text-primary-600">Contato</a>
+                                <a href="gallery.html" class="hover:text-primary-600">Galeria</a>
+                                <a href="https://wa.me/5535984687353" target="_blank" class="inline-flex items-center gap-2 bg-primary-600 text-white px-3 py-2 rounded-lg hover:bg-primary-700 transition">
+                                    <span class="material-symbols-outlined">chat</span>
+                                    Reservar WhatsApp
+                                </a>
+                            </nav>
+                            <button id="menu-toggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 dark:border-gray-700">
+                                <span class="material-symbols-outlined">menu</span>
+                            </button>
+                        </div>
+                        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-800">
+                            <div class="px-4 py-3 space-y-2">
+                                <a href="index.html" class="block py-2">Início</a>
+                                <a href="section.html" class="block py-2">Sobre</a>
+                                <a href="footer.html" class="block py-2">Contato</a>
+                                <a href="gallery.html" class="block py-2">Galeria</a>
+                                <a href="https://wa.me/5535984687353" target="_blank" class="block py-2 text-primary-600">Reservar WhatsApp</a>
+                            </div>
+                        </div>
+                    </header>
 
-<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
-    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-        <!-- TopAppBar -->
-        <header
-            class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-200 dark:border-gray-800">
-            <button
-                class="text-gray-800 dark:text-gray-200 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
-                <span class="material-symbols-outlined text-2xl"><-</span>
-            </button>
-            <h1 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">Contato e
-                Localização</h1>
-        </header>
-        <main class="flex-grow">
-            <!-- Map -->
-            <div class="flex px-4 py-3 mt-2">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover shadow-sm"
-                    data-alt="Interactive map showing the location of the meeting point in Monte Verde, MG"
-                    data-location="Monte Verde, MG"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDBMNqtYUs_ZT3-YbXJkztCTaymY_9wPvVBGwSghvYmKUsR0VJbMnXdquvr87j9IHn5h9zzCOaIxQgxvlGitYD461Ljdtp2RW2X_oOjel95daPMeuRwQLzYRTOh58aW1uRgNZAHAy8nhrslvVHVEOx26NVweRvaKm343JDfrnGKdRww1UZCjp__V8n2m7YYuPv3qmBipfatnH13KEwmz5-33sdWWtA2Sq0sMU5MNDfWk7gO8cUbg7Lw6GxT-6wQGHtrK0Q--ELs4Q");'>
-                </div>
-            </div>
-            <!-- SectionHeader: Meeting Point -->
-            <h2
-                class="text-gray-900 dark:text-gray-100 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-1 pt-5">
-                Nosso Ponto de Encontro</h2>
-            <!-- BodyText: Address -->
-            <p class="text-gray-700 dark:text-gray-300 text-base font-normal leading-normal px-4">Rua das Quadras, 123,
-                Monte Verde, MG <br /> Próximo à entrada principal da cidade.</p>
-            <!-- SectionHeader: Send us a Message -->
-            <h2
-                class="text-gray-900 dark:text-gray-100 text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8">
-                Envie uma Mensagem</h2>
-            <!-- Contact Form -->
-            <form class="px-4 space-y-4">
-                <div>
-                    <label class="sr-only" for="name">Nome</label>
-                    <input
-                        class="w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary focus:ring-primary focus:ring-opacity-50 text-gray-800 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-500"
-                        id="name" placeholder="Seu nome" type="text" />
-                </div>
-                <div>
-                    <label class="sr-only" for="contact">Email ou Telefone</label>
-                    <input
-                        class="w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary focus:ring-primary focus:ring-opacity-50 text-gray-800 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-500"
-                        id="contact" placeholder="Email ou telefone" type="text" />
-                </div>
-                <div>
-                    <label class="sr-only" for="message">Mensagem</label>
-                    <textarea
-                        class="w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary focus:ring-primary focus:ring-opacity-50 text-gray-800 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-500"
-                        id="message" placeholder="Sua mensagem..." rows="4"></textarea>
-                </div>
-                <button
-                    class="w-full bg-primary text-gray-900 font-bold py-3 px-4 rounded-xl hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-colors"
-                    type="submit">Enviar Mensagem</button>
-            </form>
-            <!-- Quick Contact Buttons -->
-            <div class="px-4 pt-8 pb-4">
-                <h3 class="text-center text-sm font-medium text-gray-600 dark:text-gray-400 mb-4">Ou entre em contato
-                    diretamente</h3>
+                    <main class="max-w-6xl mx-auto px-4 py-24">
+                        <h1 class="text-2xl md:text-3xl font-bold">Contato</h1>
+                        <p class="mt-2 text-gray-700 dark:text-gray-300">Fale com a gente para tirar dúvidas ou reservar seu passeio.</p>
+                        <div class="mt-6 grid md:grid-cols-3 gap-6">
+                            <a href="https://wa.me/5535984687353" target="_blank" class="p-6 rounded-xl border bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 inline-flex items-center gap-2">
+                                <span class="material-symbols-outlined">chat</span>
+                                WhatsApp (35) 98468-7353
+                            </a>
+                            <a href="tel:+5535998793419" class="p-6 rounded-xl border bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 inline-flex items-center gap-2">
+                                <span class="material-symbols-outlined">call</span>
+                                Telefone (35) 99879-3419
+                            </a>
+                            <a href="mailto:hygormeendes98@gmail.com" class="p-6 rounded-xl border bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 inline-flex items-center gap-2">
+                                <span class="material-symbols-outlined">mail</span>
+                                Email
+                            </a>
+                        </div>
+
+                        <div class="mt-8">
+                            <h2 class="font-semibold">Redes sociais</h2>
+                            <a href="https://instagram.com/HyguinhoQuadriciclosMv" target="_blank" class="mt-3 inline-flex items-center gap-2 px-3 py-2 rounded-lg border hover:bg-gray-50 dark:hover:bg-gray-800">
+                                <span class="material-symbols-outlined">camera</span>
+                                Instagram
+                            </a>
+                        </div>
+
+                        <!-- CTA Consistente -->
+                        <section class="py-12">
+                            <div class="max-w-6xl mx-auto px-4 p-8 rounded-2xl bg-gradient-to-r from-primary-600 to-primary-700 text-white flex flex-col md:flex-row items-center justify-between gap-4">
+                                <div>
+                                    <h3 class="text-2xl font-bold">Pronto para reservar?</h3>
+                                    <p class="mt-1 text-white/90">Chame no WhatsApp e garanta seu passeio.</p>
+                                </div>
+                                <a href="https://wa.me/5535984687353" target="_blank" class="inline-flex items-center gap-2 bg-white text-primary-700 px-5 py-3 rounded-xl hover:bg-white/90">
+                                    <span class="material-symbols-outlined">chat</span>
+                                    Reservar no WhatsApp
+                                </a>
+                            </div>
+                        </section>
+                    </main>
+
+                    <script src="js/index.js"></script>
+
+                    <footer class="border-t py-10">
+                        <div class="max-w-6xl mx-auto px-4 text-sm text-gray-600 dark:text-gray-400">Email: hygormeendes98@gmail.com • WhatsApp: (35) 98468-7353 • Instagram: HyguinhoQuadriciclosMv</div>
+                    </footer>
+                </body>
+            </html>
                 <div class="grid grid-cols-3 gap-4">
                     <a class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
-                        href="#">
+                        href="https://wa.me/5535984687353" target="_blank">
                         <svg class="h-6 w-6 text-green-500" fill="currentColor" viewbox="0 0 24 24">
                             <path
                                 d="M16.75 13.96c.25.13.41.38.41.66v2.51c0 .41-.33.74-.74.74C11.93 17.65 8 13.56 8 8.7c0-.41.33-.74.74-.74h2.51c.28 0 .53.16.66.41l1.11 2.22a.75.75 0 01-.19.85l-1.42 1.42a.5.5 0 00-.11.59c.56 1.43 1.76 2.63 3.19 3.19a.5.5 0 00.59-.11l1.42-1.42a.75.75 0 01.85-.19l2.22 1.11zM12 2a10 10 0 100 20 10 10 0 000-20zm0 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17z">
@@ -89,12 +140,12 @@
                         <span class="text-xs font-medium text-gray-700 dark:text-gray-300">WhatsApp</span>
                     </a>
                     <a class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
-                        href="#">
+                        href="tel:+5535998793419">
                         <span class="material-symbols-outlined text-blue-500" style="font-size: 24px;">call</span>
                         <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Ligar</span>
                     </a>
                     <a class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
-                        href="#">
+                        href="https://instagram.com/HyguinhoQuadriciclosMv" target="_blank">
                         <svg class="h-6 w-6 text-pink-500" fill="currentColor" viewbox="0 0 24 24">
                             <path clip-rule="evenodd"
                                 d="M12 2.75a9.25 9.25 0 100 18.5 9.25 9.25 0 000-18.5zM1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12 17.937 22.75 12 22.75 1.25 17.937 1.25 12z"
@@ -131,9 +182,9 @@
                 </a>
             </div>
             <div class="flex justify-center space-x-4 text-xs font-medium text-gray-600 dark:text-gray-400 mb-4">
-                <a class="hover:text-primary" href="#">Aviso de Segurança</a>
+                <span>Hyguinho Quadriciclos MV • Fazenda Adrenalina</span>
                 <span>•</span>
-                <a class="hover:text-primary" href="#">Termos de Responsabilidade</a>
+                <a class="hover:text-primary" href="mailto:hygormeendes98@gmail.com">hygormeendes98@gmail.com</a>
             </div>
             <p class="text-center text-xs text-gray-500 dark:text-gray-500">© 2024 Hyguinho Quadriciclos MV. Todos os
                 direitos reservados.</p>

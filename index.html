@@ -1,205 +1,598 @@
 <!DOCTYPE html>
-
-<html class="light" lang="pt-BR">
-
+<html lang="pt-BR" class="scroll-smooth">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Página Inicial - Hyguinho Quadriciclos MV</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aventuras de quadriciclo em Monte Verde - Passeios guiados na Fazenda Adrenalina com segurança e diversão">
+    <title>Hyguinho Quadriciclos MV | Aventuras em Monte Verde</title>
+    
+    <!-- Tailwind CDN com configuração -->
+    <script>
+        tailwind = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 
+                            50: '#f5f9f0', 100: '#e8f3dd', 200: '#d4e8bf', 300: '#bad998', 
+                            400: '#a8d900', 500: '#95c500', 600: '#7fa800', 700: '#6ba520', 
+                            800: '#4d7816', 900: '#2d5016', 950: '#0d3b1a' 
+                        },
+                        accent: {
+                            50: '#f5f0d8', 100: '#ece4bf', 200: '#e0d5a3', 300: '#d4c587',
+                            400: '#c8b66b', 500: '#bca74f', 600: '#a89540', 700: '#8b7a35',
+                            800: '#6e5f2a', 900: '#4a4020', 950: '#2d2715'
+                        },
+                        neon: {
+                            50: '#f5f9f0', 100: '#e5f3d9', 200: '#d0e9b8', 300: '#b8dd92',
+                            400: '#a8d900', 500: '#8bc500', 600: '#6ba520', 700: '#4d7816',
+                            800: '#2d5016', 900: '#1a3d0f', 950: '#0d3b1a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.7s ease-out',
+                        'slide-down': 'slideDown 0.4s ease-out',
+                        'scale-in': 'scaleIn 0.5s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        slideUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+                        slideDown: { '0%': { opacity: '0', transform: 'translateY(-20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+                        scaleIn: { '0%': { opacity: '0', transform: 'scale(0.95)' }, '100%': { opacity: '1', transform: 'scale(1)' } }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js"></script>
 </head>
 
-<body class="bg-background-light dark:bg-background-dark font-display">
-    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-        <!-- TopAppBar -->
-        <header class="flex items-center bg-surface dark:bg-surface-dark p-4 pb-2 justify-between sticky top-0 z-10">
-            <h1
-                class="text-text-primary-light dark:text-text-primary-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1">
-                Hyguinho Quadriciclos MV</h1>
-                <button id="menu-toggle" aria-label="Abrir menu" class="text-text-primary-light dark:text-text-primary-dark flex size-12 shrink-0 items-center justify-end" data-size="24px" data-weight="regular" style="background:none;border:none;">
-                    <span class="material-symbols-outlined">menu</span>
-                </button>
-        </header>
-        <!-- HeroSection -->
-        <main class="flex-grow">
-            <div class="@container">
-                <div class="@[480px]:p-4">
-                    <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
-                        data-alt="A person riding a quadricycle on a dirt trail at sunset with beautiful natural landscape in the background."
-                        style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUgWIftePgjz_QLNoa7dpyZD_Vmv4nlIMjbj_pm067pyOZEeOweDQcFRla75ojHWe791xbHo_3RkRZ2pKeHIaMfy1xal_RFGxk1k7FSMKzSHWeOJJ__a2-XoAacxvApRfuhvmBXujVDstrpo6dZ3sUBDrdvM2VQ0Fq9yUzeEcBZ7OkzUI7fIuXx0m6a5RmroUbSXJLunMdBqK8F8Q-UYOm8QRDrPGQrp3XCPWZwzgysfoV0HBmQfCXs6VoTyTkDNxe_M2fCvjy-Gk");'>
-                        <div class="flex flex-col gap-2 text-center">
-                            <h2
-                                class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
-                                Aventura sobre 4 rodas</h2>
-                            <p
-                                class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                                Explore as paisagens mais incríveis com segurança e emoção.</p>
-                        </div>
-                        <button
-                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-text-primary-light text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
-                            <span class="truncate">Reservar Agora</span>
-                        </button>
+<body class="bg-gradient-to-br from-primary-50 via-white to-accent-50 dark:from-primary-950 dark:via-primary-900 dark:to-slate-900 text-slate-900 dark:text-slate-100 font-sans overflow-x-hidden">
+    
+    <!-- Header Moderno e Minimalista -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/70 dark:bg-slate-900/70 border-b border-slate-200/50 dark:border-slate-700/50 shadow-sm transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center shadow-lg shadow-primary-500/30 group-hover:shadow-xl group-hover:shadow-primary-500/40 transition-all duration-300">
+                        <span class="material-symbols-rounded text-white text-2xl">terrain</span>
                     </div>
-                </div>
-            </div>
-                <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-surface dark:bg-surface-dark z-50 flex flex-col items-center justify-center text-center transition-transform duration-300" style="transform: translateY(-100%);">
-                    <button id="menu-close" aria-label="Fechar menu" class="absolute top-4 right-4 text-2xl text-text-primary-light dark:text-text-primary-dark" style="background:none;border:none;">
-                        <span class="material-symbols-outlined">close</span>
-                    </button>
-                    <a href="#" class="text-lg font-bold mb-6">Início</a>
-                    <a href="section.html" class="text-lg font-bold mb-6">Sobre</a>
-                    <a href="footer.html" class="text-lg font-bold mb-6">Contato</a>
-                    <a href="https://wa.me/5535984687353" target="_blank" class="text-lg font-bold mb-6 text-green-600">WhatsApp</a>
+                    <div class="hidden sm:block">
+                        <h1 class="font-display font-bold text-lg md:text-xl text-slate-900 dark:text-white tracking-tight">
+                            Hyguinho Quadriciclos
+                        </h1>
+                        <p class="text-xs text-slate-600 dark:text-slate-400">Monte Verde · MG</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="nav-link text-sm font-medium text-slate-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Início</a>
+                    <a href="section.html" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Sobre</a>
+                    <a href="gallery.html" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Galeria</a>
+                    <a href="footer.html" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contato</a>
                 </nav>
-            <!-- SectionHeader -->
-            <h3
-                class="text-text-primary-light dark:text-text-primary-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-                Passeio em Destaque</h3>
-            <!-- Card -->
-            <div class="p-4 @container pt-0">
-                <div
-                    class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-lg shadow-gray-200/50 dark:shadow-black/20 bg-surface dark:bg-surface-dark overflow-hidden">
-                    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
-                        data-alt="A stunning view of the sunset over a hilly landscape, seen from a viewpoint on a trail."
-                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBch6QFu6rCjM4HTusE_nm5CiecLKUYJT3AcgIv30E1lv-3H9xN7yGIeBK5QweD7zGSrbpMQwEpRzU18EAw6K-38lSwg8VmSMQade8lvwOsgWqnMN9W95vWoRWXJrO-kOVhfpv2ZtgdQLM9bv5v20a_vKlNl-4dYPLNmwz0GnFC60MdeDoUfuXgly0c81hcUvcfOCN0QhEeM0VY_46DGYSlgi2LFQrhBocUnkhrHodQdER_ZsQRPzJA9zIwl8OowEwKrzwvFXJNdz4");'>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-2 md:gap-3">
+                    <button id="theme-toggle" aria-label="Alternar tema" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                        <span class="material-symbols-rounded text-slate-700 dark:text-slate-300">dark_mode</span>
+                    </button>
+                    <a href="https://wa.me/5535984687353" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-accent-500 hover:bg-accent-600 text-white rounded-xl font-medium shadow-lg shadow-accent-500/30 hover:shadow-xl hover:shadow-accent-500/40 transition-all duration-300">
+                        <span class="material-symbols-rounded text-xl">chat</span>
+                        <span>WhatsApp</span>
+                    </a>
+                    <button id="menu-toggle" aria-label="Menu" class="lg:hidden p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                        <span class="material-symbols-rounded text-2xl text-slate-700 dark:text-slate-300">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden opacity-0 invisible transition-all duration-300">
+        <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" id="menu-backdrop"></div>
+        <nav class="absolute top-0 right-0 h-full w-80 max-w-full bg-white dark:bg-slate-900 shadow-2xl transform translate-x-full transition-transform duration-300" id="menu-panel">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-between p-6 border-b border-slate-200 dark:border-slate-700">
+                    <h2 class="font-display font-bold text-lg">Menu</h2>
+                    <button id="menu-close" aria-label="Fechar menu" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                        <span class="material-symbols-rounded text-2xl">close</span>
+                    </button>
+                </div>
+                <div class="flex-1 overflow-y-auto py-6">
+                    <a href="index.html" class="flex items-center gap-3 px-6 py-4 text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                        <span class="material-symbols-rounded text-primary-500">home</span>
+                        <span class="font-medium">Início</span>
+                    </a>
+                    <a href="section.html" class="flex items-center gap-3 px-6 py-4 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                        <span class="material-symbols-rounded">info</span>
+                        <span class="font-medium">Sobre</span>
+                    </a>
+                    <a href="gallery.html" class="flex items-center gap-3 px-6 py-4 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                        <span class="material-symbols-rounded">photo_library</span>
+                        <span class="font-medium">Galeria</span>
+                    </a>
+                    <a href="footer.html" class="flex items-center gap-3 px-6 py-4 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                        <span class="material-symbols-rounded">contact_mail</span>
+                        <span class="font-medium">Contato</span>
+                    </a>
+                </div>
+                <div class="p-6 border-t border-slate-200 dark:border-slate-700">
+                    <a href="https://wa.me/5535984687353" target="_blank" class="flex items-center justify-center gap-2 w-full px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white rounded-xl font-semibold shadow-lg transition-all">
+                        <span class="material-symbols-rounded">chat</span>
+                        <span>Falar no WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Hero Section Premium -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        <!-- Background com Parallax -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-700" 
+                 style="background-image: url('img/hero.jpg');"
+                 id="hero-bg"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/50 to-slate-900/80"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+        </div>
+
+        <!-- Conteúdo -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div class="text-center space-y-8 animate-slide-up">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 backdrop-blur-md border border-primary-400 rounded-full text-white text-sm font-bold shadow-xl shadow-primary-500/50">
+                    <span class="w-2 h-2 bg-primary-400 rounded-full animate-pulse"></span>
+                    <span>Aventuras em Monte Verde</span>
+                </div>
+
+                <!-- Título Principal -->
+                <h1 class="font-display font-black text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white leading-none tracking-tight">
+                    Adrenalina nas
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 animate-pulse-slow drop-shadow-[0_0_30px_rgba(168,217,0,0.8)]">
+                        Trilhas de MV
+                    </span>
+                </h1>
+
+                <!-- Subtítulo -->
+                <p class="max-w-2xl mx-auto text-lg md:text-xl text-slate-200 leading-relaxed">
+                    Passeios guiados de quadriciclo na <span class="font-semibold text-white">Fazenda Adrenalina</span> com segurança, paisagens incríveis e momentos inesquecíveis
+                </p>
+
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="https://wa.me/5535984687353" target="_blank" 
+                       class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-400 hover:to-primary-500 text-white rounded-2xl font-bold text-lg shadow-2xl shadow-primary-500/60 hover:shadow-primary-500/80 hover:scale-105 transition-all duration-300">
+                        <span class="material-symbols-rounded text-2xl">chat</span>
+                        <span>Reservar Agora</span>
+                        <span class="material-symbols-rounded text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                    <a href="#galeria" 
+                       class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-400 hover:to-accent-500 backdrop-blur-md border-2 border-white/30 hover:border-white/50 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300">
+                        <span class="material-symbols-rounded text-2xl">photo_library</span>
+                        <span>Ver Galeria</span>
+                    </a>
+                </div>
+
+                <!-- Features -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-12 max-w-4xl mx-auto">
+                    <div class="flex flex-col items-center gap-2 p-6 bg-gradient-to-br from-primary-500/20 to-primary-600/20 backdrop-blur-sm rounded-2xl border-2 border-primary-400/50 shadow-lg shadow-primary-500/30">
+                        <span class="material-symbols-rounded text-4xl text-primary-400 drop-shadow-[0_0_10px_rgba(168,217,0,0.8)]">verified</span>
+                        <h3 class="font-bold text-white">100% Seguro</h3>
+                        <p class="text-sm text-slate-300">Equipamentos de qualidade</p>
                     </div>
-                    <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4 @xl:px-4">
-                        <p
-                            class="text-text-primary-light dark:text-text-primary-dark text-lg font-bold leading-tight tracking-[-0.015em]">
-                            Passeio Pôr do Sol</p>
-                        <div class="flex items-end gap-3 justify-between">
-                            <div class="flex flex-col gap-1 flex-1">
-                                <p
-                                    class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">
-                                    Uma experiência inesquecível pelas trilhas com a vista do pôr do sol.</p>
-                                <p
-                                    class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">
-                                    A partir de R$ 250</p>
+                    <div class="flex flex-col items-center gap-2 p-6 bg-gradient-to-br from-primary-600/20 to-primary-700/20 backdrop-blur-sm rounded-2xl border-2 border-primary-500/50 shadow-lg shadow-primary-600/30">
+                        <span class="material-symbols-rounded text-4xl text-primary-300 drop-shadow-[0_0_10px_rgba(107,165,32,0.8)]">landscape</span>
+                        <h3 class="font-bold text-white">Trilhas Exclusivas</h3>
+                        <p class="text-sm text-slate-300">Paisagens incríveis</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 p-6 bg-gradient-to-br from-accent-500/20 to-accent-600/20 backdrop-blur-sm rounded-2xl border-2 border-accent-400/50 shadow-lg shadow-accent-500/30">
+                        <span class="material-symbols-rounded text-4xl text-accent-300 drop-shadow-[0_0_10px_rgba(188,167,79,0.8)]">schedule</span>
+                        <h3 class="font-bold text-white">Horários Flexíveis</h3>
+                        <p class="text-sm text-slate-300">Todos os dias, 9h-17h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+            <div class="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">
+                <div class="w-1 h-2 bg-white rounded-full animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="relative z-20 -mt-16">
+        <!-- Cards de Informações -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-primary-500/50">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary-500/50 group-hover:shadow-xl group-hover:shadow-primary-500/70">
+                        <span class="material-symbols-rounded text-white text-3xl">schedule</span>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">Horários</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Todos os dias<br>9:00 às 17:00</p>
+                </div>
+
+                <div class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-accent-500 dark:hover:border-accent-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-accent-500/50">
+                    <div class="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent-500/50 group-hover:shadow-xl group-hover:shadow-accent-500/70">
+                        <span class="material-symbols-rounded text-white text-3xl">location_on</span>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">Local</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Fazenda Adrenalina<br>Monte Verde, MG</p>
+                </div>
+
+                <div class="group bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-accent-500 dark:hover:border-accent-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-accent-500/50">
+                    <div class="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent-500/50 group-hover:shadow-xl group-hover:shadow-accent-500/70">
+                        <span class="material-symbols-rounded text-white text-3xl">explore</span>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">Duração</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Normal: 40-60 min<br>Pôr do Sol: 60-90 min</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Passeio em Destaque -->
+        <section class="py-20 bg-slate-50 dark:bg-slate-900/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-display font-bold text-4xl md:text-5xl text-slate-900 dark:text-white mb-4">
+                        Passeio em Destaque
+                    </h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                        Viva uma experiência única com as melhores trilhas e vistas panorâmicas
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-500 hover:shadow-primary-500/20">
+                    <div class="grid md:grid-cols-2 gap-0">
+                        <!-- Imagem -->
+                        <div class="relative h-80 md:h-full overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700" style="background-image: url('img/featured.jpg');"></div>
+                            <div class="absolute top-6 left-6">
+                                <span class="inline-flex items-center gap-2 px-4 py-2 bg-primary-500 text-white rounded-full font-bold text-sm shadow-xl">
+                                    <span class="material-symbols-rounded text-lg">star</span>
+                                    Favorito
+                                </span>
                             </div>
-                            <button
-                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-primary text-text-primary-light text-sm font-medium leading-normal">
-                                <span class="truncate">Saiba Mais</span>
-                            </button>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <div class="inline-flex items-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-accent-500 font-semibold mb-4">
+                            <span class="material-symbols-rounded text-primary-500">wb_twilight</span>
+                            <span>Experiência Premium</span>
+                        </div>                            <h3 class="font-display font-bold text-3xl md:text-4xl text-slate-900 dark:text-white mb-4">
+                                Passeio Pôr do Sol
+                            </h3>
+                            
+                            <p class="text-lg text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                                Uma experiência inesquecível pelas trilhas com a vista espetacular do pôr do sol nas montanhas. Ideal para casais e grupos que buscam momentos únicos.
+                            </p>
+
+                            <!-- Features -->
+                            <div class="grid grid-cols-2 gap-4 mb-8">
+                                <div class="flex items-center gap-2 text-slate-700 dark:text-slate-300">
+                                    <span class="material-symbols-rounded text-accent-500">schedule</span>
+                                    <span>60-90 min</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-slate-700 dark:text-slate-300">
+                                    <span class="material-symbols-rounded text-accent-500">groups</span>
+                                    <span>Até 10 pessoas</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-slate-700 dark:text-slate-300">
+                                    <span class="material-symbols-rounded text-accent-500">photo_camera</span>
+                                    <span>Fotos inclusas</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-slate-700 dark:text-slate-300">
+                                    <span class="material-symbols-rounded text-accent-500">verified</span>
+                                    <span>Guia experiente</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mb-8 pb-8 border-b border-slate-200 dark:border-slate-700">
+                                <div>
+                                    <p class="text-sm text-slate-500 dark:text-slate-400">A partir de</p>
+                                    <p class="font-display font-bold text-3xl text-primary-600 dark:text-primary-400">R$ 250</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="https://wa.me/5535984687353" target="_blank" 
+                                   class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-400 hover:to-primary-500 text-white rounded-xl font-bold shadow-lg shadow-primary-500/50 hover:shadow-xl hover:shadow-primary-500/70 hover:scale-105 transition-all duration-300">
+                                    <span class="material-symbols-rounded">chat</span>
+                                    <span>Reservar Agora</span>
+                                </a>
+                                <a href="section.html" 
+                                   class="inline-flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-primary-700 to-primary-800 hover:from-primary-600 hover:to-primary-700 text-white rounded-xl font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                                    <span>Saiba Mais</span>
+                                    <span class="material-symbols-rounded">arrow_forward</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- TextGrid -->
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-                <div
-                    class="flex flex-1 gap-3 rounded-xl border border-border-light dark:border-border-dark bg-surface dark:bg-surface-dark p-4 flex-col">
-                    <div class="text-text-primary-light dark:text-text-primary-dark">
-                        <span class="material-symbols-outlined">verified_user</span>
+        </section>
+
+        <!-- Galeria de Fotos -->
+        <section id="galeria" class="py-20 bg-slate-50 dark:bg-slate-900/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-display font-bold text-4xl md:text-5xl text-slate-900 dark:text-white mb-4">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-primary-500 to-primary-400">Galeria de Aventuras</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-400">
+                        Momentos incríveis registrados nas trilhas
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer hover:scale-105 transition-transform duration-300">
+                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.35.jpeg" alt="Quadriciclo na trilha" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">Aventura nas Trilhas</span>
+                        </div>
                     </div>
-                    <div class="flex flex-col gap-1">
-                        <h4
-                            class="text-text-primary-light dark:text-text-primary-dark text-base font-bold leading-tight">
-                            Segurança Certificada</h4>
-                        <p
-                            class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
-                            Equipamentos revisados e seguros para sua tranquilidade.</p>
+                    <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer hover:scale-105 transition-transform duration-300">
+                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.36.jpeg" alt="Vista panorâmica" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">Vista Espetacular</span>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer hover:scale-105 transition-transform duration-300">
+                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.37.jpeg" alt="Grupo de aventureiros" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">Diversão em Grupo</span>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer hover:scale-105 transition-transform duration-300">
+                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.38.jpeg" alt="Pôr do sol" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">Pôr do Sol Mágico</span>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer hover:scale-105 transition-transform duration-300">
+                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.39.jpeg" alt="Adrenalina pura" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">Adrenalina Pura</span>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer hover:scale-105 transition-transform duration-300">
+                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.40.jpeg" alt="Fazenda Adrenalina" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">Fazenda Adrenalina</span>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer hover:scale-105 transition-transform duration-300">
+                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.35 (1).jpeg" alt="Natureza exuberante" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">Natureza Exuberante</span>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer hover:scale-105 transition-transform duration-300">
+                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.36 (1).jpeg" alt="Experiência única" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <span class="text-white font-semibold">Experiência Única</span>
+                        </div>
                     </div>
                 </div>
-                <div
-                    class="flex flex-1 gap-3 rounded-xl border border-border-light dark:border-border-dark bg-surface dark:bg-surface-dark p-4 flex-col">
-                    <div class="text-text-primary-light dark:text-text-primary-dark">
-                        <span class="material-symbols-outlined">map</span>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h4
-                            class="text-text-primary-light dark:text-text-primary-dark text-base font-bold leading-tight">
-                            Guias Experientes</h4>
-                        <p
-                            class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
-                            Nossos guias conhecem cada trilha para garantir a melhor aventura.</p>
-                    </div>
+
+                <div class="text-center mt-12">
+                    <a href="https://wa.me/5535984687353" target="_blank" 
+                       class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-500 via-accent-500 to-neon-500 hover:from-primary-400 hover:via-accent-400 hover:to-neon-400 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300">
+                        <span class="material-symbols-rounded text-2xl">photo_camera</span>
+                        <span>Faça Parte da Galeria</span>
+                    </a>
                 </div>
-                <div
-                    class="flex flex-1 gap-3 rounded-xl border border-border-light dark:border-border-dark bg-surface dark:bg-surface-dark p-4 flex-col col-span-full">
-                    <div class="text-text-primary-light dark:text-text-primary-dark">
-                        <span class="material-symbols-outlined">star</span>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-display font-bold text-4xl md:text-5xl text-slate-900 dark:text-white mb-4">
+                        O que dizem nossos clientes
+                    </h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-400">
+                        Experiências reais de quem viveu a aventura
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
+                        <div class="flex gap-1 text-primary-500 mb-4">
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                        </div>
+                        <p class="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
+                            "Experiência incrível! A equipe é super atenciosa e as trilhas são sensacionais. Voltaremos com certeza!"
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center text-white font-bold">
+                                MS
+                            </div>
+                            <div>
+                                <p class="font-bold text-slate-900 dark:text-white">Maria Silva</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">São Paulo, SP</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex flex-col gap-1">
-                        <h4
-                            class="text-text-primary-light dark:text-text-primary-dark text-base font-bold leading-tight">
-                            Avaliação 5 Estrelas</h4>
-                        <p
-                            class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
-                            Clientes satisfeitos são a nossa maior recompensa.</p>
+
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
+                        <div class="flex gap-1 text-primary-500 mb-4">
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                        </div>
+                        <p class="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
+                            "Seguro e muito divertido! O passeio do pôr do sol é imperdível. Vista maravilhosa!"
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-700 rounded-full flex items-center justify-center text-white font-bold">
+                                JP
+                            </div>
+                            <div>
+                                <p class="font-bold text-slate-900 dark:text-white">João Paulo</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Belo Horizonte, MG</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-xl border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 hover:-translate-y-2">
+                        <div class="flex gap-1 text-primary-500 mb-4">
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                            <span class="material-symbols-rounded">star</span>
+                        </div>
+                        <p class="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
+                            "Paisagens fantásticas! As fotos ficaram incríveis. Uma aventura que vale muito a pena!"
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-500 rounded-full flex items-center justify-center text-white font-bold">
+                                AL
+                            </div>
+                            <div>
+                                <p class="font-bold text-slate-900 dark:text-white">Ana Lima</p>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Rio de Janeiro, RJ</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Image Gallery -->
-            <h3
-                class="text-text-primary-light dark:text-text-primary-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-2">
-                Nossos Momentos</h3>
-            <div class="flex gap-3 overflow-x-auto px-4 pb-4">
-                <div class="h-40 w-40 flex-shrink-0 rounded-lg bg-cover bg-center"
-                    data-alt="Group of friends smiling on their quadricycles."
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDunrMIp7Jr-NXAbYV8iKWjGROTH3yzV76x00vVTGyPdBAwPSwFEjovK1sJQA0PbPMsrqChdD7hnTAYCWJiU2dA1otJszmp5M05HUli3qIVtSwlH5j9VIdhQYu0Sb8B3CiMAupEbMQtta2SzckKS9ppuY-3s4E5mUwg2NH65y-31VA0p0UobZFHTzyBa5QxWu1KlAv_5pxxMbXZP8K2xgN9_1hmXFwRr25GT8nutSUpCksIVPOeTy2x0dYzxPp32LgIPjkheVnNPPU");'>
-                </div>
-                <div class="h-40 w-40 flex-shrink-0 rounded-lg bg-cover bg-center"
-                    data-alt="Close up of a quadricycle tire splashing mud on a trail."
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUu0yxKLHOVb0AJweuZJKPlNMJ9xpHpUa-ysw7wmxFJr_M8xU9kotNFllFUw_AifnnXR7z_d6zjYvFFedqqg6qnmdSL4MXtkC7E40usrRSSH7IaT5I17Hq7RlTA_xlJO3gyGQZAA1SrHm3cN5GEHO8ftLq0fjBEdwjeAMrn2gfYg831zdGKnLdkbCsfL7PaSjeQqyhZkXQpaclNHrVy1xehMfRuzH-V9Rg5NF_zs1B2FmDTb-FhYte3FJmO23oXwy7nEwyxppWbbE");'>
-                </div>
-                <div class="h-40 w-40 flex-shrink-0 rounded-lg bg-cover bg-center"
-                    data-alt="A beautiful waterfall view from one of the tour routes."
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrcVMi35DJhB-VUegpHkZHpeaZb-3jZzPaLyzKvEzqgsgy9FGgtrJId9l-ImyO52o7QwJU22mIglchRzL3EfFUfl6LedzMZcjd7UQGuYMA1S1aacLTEBbF9O618LvN9Q0GnI9GSX2t5KTVagFEb981y-q2NkWo8FqgwEmnclLAEPuydefypcUbcXql1cWX41j1tlv3j8uDhucLnUW2pmjAIwFA0IiFsNUV53y06LfTC5ZS0hdSD7BXXWO8yplin2df6ZcrCyQcOzU");'>
-                </div>
-                <div class="h-40 w-40 flex-shrink-0 rounded-lg bg-cover bg-center"
-                    data-alt="A couple posing for a photo with a quadricycle in front of a scenic view."
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCb7EQ_VDPcaB4vXtTHGrBD2Dtb_ObYI_DGSSfjcIKKPNB7hi9i9TtlVkX9nDt4LK4Zzj2ZgSzX2yyNL45tcNHsclKExOEs-Cx8MkxC4qpo_aT5VcXXUnu4CGoDHhDkfpkSY8vxOrVoqz2FQcMVq5BlYYXhAFfFknML0H0HrHagTaSKg61CB7cDGpjCJlP1CaW_I-FH1vXsz2wTrM1nlaZupFjshOIR-fo4ZuLeMdeLlHeQI7XrsbNWYk55yO9Tx6wOr5sQa9QVs5U");'>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="py-20 bg-gradient-to-br from-primary-600 via-primary-500 to-primary-400 relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjEiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h2 class="font-display font-black text-4xl md:text-5xl text-white mb-6 drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
+                    Pronto para a Aventura?
+                </h2>
+                <p class="text-xl text-white/95 mb-10 leading-relaxed font-medium">
+                    Reserve seu passeio agora e garanta momentos inesquecíveis nas trilhas de Monte Verde
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://wa.me/5535984687353" target="_blank" 
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-white hover:bg-slate-50 text-primary-700 rounded-2xl font-bold text-lg shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-white/20">
+                        <span class="material-symbols-rounded text-2xl">chat</span>
+                        <span>Falar no WhatsApp</span>
+                    </a>
+                    <a href="tel:+5535998793419" 
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-white/20 hover:bg-white/30 backdrop-blur-md border-2 border-white/40 hover:border-white/60 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300">
+                        <span class="material-symbols-rounded text-2xl">call</span>
+                        <span>(35) 99879-3419</span>
+                    </a>
                 </div>
             </div>
-        </main>
-        <!-- Quick Contact Bar -->
-        <footer
-            class="sticky bottom-0 z-10 bg-surface/80 dark:bg-surface-dark/80 backdrop-blur-sm p-3 mt-4 border-t border-border-light dark:border-border-dark">
-            <div class="flex justify-around items-center">
-                <a aria-label="Contact via WhatsApp"
-                    class="flex flex-col items-center gap-1 text-text-primary-light dark:text-text-primary-dark"
-                    href="https://wa.me/5535984687353" target="_blank">
-                    <svg class="text-green-500" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                        </path>
-                        <path d="M14.05 2a9 9 0 0 1 8 7.94"></path>
-                        <path d="M14.05 6A5 5 0 0 1 18 10"></path>
-                    </svg>
-                    <span class="text-xs font-medium">WhatsApp</span>
-                </a>
-                <a aria-label="Visit our Instagram"
-                    class="flex flex-col items-center gap-1 text-text-primary-light dark:text-text-primary-dark"
-                    href="#">
-                    <svg class="text-pink-500" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-                    </svg>
-                    <span class="text-xs font-medium">Instagram</span>
-                </a>
-                <a aria-label="Call Us"
-                    class="flex flex-col items-center gap-1 text-text-primary-light dark:text-text-primary-dark"
-                    href="#">
-                    <span class="material-symbols-outlined text-blue-500">call</span>
-                    <span class="text-xs font-medium">Ligar</span>
-                </a>
+        </section>
+
+        <!-- Footer Moderno -->
+        <footer class="bg-slate-900 text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-4 gap-12 mb-12">
+                    <!-- Logo e Descrição -->
+                    <div class="md:col-span-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center">
+                                <span class="material-symbols-rounded text-white text-2xl">terrain</span>
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-lg">Hyguinho Quadriciclos</h3>
+                                <p class="text-xs text-slate-400">Monte Verde · MG</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Passeios guiados de quadriciclo com segurança e diversão na Fazenda Adrenalina.
+                        </p>
+                    </div>
+
+                    <!-- Links -->
+                    <div>
+                        <h4 class="font-bold mb-4">Navegação</h4>
+                        <ul class="space-y-3 text-sm text-slate-400">
+                            <li><a href="index.html" class="hover:text-primary-400 transition-colors">Início</a></li>
+                            <li><a href="section.html" class="hover:text-primary-400 transition-colors">Sobre</a></li>
+                            <li><a href="gallery.html" class="hover:text-primary-400 transition-colors">Galeria</a></li>
+                            <li><a href="footer.html" class="hover:text-primary-400 transition-colors">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contato -->
+                    <div>
+                        <h4 class="font-bold mb-4">Contato</h4>
+                        <ul class="space-y-3 text-sm">
+                            <li>
+                                <a href="https://wa.me/5535984687353" target="_blank" class="flex items-center gap-2 text-slate-400 hover:text-accent-400 transition-colors">
+                                    <span class="material-symbols-rounded text-lg">chat</span>
+                                    <span>(35) 98468-7353</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+5535998793419" class="flex items-center gap-2 text-slate-400 hover:text-primary-400 transition-colors">
+                                    <span class="material-symbols-rounded text-lg">call</span>
+                                    <span>(35) 99879-3419</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:hygormeendes98@gmail.com" class="flex items-center gap-2 text-slate-400 hover:text-primary-400 transition-colors">
+                                    <span class="material-symbols-rounded text-lg">mail</span>
+                                    <span>hygormeendes98@gmail.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Redes Sociais -->
+                    <div>
+                        <h4 class="font-bold mb-4">Redes Sociais</h4>
+                        <div class="flex gap-3">
+                            <a href="https://instagram.com/HyguinhoQuadriciclosMv" target="_blank" 
+                               class="w-12 h-12 bg-slate-800 hover:bg-gradient-to-br hover:from-primary-500 hover:to-primary-600 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110">
+                                <span class="material-symbols-rounded">photo_camera</span>
+                            </a>
+                            <a href="https://wa.me/5535984687353" target="_blank" 
+                               class="w-12 h-12 bg-slate-800 hover:bg-primary-500 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110">
+                                <span class="material-symbols-rounded">chat</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 border-t border-slate-800 text-center text-sm text-slate-400">
+                    <p>© 2025 Hyguinho Quadriciclos MV — Todos os direitos reservados.</p>
+                </div>
             </div>
         </footer>
-    </div>
-</body>
+    </main>
 
+    <script src="js/index.js"></script>
+</body>
 </html>
