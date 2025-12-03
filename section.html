@@ -27,6 +27,25 @@
         };
     </script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- 🎨 Paleta Harmoniosa Profissional -->
+    <style>
+        :root {
+            --cor-principal: #FF6B35;      /* Laranja vibrante */
+            --cor-secundaria: #00C9A7;     /* Teal/Verde-azulado */
+            --cor-acento: #1B4965;         /* Azul profundo */
+            --cor-destaque: #FFB800;       /* Amarelo dourado */
+        }
+        
+        .bg-primary-500 { background-color: #FF6B35 !important; }
+        .bg-nature-500 { background-color: #00C9A7 !important; }
+        .bg-sky-500 { background-color: #1B4965 !important; }
+        .bg-sun-500 { background-color: #FFB800 !important; }
+        .text-sky-400 { color: #3D8EAF !important; }
+        .text-primary-500 { color: #FF6B35 !important; }
+        .text-nature-500 { color: #00C9A7 !important; }
+    </style>
+    
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap"
@@ -34,15 +53,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/section.css?v=2.0">
     <script src="js/section.js"></script>
 </head>
 
 <body class="bg-base-900 text-white font-display">
     <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
         <!-- Top App Bar -->
-        <div
-            class="sticky top-0 z-10 flex items-center bg-base-950/70 backdrop-blur-md p-4 pb-2 justify-between border-b border-white/10">
+        <div class="sticky top-0 z-10 flex items-center p-4 pb-2 justify-between border-b border-white/10" style="background: linear-gradient(180deg, rgba(20,20,20,0.9) 0%, rgba(255,107,53,0.15) 100%); backdrop-filter: blur(12px);">
             <button aria-label="Voltar"
                 class="text-gray-800 dark:text-gray-200 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                 <span class="material-symbols-outlined text-2xl">arrow_back</span>
@@ -51,7 +69,7 @@
                 class="text-gray-900 dark:text-gray-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
                 Sobre Nós</h2>
             <div class="flex items-center gap-2">
-                <a href="gallery.html" class="text-sm font-medium text-white hover:text-sky-400">Galeria</a>
+                <a href="gallery.html" class="text-sm font-medium text-white transition-colors" style="color: #fff;" onmouseover="this.style.color='#00C9A7'" onmouseout="this.style.color='#fff'">Galeria</a>
                 <div class="size-10 shrink-0"></div>
             </div>
         </div>
@@ -161,7 +179,7 @@
 
                 <!-- CTA Consistente -->
                 <section class="py-12">
-                    <div class="max-w-6xl mx-auto px-4 p-8 rounded-2xl bg-gradient-to-r from-primary-500 via-accent-500 to-neon-500 text-white flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="max-w-6xl mx-auto px-4 p-8 rounded-2xl bg-gradient-to-r from-primary-500 via-sky-500 via-nature-500 to-sun-500 text-white flex flex-col md:flex-row items-center justify-between gap-4">
                         <div>
                             <h3 class="text-2xl font-bold">Quer saber mais ou reservar?</h3>
                             <p class="mt-1 text-white/90">Fale conosco e garanta sua vaga.</p>

@@ -11,39 +11,39 @@
 }
 
 :root {
-    /* 🎨 Paleta Viva & Emocional - Psicologia das Cores */
+    /* 🎨 PALETA HARMONIOSA PROFISSIONAL - Esquema Complementar */
     
-    /* 🔥 LARANJA ENERGIA - Aventura, Ação, Emoção */
-    --primary-300: #FFB366;
-    --primary-400: #FF944D;
-    --primary-500: #FF7A00; /* Principal */
-    --primary-600: #E66D00;
-    --primary-700: #CC6100;
-    --primary-900: #994800;
+    /* 🔥 LARANJA VIBRANTE - Principal: Aventura, Energia, Ação */
+    --primary-300: #FFB380;
+    --primary-400: #FF8555;
+    --primary-500: #FF6B35; /* COR PRINCIPAL */
+    --primary-600: #E85A24;
+    --primary-700: #D04913;
+    --primary-900: #A83800;
 
-    /* 🌿 VERDE NATUREZA - Equilíbrio, Ar Livre, Harmonia */
-    --nature-300: #5FE89F;
-    --nature-400: #43E08C;
-    --nature-500: #27D97A; /* Principal */
-    --nature-600: #22C46D;
-    --nature-700: #1DAF60;
-    --nature-900: #148446;
+    /* 🌊 TEAL/VERDE-AZULADO - Secundário: Natureza, Equilíbrio, Outdoor */
+    --nature-300: #33E3C2;
+    --nature-400: #1AD4B5;
+    --nature-500: #00C9A7; /* COR SECUNDÁRIA */
+    --nature-600: #00B090;
+    --nature-700: #009879;
+    --nature-900: #006B57;
 
-    /* ☀️ AZUL CÉU - Liberdade, Confiança, Aventura */
-    --sky-300: #66D4FF;
-    --sky-400: #33C5FF;
-    --sky-500: #00B7FF; /* Principal */
-    --sky-600: #00A5E6;
-    --sky-700: #0093CC;
-    --sky-900: #006F99;
+    /* 🌌 AZUL PROFUNDO - Acento: Confiança, Aventura, Céu */
+    --sky-300: #5C9FBE;
+    --sky-400: #3D8EAF;
+    --sky-500: #1B4965; /* COR DE ACENTO */
+    --sky-600: #153A51;
+    --sky-700: #0F2B3D;
+    --sky-900: #081A28;
 
-    /* 🌞 AMARELO SOL - Calor, Alegria, Destaque */
-    --sun-300: #FFDE66;
-    --sun-400: #FFD74D;
-    --sun-500: #FFD029; /* Principal */
-    --sun-600: #E6BB25;
-    --sun-700: #CCA620;
-    --sun-900: #997D18;
+    /* ☀️ AMARELO DOURADO - Destaque: Alegria, Calor, Otimismo */
+    --sun-300: #FFD74D;
+    --sun-400: #FFD033;
+    --sun-500: #FFB800; /* COR DE DESTAQUE */
+    --sun-600: #E6A600;
+    --sun-700: #CC9400;
+    --sun-900: #997000;
 
     /* Neutros Modernos */
     --neutral-warm: #F5F5F5; /* Branco quente */
@@ -77,8 +77,35 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     /* 🎨 Fundo moderno com gradiente emocional */
-    background: linear-gradient(180deg, var(--base-950) 0%, #1A1A1A 50%, var(--base-900) 100%);
+    background: linear-gradient(180deg, #141414 0%, #1A1A1A 50%, #1E1E1E 100%);
 }
+
+/* 🎨 FORÇAR CORES HARMONIOSAS PROFISSIONAIS */
+.bg-primary-500,
+*[class*="bg-primary-500"] {
+    background: #FF6B35 !important;
+}
+
+.bg-nature-500,
+*[class*="bg-nature-500"] {
+    background: #00C9A7 !important;
+}
+
+.bg-sky-500,
+*[class*="bg-sky-500"] {
+    background: #1B4965 !important;
+}
+
+.bg-sun-500,
+*[class*="bg-sun-500"] {
+    background: #FFB800 !important;
+}
+
+/* Cores de texto */
+.text-primary-500 { color: #FF6B35 !important; }
+.text-nature-400, .text-nature-500 { color: #00C9A7 !important; }
+.text-sky-400, .text-sky-500 { color: #3D8EAF !important; }
+.text-sun-400, .text-sun-500 { color: #FFB800 !important; }
 
 /* Force dark backgrounds for structure to avoid white gaps */
 main {
