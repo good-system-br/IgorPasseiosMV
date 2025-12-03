@@ -11,31 +11,51 @@
 }
 
 :root {
-    /* Paleta Viva e Natural (psicologia das cores) */
-    --primary-400: #FFA14D; /* Laranja vivo – entusiasmo, ação */
-    --primary-500: #FF7A00;
-    --primary-600: #CC6200;
-    --primary-900: #994C00;
-
-    --neon-400: #55D88E; /* Verde folha – equilíbrio e bem-estar */
-    --neon-500: #2ECC71;
-    --neon-600: #25A75C;
-
-    --accent-400: #33D9FF; /* Azul caribe – frescor e confiança */
-    --accent-500: #00C8FF;
-    --accent-600: #00A0CC;
-
-    /* Neutros padronizados */
-    --neutral-light: #F6F6F6;
-    --neutral-dark: #222222;
-
-    /* Bases (menos preto, mais moderno) */
-    --base-900: #0E1A24; /* Navy profundo para conforto visual */
-    --base-950: #0A141C; /* Charcoal-azulado */
+    /* 🎨 Paleta Viva & Emocional - Psicologia das Cores */
     
-    /* Neutros (ajustados) */
-    --slate-50: #2A2A2A;
-    --slate-900: #222222;
+    /* 🔥 LARANJA ENERGIA - Aventura, Ação, Emoção */
+    --primary-300: #FFB366;
+    --primary-400: #FF944D;
+    --primary-500: #FF7A00; /* Principal */
+    --primary-600: #E66D00;
+    --primary-700: #CC6100;
+    --primary-900: #994800;
+
+    /* 🌿 VERDE NATUREZA - Equilíbrio, Ar Livre, Harmonia */
+    --nature-300: #5FE89F;
+    --nature-400: #43E08C;
+    --nature-500: #27D97A; /* Principal */
+    --nature-600: #22C46D;
+    --nature-700: #1DAF60;
+    --nature-900: #148446;
+
+    /* ☀️ AZUL CÉU - Liberdade, Confiança, Aventura */
+    --sky-300: #66D4FF;
+    --sky-400: #33C5FF;
+    --sky-500: #00B7FF; /* Principal */
+    --sky-600: #00A5E6;
+    --sky-700: #0093CC;
+    --sky-900: #006F99;
+
+    /* 🌞 AMARELO SOL - Calor, Alegria, Destaque */
+    --sun-300: #FFDE66;
+    --sun-400: #FFD74D;
+    --sun-500: #FFD029; /* Principal */
+    --sun-600: #E6BB25;
+    --sun-700: #CCA620;
+    --sun-900: #997D18;
+
+    /* Neutros Modernos */
+    --neutral-warm: #F5F5F5; /* Branco quente */
+    --neutral-graphite: #2A2A2A; /* Grafite moderno */
+
+    /* Bases (fundos confortáveis) */
+    --base-900: #1E1E1E; /* Grafite escuro */
+    --base-950: #141414; /* Preto suave */
+    
+    /* Slate ajustado */
+    --slate-50: #F5F5F5;
+    --slate-900: #2A2A2A;
     
     /* Sombras */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -56,13 +76,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
     overflow-x: hidden;
-    /* Fundo moderno em gradient suave (menos preto) */
-    background: linear-gradient(180deg, var(--base-950) 0%, #0F2130 40%, #0E1A24 100%);
+    /* 🎨 Fundo moderno com gradiente emocional */
+    background: linear-gradient(180deg, var(--base-950) 0%, #1A1A1A 50%, var(--base-900) 100%);
 }
 
 /* Force dark backgrounds for structure to avoid white gaps */
 main {
-    background: linear-gradient(180deg, #0E1A24 0%, #0F2130 60%, #0E1A24 100%);
+    background: linear-gradient(180deg, var(--base-900) 0%, #252525 50%, var(--base-900) 100%);
 }
 
 section {
@@ -223,12 +243,12 @@ footer .bg-primary-900\/50 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-500);
+    background: linear-gradient(180deg, var(--primary-500), var(--nature-500));
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-600);
+    background: linear-gradient(180deg, var(--primary-400), var(--nature-400));
 }
 
 .dark ::-webkit-scrollbar-track {
@@ -341,12 +361,12 @@ button:focus-visible {
 
 /* Selection Colors */
 ::selection {
-    background: var(--accent-500);
+    background: var(--sky-500);
     color: white;
 }
 
 ::-moz-selection {
-    background: var(--neon-500);
+    background: var(--nature-500);
     color: white;
 }
 
@@ -383,16 +403,24 @@ button:focus-visible {
     animation: borderGlow 3s ease-in-out infinite;
 }
 
-/* Gradientes Vibrantes */
+/* 🌈 Gradientes Vibrantes & Emocionais */
 .gradient-vibrant {
-    background: linear-gradient(135deg, var(--primary-500), var(--accent-500), var(--neon-500));
+    background: linear-gradient(135deg, var(--primary-500), var(--sky-500), var(--nature-500), var(--sun-500));
 }
 
 .gradient-vibrant-text {
-    background: linear-gradient(135deg, var(--primary-500), var(--accent-500), var(--neon-500));
+    background: linear-gradient(135deg, var(--primary-500), var(--sky-500), var(--nature-500));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.gradient-adventure {
+    background: linear-gradient(135deg, var(--primary-500), var(--sun-500));
+}
+
+.gradient-nature {
+    background: linear-gradient(135deg, var(--nature-500), var(--sky-500));
 }
 
 /* Hover Glow Effect */
