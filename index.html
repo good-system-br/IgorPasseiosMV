@@ -14,52 +14,32 @@
             theme: {
                 extend: {
                     colors: {
-                        // Paleta viva solicitada (neon/alto contraste)
-                        primary: { // Azul Elétrico
-                            400: '#3399FF',
-                            500: '#007BFF',
-                            600: '#0062CC',
-                            700: '#004EA6',
-                            800: '#003D80',
-                            900: '#002C5C'
+                        // Paleta viva e natural (psicologia das cores)
+                        primary: { // Laranja vivo – energia e ação
+                            400: '#FFA14D',
+                            500: '#FF7A00',
+                            600: '#CC6200',
+                            700: '#994C00'
                         },
-                        accent: { // Rosa Neon
-                            400: '#FF3399',
-                            500: '#FF007F',
-                            600: '#CC0066',
-                            700: '#99004D',
-                            800: '#73003A',
-                            900: '#520029'
+                        neon: { // Verde folha – harmonia e bem-estar
+                            400: '#55D88E',
+                            500: '#2ECC71',
+                            600: '#25A75C',
+                            700: '#1C8248'
                         },
-                        neon: { // Verde Lima Forte
-                            400: '#33FF75',
-                            500: '#00FF4C',
-                            600: '#00CC3D',
-                            700: '#00A32F',
-                            800: '#007A23',
-                            900: '#005216'
+                        accent: { // Azul caribe – frescor e destaque
+                            400: '#33D9FF',
+                            500: '#00C8FF',
+                            600: '#00A0CC',
+                            700: '#00799E'
                         },
-                        yellow: { // Amarelo Vibrante
-                            400: '#FFF04D',
-                            500: '#FFEA00',
-                            600: '#E6D300',
-                            700: '#B3A500'
+                        neutral: {
+                            light: '#F6F6F6',
+                            dark: '#222222'
                         },
-                        purple: { // Roxo Neon
-                            400: '#BB33FF',
-                            500: '#A400FF',
-                            600: '#8400CC',
-                            700: '#660099'
-                        },
-                        orange: { // Laranja Intenso
-                            400: '#FF8C33',
-                            500: '#FF6A00',
-                            600: '#CC5500',
-                            700: '#993F00'
-                        },
-                        base: { // Fundos escuros
-                            900: '#1A1A1A',
-                            950: '#0F0F0F'
+                        base: { // Fundos
+                            900: '#222222',
+                            950: '#1A1A1A'
                         },
                         white: '#FFFFFF'
                     },
@@ -98,7 +78,7 @@
 <body class="bg-base-900 text-white font-sans overflow-x-hidden">
     
     <!-- Header Moderno e Minimalista -->
-    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-gradient-to-b from-accent-900/80 to-primary-900/70 dark:from-slate-900/80 dark:to-slate-800/70 border-b border-slate-200/20 dark:border-slate-700/50 shadow-sm transition-all duration-300" id="main-header">
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-gradient-to-b from-base-950/80 via-primary-700/70 to-accent-700/70 border-b border-white/10 shadow-sm transition-all duration-300" id="main-header">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 md:h-20">
                 <!-- Logo -->
@@ -116,10 +96,10 @@
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex items-center gap-8">
-                    <a href="index.html" class="nav-link text-sm font-medium text-white hover:text-neon-400 transition-colors">Início</a>
-                    <a href="section.html" class="nav-link text-sm font-medium text-white/90 hover:text-neon-400 transition-colors">Sobre</a>
-                    <a href="gallery.html" class="nav-link text-sm font-medium text-white/90 hover:text-neon-400 transition-colors">Galeria</a>
-                    <a href="footer.html" class="nav-link text-sm font-medium text-white/90 hover:text-neon-400 transition-colors">Contato</a>
+                    <a href="index.html" class="nav-link text-sm font-medium text-white hover:text-accent-500 transition-colors">Início</a>
+                    <a href="section.html" class="nav-link text-sm font-medium text-white/90 hover:text-accent-500 transition-colors">Sobre</a>
+                    <a href="gallery.html" class="nav-link text-sm font-medium text-white/90 hover:text-accent-500 transition-colors">Galeria</a>
+                    <a href="footer.html" class="nav-link text-sm font-medium text-white/90 hover:text-accent-500 transition-colors">Contato</a>
                 </nav>
 
                 <!-- Actions -->
@@ -127,7 +107,7 @@
                     <button id="theme-toggle" aria-label="Alternar tema" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
                         <span class="material-symbols-rounded text-slate-700 dark:text-slate-300">dark_mode</span>
                     </button>
-                    <a href="https://wa.me/5535984687353" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-accent-500 to-neon-500 hover:from-accent-400 hover:to-neon-400 text-white rounded-xl font-medium shadow-lg shadow-accent-500/30 hover:shadow-xl hover:shadow-neon-500/40 transition-all duration-300">
+                    <a href="https://wa.me/5535984687353" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-primary-500 to-accent-500 hover:from-primary-400 hover:to-accent-400 text-white rounded-xl font-medium shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-accent-500/40 transition-all duration-300">
                         <span class="material-symbols-rounded text-xl">chat</span>
                         <span>WhatsApp</span>
                     </a>
@@ -184,15 +164,15 @@
             <div class="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-700" 
                  style="background-image: url('img/WhatsApp Image 2025-12-02 at 10.56.38.jpeg');"
                  id="hero-bg"></div>
-            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-primary-950/20 via-transparent to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-base-950/70 via-base-900/40 to-base-950/70"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary-700/30 via-transparent to-transparent"></div>
         </div>
 
         <!-- Conteúdo -->
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
             <div class="text-center space-y-8 animate-slide-up">
                 <!-- Badge -->
-                <div class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-500 to-accent-600 backdrop-blur-md border border-accent-500 rounded-full text-white text-sm font-bold shadow-xl shadow-primary-500/40">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-500 to-accent-500 backdrop-blur-md border border-accent-500 rounded-full text-white text-sm font-bold shadow-xl shadow-primary-500/40">
                     <span class="w-2 h-2 bg-accent-500 rounded-full animate-pulse"></span>
                     <span>Aventuras em Monte Verde</span>
                 </div>
@@ -200,7 +180,7 @@
                 <!-- Título Principal -->
                 <h1 class="font-display font-black text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white leading-none tracking-tight">
                     Adrenalina nas Trilhas de Monte Verde
-                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-accent-500 via-primary-400 to-primary-500 animate-pulse-slow drop-shadow-[0_0_40px_rgba(236,181,88,0.7)]">
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-accent-500 to-neon-500 animate-pulse-slow drop-shadow-[0_0_40px_rgba(255,122,0,0.5)]">
                         Trilhas de MV
                     </span>
                 </h1>
@@ -213,7 +193,7 @@
                 <!-- CTAs -->
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                           <a href="https://wa.me/5535984687353" target="_blank" 
-                              class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-primary-500 to-neon-500 hover:from-primary-400 hover:to-neon-400 text-white rounded-2xl font-bold text-lg shadow-2xl shadow-neon-500/50 hover:shadow-neon-500/70 hover:scale-105 transition-all duration-300">
+                              class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-primary-500 to-neon-500 hover:from-primary-400 hover:to-neon-400 text-white rounded-2xl font-bold text-lg shadow-2xl shadow-primary-500/40 hover:shadow-accent-500/60 hover:scale-105 transition-all duration-300">
                         <span class="material-symbols-rounded text-2xl">chat</span>
                         <span>Reservar Agora</span>
                         <span class="material-symbols-rounded text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
@@ -255,7 +235,7 @@
     </section>
 
     <!-- Main Content -->
-    <main class="relative z-20 -mt-16 bg-gradient-to-b from-primary-900 via-primary-800 to-accent-800">
+    <main class="relative z-20 -mt-16 bg-gradient-to-b from-base-900 via-primary-800 to-accent-700">
         <!-- Cards de Informações -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-6 bg-white/5 rounded-3xl">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -286,7 +266,7 @@
         </div>
 
         <!-- Passeio em Destaque -->
-        <section class="py-20 bg-gradient-to-b from-primary-900 via-primary-800 to-accent-800">
+        <section class="py-20 bg-gradient-to-b from-base-900 via-primary-800 to-accent-700">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-4">
@@ -369,11 +349,11 @@
         </section>
 
         <!-- Galeria de Fotos -->
-        <section id="galeria" class="py-20 bg-gradient-to-b from-primary-900 via-primary-800 to-accent-800">
+        <section id="galeria" class="py-20 bg-gradient-to-b from-base-900 via-primary-800 to-accent-700">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-4">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 via-neon-500 to-primary-400">Galeria de Aventuras</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 via-accent-500 to-neon-500">Galeria de Aventuras</span>
                     </h2>
                     <p class="text-lg text-white/90">
                         Momentos incríveis registrados nas trilhas
@@ -418,13 +398,13 @@
                         </div>
                     </div>
                     <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer hover:scale-105 transition-transform duration-300">
-                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.35 (1).jpeg" alt="Natureza exuberante" class="w-full h-full object-cover" loading="lazy">
+                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.35.jpeg" alt="Natureza exuberante" class="w-full h-full object-cover" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                             <span class="text-white font-semibold">Natureza Exuberante</span>
                         </div>
                     </div>
                     <div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer hover:scale-105 transition-transform duration-300">
-                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.36 (1).jpeg" alt="Experiência única" class="w-full h-full object-cover" loading="lazy">
+                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.36.jpeg" alt="Experiência única" class="w-full h-full object-cover" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                             <span class="text-white font-semibold">Experiência Única</span>
                         </div>
@@ -433,7 +413,7 @@
 
                 <div class="text-center mt-12">
                     <a href="https://wa.me/5535984687353" target="_blank" 
-                       class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-accent-500 via-neon-500 to-primary-500 hover:from-accent-400 hover:via-neon-400 hover:to-primary-400 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300">
+                       class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-500 via-accent-500 to-neon-500 hover:from-primary-400 hover:via-accent-400 hover:to-neon-400 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300">
                         <span class="material-symbols-rounded text-2xl">photo_camera</span>
                         <span>Faça Parte da Galeria</span>
                     </a>
@@ -442,7 +422,7 @@
         </section>
 
         <!-- Depoimentos -->
-        <section class="py-20 bg-gradient-to-b from-primary-800 via-primary-700 to-accent-700">
+        <section class="py-20 bg-gradient-to-b from-base-900 via-primary-700 to-accent-700">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-4">
@@ -524,7 +504,7 @@
         </section>
 
         <!-- CTA Final -->
-        <section class="py-20 bg-gradient-to-br from-accent-700 via-neon-600 to-primary-700 relative overflow-hidden">
+        <section class="py-20 bg-gradient-to-br from-primary-700 via-accent-600 to-neon-600 relative overflow-hidden">
             <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjEiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30"></div>
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <h2 class="font-display font-black text-4xl md:text-5xl text-white mb-6 drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
@@ -535,7 +515,7 @@
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                           <a href="https://wa.me/5535984687353" target="_blank" 
-                              class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-primary-500 to-neon-500 hover:from-primary-400 hover:to-neon-400 text-white rounded-2xl font-bold text-lg shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-white/20">
+                              class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-primary-500 to-accent-500 hover:from-primary-400 hover:to-accent-400 text-white rounded-2xl font-bold text-lg shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-white/20">
                         <span class="material-symbols-rounded text-2xl">chat</span>
                         <span>Falar no WhatsApp</span>
                     </a>
@@ -549,7 +529,7 @@
         </section>
 
         <!-- Footer Moderno -->
-        <footer class="bg-gradient-to-b from-primary-900 to-primary-950 text-white py-16">
+        <footer class="bg-gradient-to-b from-base-900 to-base-950 text-white py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid md:grid-cols-4 gap-12 mb-12">
                     <!-- Logo e Descrição -->

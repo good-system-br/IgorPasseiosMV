@@ -11,31 +11,31 @@
 }
 
 :root {
-    /* Paleta Neon/Viva */
-    --primary-400: #3399FF; /* Azul Elétrico (light) */
-    --primary-500: #007BFF; /* Azul Elétrico */
-    --primary-600: #0062CC;
-    --primary-900: #002C5C;
+    /* Paleta Viva e Natural (psicologia das cores) */
+    --primary-400: #FFA14D; /* Laranja vivo – entusiasmo, ação */
+    --primary-500: #FF7A00;
+    --primary-600: #CC6200;
+    --primary-900: #994C00;
+
+    --neon-400: #55D88E; /* Verde folha – equilíbrio e bem-estar */
+    --neon-500: #2ECC71;
+    --neon-600: #25A75C;
+
+    --accent-400: #33D9FF; /* Azul caribe – frescor e confiança */
+    --accent-500: #00C8FF;
+    --accent-600: #00A0CC;
+
+    /* Neutros padronizados */
+    --neutral-light: #F6F6F6;
+    --neutral-dark: #222222;
+
+    /* Bases (menos preto, mais moderno) */
+    --base-900: #0E1A24; /* Navy profundo para conforto visual */
+    --base-950: #0A141C; /* Charcoal-azulado */
     
-    --accent-400: #FF3399; /* Rosa Neon (light) */
-    --accent-500: #FF007F; /* Rosa Neon */
-    --accent-600: #CC0066;
-    
-    --neon-400: #33FF75; /* Verde Lima (light) */
-    --neon-500: #00FF4C; /* Verde Lima Forte */
-    --neon-600: #00CC3D;
-    
-    --yellow-500: #FFEA00; /* Amarelo Vibrante */
-    --purple-500: #A400FF; /* Roxo Neon */
-    --orange-500: #FF6A00; /* Laranja Intenso */
-    
-    /* Bases */
-    --base-900: #1A1A1A; /* Fundo escuro principal */
-    --base-950: #0F0F0F;
-    
-    /* Neutros (ajustados para base escura) */
-    --slate-50: #262626;
-    --slate-900: #1A1A1A;
+    /* Neutros (ajustados) */
+    --slate-50: #2A2A2A;
+    --slate-900: #222222;
     
     /* Sombras */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -56,12 +56,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: var(--base-900); /* Ensure dark base */
+    /* Fundo moderno em gradient suave (menos preto) */
+    background: linear-gradient(180deg, var(--base-950) 0%, #0F2130 40%, #0E1A24 100%);
 }
 
 /* Force dark backgrounds for structure to avoid white gaps */
 main {
-    background-color: var(--base-900);
+    background: linear-gradient(180deg, #0E1A24 0%, #0F2130 60%, #0E1A24 100%);
 }
 
 section {
@@ -111,7 +112,7 @@ footer .bg-primary-900\/50 {
 }
 
 #main-header.scrolled {
-    background: rgba(26, 26, 26, 0.95);
+    background: rgba(34, 34, 34, 0.95);
     backdrop-filter: blur(20px);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
@@ -340,7 +341,7 @@ button:focus-visible {
 
 /* Selection Colors */
 ::selection {
-    background: var(--neon-500);
+    background: var(--accent-500);
     color: white;
 }
 

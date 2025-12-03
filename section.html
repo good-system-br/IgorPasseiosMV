@@ -13,17 +13,11 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: "#f4c025",
-                        "background-light": "#f8f8f5",
-                        "background-dark": "#221e10",
-                        surface: "#ffffff",
-                        "surface-dark": "#2a261a",
-                        "text-primary-light": "#181611",
-                        "text-primary-dark": "#f8f8f5",
-                        "text-secondary-light": "#8a8060",
-                        "text-secondary-dark": "#a19a81",
-                        "border-light": "#e6e3db",
-                        "border-dark": "#4d4632"
+                        // Paleta viva e natural
+                        primary: { 500: '#FF7A00', 600: '#CC6200', 700: '#994C00' },
+                        neon: { 500: '#2ECC71', 600: '#25A75C' },
+                        accent: { 500: '#00C8FF', 600: '#00A0CC' },
+                        base: { 900: '#222222', 950: '#1A1A1A' }
                     },
                     fontFamily: { display: ["Plus Jakarta Sans", "sans-serif"] },
                     borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }
@@ -43,11 +37,11 @@
     <script src="js/section.js"></script>
 </head>
 
-<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<body class="bg-base-900 text-white font-display">
     <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
         <!-- Top App Bar -->
         <div
-            class="sticky top-0 z-10 flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between border-b border-gray-200 dark:border-gray-800">
+            class="sticky top-0 z-10 flex items-center bg-base-950/70 backdrop-blur-md p-4 pb-2 justify-between border-b border-white/10">
             <button aria-label="Voltar"
                 class="text-gray-800 dark:text-gray-200 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                 <span class="material-symbols-outlined text-2xl">arrow_back</span>
@@ -56,22 +50,22 @@
                 class="text-gray-900 dark:text-gray-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
                 Sobre Nós</h2>
             <div class="flex items-center gap-2">
-                <a href="gallery.html" class="text-sm font-medium text-gray-800 dark:text-gray-200 hover:text-primary">Galeria</a>
+                <a href="gallery.html" class="text-sm font-medium text-white hover:text-accent-500">Galeria</a>
                 <div class="size-10 shrink-0"></div>
             </div>
         </div>
         <!-- Header Image -->
         <div class="@container px-4 pt-4">
             <div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-80"
-                data-alt="Equipe e trilhas de Monte Verde" style='background-image:url("img/about_header.jpg");'>
+                data-alt="Equipe e trilhas de Monte Verde" style='background-image:url("img/WhatsApp Image 2025-12-02 at 10.56.38.jpeg");'>
             </div>
         </div>
         <!-- Headline: Nossa História -->
         <h1
-            class="text-gray-900 dark:text-gray-100 tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-8">
+            class="text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-8">
             Nossa História</h1>
         <!-- Body Text: Nossa História -->
-        <p class="text-gray-700 dark:text-gray-300 text-base font-normal leading-relaxed pb-3 pt-1 px-4">
+        <p class="text-white/80 text-base font-normal leading-relaxed pb-3 pt-1 px-4">
             Nascemos da paixão por aventura e pela beleza natural de Monte Verde. Hyguinho Quadriciclos MV foi fundada
             para compartilhar experiências inesquecíveis, combinando a emoção off-road com o respeito pela natureza.
         </p>
@@ -148,25 +142,25 @@
 
                 <section class="max-w-6xl mx-auto px-4 py-24 grid md:grid-cols-2 gap-8 items-center">
                     <div data-img class="relative">
-                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.38 (1).jpeg" class="rounded-xl shadow w-full h-full object-cover" alt="Sobre nós" onerror="this.classList.add('hidden'); this.closest('[data-img]').classList.add('fallback');" />
+                        <img src="img/WhatsApp Image 2025-12-02 at 10.56.37.jpeg" class="rounded-xl shadow w-full h-full object-cover" alt="Sobre nós" onerror="this.classList.add('hidden'); this.closest('[data-img]').classList.add('fallback');" />
                     </div>
                     <div>
-                        <h1 class="text-2xl md:text-3xl font-bold">Quem somos</h1>
-                        <p class="mt-3 text-gray-700 dark:text-gray-300">Somos apaixonados por aventura e natureza. Nossos passeios guiados de quadriciclo oferecem segurança, diversão e cenários inesquecíveis.</p>
+                        <h1 class="text-2xl md:text-3xl font-bold text-white">Quem somos</h1>
+                        <p class="mt-3 text-white/80">Somos apaixonados por aventura e natureza. Nossos passeios guiados de quadriciclo oferecem segurança, diversão e cenários inesquecíveis.</p>
                     </div>
                 </section>
 
                 <section class="max-w-6xl mx-auto px-4 pb-12 grid md:grid-cols-3 gap-6">
-                    <div data-img class="relative"><img src="img/WhatsApp Image 2025-12-02 at 10.56.35 (1).jpeg" class="rounded-xl w-full h-full object-cover" alt="Equipe" onerror="this.classList.add('hidden'); this.closest('[data-img]').classList.add('fallback');" /></div>
-                    <div data-img class="relative"><img src="img/WhatsApp Image 2025-12-02 at 10.56.36 (1).jpeg" class="rounded-xl w-full h-full object-cover" alt="Veículos" onerror="this.classList.add('hidden'); this.closest('[data-img]').classList.add('fallback');" /></div>
-                    <div data-img class="relative"><img src="img/WhatsApp Image 2025-12-02 at 10.56.39 (1).jpeg" class="rounded-xl w-full h-full object-cover" alt="Partida" onerror="this.classList.add('hidden'); this.closest('[data-img]').classList.add('fallback');" /></div>
+                    <div data-img class="relative"><img src="img/WhatsApp Image 2025-12-02 at 10.56.35.jpeg" class="rounded-xl w-full h-full object-cover" alt="Equipe" onerror="this.classList.add('hidden'); this.closest('[data-img]').classList.add('fallback');" /></div>
+                    <div data-img class="relative"><img src="img/WhatsApp Image 2025-12-02 at 10.56.36.jpeg" class="rounded-xl w-full h-full object-cover" alt="Veículos" onerror="this.classList.add('hidden'); this.closest('[data-img]').classList.add('fallback');" /></div>
+                    <div data-img class="relative"><img src="img/WhatsApp Image 2025-12-02 at 10.56.39.jpeg" class="rounded-xl w-full h-full object-cover" alt="Partida" onerror="this.classList.add('hidden'); this.closest('[data-img]').classList.add('fallback');" /></div>
                 </section>
 
                 <script src="js/index.js"></script>
 
                 <!-- CTA Consistente -->
                 <section class="py-12">
-                    <div class="max-w-6xl mx-auto px-4 p-8 rounded-2xl bg-gradient-to-r from-primary-600 to-primary-700 text-white flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="max-w-6xl mx-auto px-4 p-8 rounded-2xl bg-gradient-to-r from-primary-500 via-accent-500 to-neon-500 text-white flex flex-col md:flex-row items-center justify-between gap-4">
                         <div>
                             <h3 class="text-2xl font-bold">Quer saber mais ou reservar?</h3>
                             <p class="mt-1 text-white/90">Fale conosco e garanta sua vaga.</p>
@@ -178,8 +172,8 @@
                     </div>
                 </section>
   
-                <footer class="border-t py-10">
-                    <div class="max-w-6xl mx-auto px-4 text-sm text-gray-600 dark:text-gray-400">Email: hygormeendes98@gmail.com • WhatsApp: (35) 98468-7353 • Instagram: HyguinhoQuadriciclosMv</div>
+                <footer class="border-t border-white/10 py-10">
+                    <div class="max-w-6xl mx-auto px-4 text-sm text-white/80">Email: hygormeendes98@gmail.com • WhatsApp: (35) 98468-7353 • Instagram: HyguinhoQuadriciclosMv</div>
                 </footer>
             </body>
         </html>
