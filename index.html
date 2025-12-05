@@ -84,34 +84,34 @@
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- ⚡ Paleta Harmoniosa Profissional -->
+    <!-- ⚡ Paleta Natural (Verde + Marrom) -->
     <style>
-        /* 🎨 Esquema Complementar: Laranja + Teal + Azul Profundo */
         :root {
-            --cor-principal: #FF6B35;      /* Laranja vibrante */
-            --cor-secundaria: #00C9A7;     /* Teal/Verde-azulado */
-            --cor-acento: #1B4965;         /* Azul profundo */
-            --cor-destaque: #FFB800;       /* Amarelo dourado */
+            --cor-principal: #3A5A40;      /* Verde musgo */
+            --cor-secundaria: #588157;     /* Verde folha */
+            --cor-terra: #A47148;          /* Marrom caramelo */
+            --cor-cafe: #4E342E;           /* Marrom café */
+            --cor-bege: #F7F3EE;           /* Off-white */
         }
         
-        .bg-primary-500, [class*="primary-500"] { background-color: #FF6B35 !important; }
-        .bg-primary-600, [class*="primary-600"] { background-color: #E85A24 !important; }
-        .bg-nature-500, [class*="nature-500"] { background-color: #00C9A7 !important; }
-        .bg-nature-600, [class*="nature-600"] { background-color: #00B090 !important; }
-        .bg-sky-500, [class*="sky-500"] { background-color: #1B4965 !important; }
-        .bg-sky-600, [class*="sky-600"] { background-color: #153A51 !important; }
-        .bg-sun-500, [class*="sun-500"] { background-color: #FFB800 !important; }
-        .bg-sun-600, [class*="sun-600"] { background-color: #E6A600 !important; }
+        .bg-primary-500, [class*="primary-500"] { background-color: #3A5A40 !important; }
+        .bg-primary-600, [class*="primary-600"] { background-color: #314C36 !important; }
+        .bg-nature-500, [class*="nature-500"] { background-color: #A47148 !important; }
+        .bg-nature-600, [class*="nature-600"] { background-color: #8F603C !important; }
+        .bg-sky-500, [class*="sky-500"] { background-color: #4E342E !important; }
+        .bg-sky-600, [class*="sky-600"] { background-color: #3D2926 !important; }
+        .bg-sun-500, [class*="sun-500"] { background-color: #D8CEC2 !important; }
+        .bg-sun-600, [class*="sun-600"] { background-color: #C8BAAB !important; }
         
-        .text-primary-500 { color: #FF6B35 !important; }
-        .text-nature-400, .text-nature-500 { color: #00C9A7 !important; }
-        .text-sky-400, .text-sky-500 { color: #3D8EAF !important; }
-        .text-sun-400, .text-sun-500 { color: #FFB800 !important; }
+        .text-primary-500 { color: #3A5A40 !important; }
+        .text-nature-400, .text-nature-500 { color: #A47148 !important; }
+        .text-sky-400, .text-sky-500 { color: #4E342E !important; }
+        .text-sun-400, .text-sun-500 { color: #A3B18A !important; }
         
-        .border-primary-500 { border-color: #FF6B35 !important; }
-        .border-nature-500 { border-color: #00C9A7 !important; }
-        .border-sky-500 { border-color: #1B4965 !important; }
-        .border-sun-500 { border-color: #FFB800 !important; }
+        .border-primary-500 { border-color: #3A5A40 !important; }
+        .border-nature-500 { border-color: #A47148 !important; }
+        .border-sky-500 { border-color: #4E342E !important; }
+        .border-sun-500 { border-color: #A3B18A !important; }
     </style>
     
     <!-- Google Fonts -->
@@ -126,12 +126,12 @@
 <body class="bg-base-900 text-white font-sans overflow-x-hidden">
     
     <!-- Header Moderno e Minimalista -->
-    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-white/10 shadow-sm transition-all duration-300" id="main-header" style="background: linear-gradient(180deg, rgba(20,20,20,0.9) 0%, rgba(255,107,53,0.15) 100%);">
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-white/10 shadow-sm transition-all duration-300" id="main-header" style="background: linear-gradient(180deg, rgba(16,15,12,0.92) 0%, rgba(58,90,64,0.22) 100%);">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 md:h-20">
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg transition-all duration-300" style="background: linear-gradient(135deg, #FF6B35, #E85A24); box-shadow: 0 10px 15px -3px rgba(255,107,53,0.4);">
+                    <div class="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg transition-all duration-300" style="background: linear-gradient(135deg, #3A5A40, #4E342E); box-shadow: 0 10px 15px -3px rgba(58,90,64,0.35);">
                         <span class="material-symbols-rounded text-white text-2xl">terrain</span>
                     </div>
                     <div class="hidden sm:block">
@@ -155,7 +155,7 @@
                     <button id="theme-toggle" aria-label="Alternar tema" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
                         <span class="material-symbols-rounded text-slate-700 dark:text-slate-300">dark_mode</span>
                     </button>
-                    <a href="https://wa.me/5535984687353" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-white rounded-xl font-medium shadow-lg transition-all duration-300" style="background: linear-gradient(to right, #FF6B35, #00C9A7);" onmouseover="this.style.background='linear-gradient(to right, #FF8555, #1AD4B5)'" onmouseout="this.style.background='linear-gradient(to right, #FF6B35, #00C9A7)'">
+                    <a href="https://wa.me/5535984687353" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-white rounded-xl font-medium shadow-lg transition-all duration-300" style="background: linear-gradient(to right, #3A5A40, #A47148);" onmouseover="this.style.background='linear-gradient(to right, #588157, #B17F5B)'" onmouseout="this.style.background='linear-gradient(to right, #3A5A40, #A47148)'">
                         <span class="material-symbols-rounded text-xl">chat</span>
                         <span>WhatsApp</span>
                     </a>
@@ -220,34 +220,34 @@
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
             <div class="text-center space-y-8 animate-slide-up">
                 <!-- Badge -->
-                <div class="inline-flex items-center gap-2 px-4 py-2 backdrop-blur-md rounded-full text-white text-sm font-bold shadow-xl" style="background: linear-gradient(to right, #FF6B35, #FFB800); border: 2px solid #FFB800;">
-                    <span class="w-2 h-2 rounded-full animate-pulse" style="background: #FFB800;"></span>
+                <div class="inline-flex items-center gap-2 px-4 py-2 backdrop-blur-md rounded-full text-white text-sm font-bold shadow-xl" style="background: linear-gradient(to right, #3A5A40, #A47148); border: 2px solid #A3B18A;">
+                    <span class="w-2 h-2 rounded-full animate-pulse" style="background: #A3B18A;"></span>
                     <span>Aventuras em Monte Verde</span>
                 </div>
 
                 <!-- Título Principal -->
                 <h1 class="font-display font-black text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white leading-none tracking-tight">
                     Adrenalina nas Trilhas de Monte Verde
-                    <span class="block animate-pulse-slow" style="background: linear-gradient(to right, #FF6B35, #00C9A7, #FFB800); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 40px rgba(255,107,53,0.5));">
+                    <span class="block animate-pulse-slow" style="background: linear-gradient(to right, #3A5A40, #A47148, #A3B18A); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 40px rgba(58,90,64,0.35));">
                         Trilhas de MV
                     </span>
                 </h1>
 
                 <!-- Subtítulo -->
                 <p class="max-w-2xl mx-auto text-lg md:text-xl text-white leading-relaxed">
-                    Passeios guiados de quadriciclo na <span class="font-bold" style="color: #FFB800;">Fazenda Adrenalina</span> com segurança, paisagens incríveis e momentos inesquecíveis
+                    Passeios guiados de quadriciclo na <span class="font-bold" style="color: #A3B18A;">Fazenda Adrenalina</span> com segurança, paisagens incríveis e momentos inesquecíveis
                 </p>
 
                 <!-- CTAs -->
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                           <a href="https://wa.me/5535984687353" target="_blank" 
-                              class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 text-white rounded-2xl font-bold text-lg shadow-2xl hover:scale-105 transition-all duration-300" style="background: linear-gradient(to right, #FF6B35, #00C9A7);" onmouseover="this.style.background='linear-gradient(to right, #FF8555, #1AD4B5)'" onmouseout="this.style.background='linear-gradient(to right, #FF6B35, #00C9A7)'">
+                              class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 text-white rounded-2xl font-bold text-lg shadow-2xl hover:scale-105 transition-all duration-300" style="background: linear-gradient(to right, #3A5A40, #A47148);" onmouseover="this.style.background='linear-gradient(to right, #588157, #B17F5B)'" onmouseout="this.style.background='linear-gradient(to right, #3A5A40, #A47148)'">
                         <span class="material-symbols-rounded text-2xl">chat</span>
                         <span>Reservar Agora</span>
                         <span class="material-symbols-rounded text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </a>
                           <a href="#galeria" 
-                              class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 backdrop-blur-md border-2 border-white/30 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300" style="background: rgba(27,73,101,0.7);" onmouseover="this.style.background='rgba(27,73,101,0.9)'; this.style.borderColor='rgba(0,201,167,0.6)'" onmouseout="this.style.background='rgba(27,73,101,0.7)'; this.style.borderColor='rgba(255,255,255,0.3)'">
+                              class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 backdrop-blur-md border-2 border-white/30 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300" style="background: rgba(78,52,46,0.65);" onmouseover="this.style.background='rgba(78,52,46,0.82)'; this.style.borderColor='rgba(163,177,138,0.6)'" onmouseout="this.style.background='rgba(78,52,46,0.65)'; this.style.borderColor='rgba(255,255,255,0.3)'">
                         <span class="material-symbols-rounded text-2xl">photo_library</span>
                         <span>Ver Galeria</span>
                     </a>
@@ -255,18 +255,18 @@
 
                 <!-- Features -->
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-12 max-w-4xl mx-auto">
-                        <div class="flex flex-col items-center gap-2 p-6 bg-white/10 backdrop-blur-md rounded-2xl border-2 shadow-lg" style="border-color: rgba(27,73,101,0.6); box-shadow: 0 10px 15px -3px rgba(27,73,101,0.3);">
-                        <span class="material-symbols-rounded text-4xl" style="color: #3D8EAF; filter: drop-shadow(0 0 15px rgba(27,73,101,0.8));">verified</span>
+                        <div class="flex flex-col items-center gap-2 p-6 bg-white/10 backdrop-blur-md rounded-2xl border-2 shadow-lg" style="border-color: rgba(58,90,64,0.5); box-shadow: 0 10px 15px -3px rgba(58,90,64,0.25);">
+                        <span class="material-symbols-rounded text-4xl" style="color: #3A5A40; filter: drop-shadow(0 0 15px rgba(58,90,64,0.6));">verified</span>
                         <h3 class="font-bold text-white text-lg">100% Seguro</h3>
                         <p class="text-sm text-white/90">Equipamentos de qualidade</p>
                     </div>
-                    <div class="flex flex-col items-center gap-2 p-6 bg-white/10 backdrop-blur-md rounded-2xl border-2 shadow-lg" style="border-color: rgba(0,201,167,0.6); box-shadow: 0 10px 15px -3px rgba(0,201,167,0.3);">
-                        <span class="material-symbols-rounded text-4xl" style="color: #1AD4B5; filter: drop-shadow(0 0 15px rgba(0,201,167,0.8));">landscape</span>
+                    <div class="flex flex-col items-center gap-2 p-6 bg-white/10 backdrop-blur-md rounded-2xl border-2 shadow-lg" style="border-color: rgba(164,113,72,0.55); box-shadow: 0 10px 15px -3px rgba(164,113,72,0.3);">
+                        <span class="material-symbols-rounded text-4xl" style="color: #A47148; filter: drop-shadow(0 0 15px rgba(164,113,72,0.65));">landscape</span>
                         <h3 class="font-bold text-white text-lg">Trilhas Exclusivas</h3>
                         <p class="text-sm text-white/90">Paisagens incríveis</p>
                     </div>
-                    <div class="flex flex-col items-center gap-2 p-6 bg-white/10 backdrop-blur-md rounded-2xl border-2 shadow-lg" style="border-color: rgba(255,184,0,0.6); box-shadow: 0 10px 15px -3px rgba(255,184,0,0.3);">
-                        <span class="material-symbols-rounded text-4xl" style="color: #FFD033; filter: drop-shadow(0 0 15px rgba(255,184,0,0.8));">schedule</span>
+                    <div class="flex flex-col items-center gap-2 p-6 bg-white/10 backdrop-blur-md rounded-2xl border-2 shadow-lg" style="border-color: rgba(163,177,138,0.6); box-shadow: 0 10px 15px -3px rgba(163,177,138,0.35);">
+                        <span class="material-symbols-rounded text-4xl" style="color: #A3B18A; filter: drop-shadow(0 0 15px rgba(163,177,138,0.7));">schedule</span>
                         <h3 class="font-bold text-white text-lg">Horários Flexíveis</h3>
                         <p class="text-sm text-white/90">Todos os dias, 9h-17h</p>
                     </div>
@@ -287,24 +287,24 @@
         <!-- Cards de Informações -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-6 bg-white/5 rounded-3xl">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="group bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 transition-all duration-300 hover:-translate-y-2" style="border-color: rgba(255,255,255,0.2);" onmouseover="this.style.borderColor='#FFB800'" onmouseout="this.style.borderColor='rgba(255,255,255,0.2)'">
-                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg" style="background: linear-gradient(135deg, #FFB800, #CC9600);">
+                <div class="group bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 transition-all duration-300 hover:-translate-y-2" style="border-color: rgba(255,255,255,0.16);" onmouseover="this.style.borderColor='#A3B18A'" onmouseout="this.style.borderColor='rgba(255,255,255,0.16)'">
+                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg" style="background: linear-gradient(135deg, #A3B18A, #8C9C78);">
                         <span class="material-symbols-rounded text-white text-3xl">schedule</span>
                     </div>
                     <h3 class="font-display font-bold text-xl text-white mb-2">Horários</h3>
                     <p class="text-white/90">Todos os dias<br>9:00 às 17:00</p>
                 </div>
 
-                <div class="group bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 transition-all duration-300 hover:-translate-y-2" style="border-color: rgba(255,255,255,0.2);" onmouseover="this.style.borderColor='#00C9A7'" onmouseout="this.style.borderColor='rgba(255,255,255,0.2)'">
-                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg" style="background: linear-gradient(135deg, #00C9A7, #00B090);">
+                <div class="group bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 transition-all duration-300 hover:-translate-y-2" style="border-color: rgba(255,255,255,0.16);" onmouseover="this.style.borderColor='#A47148'" onmouseout="this.style.borderColor='rgba(255,255,255,0.16)'">
+                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg" style="background: linear-gradient(135deg, #A47148, #8F603C);">
                         <span class="material-symbols-rounded text-white text-3xl">location_on</span>
                     </div>
                     <h3 class="font-display font-bold text-xl text-white mb-2">Local</h3>
                     <p class="text-white/90">Fazenda Adrenalina<br>Monte Verde, MG</p>
                 </div>
 
-                <div class="group bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 transition-all duration-300 hover:-translate-y-2" style="border-color: rgba(255,255,255,0.2);" onmouseover="this.style.borderColor='#1B4965'" onmouseout="this.style.borderColor='rgba(255,255,255,0.2)'">
-                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg" style="background: linear-gradient(135deg, #1B4965, #153A51);">
+                <div class="group bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl border-2 transition-all duration-300 hover:-translate-y-2" style="border-color: rgba(255,255,255,0.16);" onmouseover="this.style.borderColor='#4E342E'" onmouseout="this.style.borderColor='rgba(255,255,255,0.16)'">
+                    <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg" style="background: linear-gradient(135deg, #4E342E, #3D2926);">
                         <span class="material-symbols-rounded text-white text-3xl">explore</span>
                     </div>
                     <h3 class="font-display font-bold text-xl text-white mb-2">Duração</h3>

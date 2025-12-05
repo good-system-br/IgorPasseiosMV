@@ -11,47 +11,46 @@
 }
 
 :root {
-    /* 🎨 PALETA HARMONIOSA PROFISSIONAL - Esquema Complementar */
-    
-    /* 🔥 LARANJA VIBRANTE - Principal: Aventura, Energia, Ação */
-    --primary-300: #FFB380;
-    --primary-400: #FF8555;
-    --primary-500: #FF6B35; /* COR PRINCIPAL */
-    --primary-600: #E85A24;
-    --primary-700: #D04913;
-    --primary-900: #A83800;
+    /* 🎨 PALETA NATURAL (VERDE + MARROM) 2024/2025 */
+    /* Verdes: frescor, natureza, confiança */
+    --primary-300: #A3B18A; /* Verde claro natural */
+    --primary-400: #588157; /* Verde folha */
+    --primary-500: #3A5A40; /* Verde musgo – principal */
+    --primary-600: #314C36;
+    --primary-700: #283F2D;
+    --primary-900: #1E3123;
 
-    /* 🌊 TEAL/VERDE-AZULADO - Secundário: Natureza, Equilíbrio, Outdoor */
-    --nature-300: #33E3C2;
-    --nature-400: #1AD4B5;
-    --nature-500: #00C9A7; /* COR SECUNDÁRIA */
-    --nature-600: #00B090;
-    --nature-700: #009879;
-    --nature-900: #006B57;
+    /* Marrons: terra, aconchego, estabilidade */
+    --nature-300: #C4956E; /* caramelo claro */
+    --nature-400: #B17F5B;
+    --nature-500: #A47148; /* marrom terra/caramelo */
+    --nature-600: #8F603C;
+    --nature-700: #744D30;
+    --nature-900: #4E342E; /* marrom café profundo */
 
-    /* 🌌 AZUL PROFUNDO - Acento: Confiança, Aventura, Céu */
-    --sky-300: #5C9FBE;
-    --sky-400: #3D8EAF;
-    --sky-500: #1B4965; /* COR DE ACENTO */
-    --sky-600: #153A51;
-    --sky-700: #0F2B3D;
-    --sky-900: #081A28;
+    /* Acento escuro (usando café para contrastes) */
+    --sky-300: #6A4A43;
+    --sky-400: #5A3F38;
+    --sky-500: #4E342E; /* Café */
+    --sky-600: #3D2926;
+    --sky-700: #2E1F1D;
+    --sky-900: #201513;
 
-    /* ☀️ AMARELO DOURADO - Destaque: Alegria, Calor, Otimismo */
-    --sun-300: #FFD74D;
-    --sun-400: #FFD033;
-    --sun-500: #FFB800; /* COR DE DESTAQUE */
-    --sun-600: #E6A600;
-    --sun-700: #CC9400;
-    --sun-900: #997000;
+    /* Destaques suaves / off-white */
+    --sun-300: #F7F3EE; /* Bege leve */
+    --sun-400: #E9E1D7;
+    --sun-500: #D8CEC2; /* Fundo claro elegante */
+    --sun-600: #C8BAAB;
+    --sun-700: #B3A08A;
+    --sun-900: #8F7B66;
 
     /* Neutros Modernos */
     --neutral-warm: #F5F5F5; /* Branco quente */
     --neutral-graphite: #2A2A2A; /* Grafite moderno */
 
     /* Bases (fundos confortáveis) */
-    --base-900: #1E1E1E; /* Grafite escuro */
-    --base-950: #141414; /* Preto suave */
+    --base-900: #161512; /* Escuro quente */
+    --base-950: #0F0E0C; /* Preto tostado */
     
     /* Slate ajustado */
     --slate-50: #F5F5F5;
@@ -76,44 +75,44 @@ body {
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
     overflow-x: hidden;
-    /* 🎨 Fundo moderno com gradiente emocional */
-    background: linear-gradient(180deg, #141414 0%, #1A1A1A 50%, #1E1E1E 100%);
+    /* 🎨 Fundo moderno com gradiente natural (quente e acolhedor) */
+    background: linear-gradient(180deg, #0F0E0C 0%, #161512 40%, #1C1A16 100%);
 }
 
-/* 🎨 FORÇAR CORES HARMONIOSAS PROFISSIONAIS */
+/* 🎨 FORÇAR CORES DA NOVA PALETA (VERDE + MARROM) */
 .bg-primary-500,
 *[class*="bg-primary-500"] {
-    background: #FF6B35 !important;
+    background: #3A5A40 !important; /* verde musgo */
 }
 
 .bg-nature-500,
 *[class*="bg-nature-500"] {
-    background: #00C9A7 !important;
+    background: #A47148 !important; /* marrom caramelo */
 }
 
 .bg-sky-500,
 *[class*="bg-sky-500"] {
-    background: #1B4965 !important;
+    background: #4E342E !important; /* café profundo */
 }
 
 .bg-sun-500,
 *[class*="bg-sun-500"] {
-    background: #FFB800 !important;
+    background: #D8CEC2 !important; /* bege neutro */
 }
 
 /* Cores de texto */
-.text-primary-500 { color: #FF6B35 !important; }
-.text-nature-400, .text-nature-500 { color: #00C9A7 !important; }
-.text-sky-400, .text-sky-500 { color: #3D8EAF !important; }
-.text-sun-400, .text-sun-500 { color: #FFB800 !important; }
+.text-primary-500 { color: #3A5A40 !important; }
+.text-nature-400, .text-nature-500 { color: #A47148 !important; }
+.text-sky-400, .text-sky-500 { color: #4E342E !important; }
+.text-sun-400, .text-sun-500 { color: #A3B18A !important; }
 
 /* Force dark backgrounds for structure to avoid white gaps */
 main {
-    background: linear-gradient(180deg, var(--base-900) 0%, #252525 50%, var(--base-900) 100%);
+    background: linear-gradient(180deg, #1C1A16 0%, #15130F 55%, #0F0E0C 100%);
 }
 
 section {
-    background-color: transparent; /* allow Tailwind gradients; prevents default white */
+    background-color: transparent; /* manter transparência para gradientes sobrepostos */
 }
 
 /* Prevent accidental white overlays */

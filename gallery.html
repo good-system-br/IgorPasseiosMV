@@ -28,22 +28,23 @@
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- 🎨 Paleta Harmoniosa Profissional -->
+    <!-- 🎨 Paleta Natural (Verde + Marrom) -->
     <style>
         :root {
-            --cor-principal: #FF6B35;
-            --cor-secundaria: #00C9A7;
-            --cor-acento: #1B4965;
-            --cor-destaque: #FFB800;
+            --cor-principal: #3A5A40;
+            --cor-secundaria: #588157;
+            --cor-terra: #A47148;
+            --cor-cafe: #4E342E;
+            --cor-bege: #F7F3EE;
         }
-        .bg-primary-500 { background-color: #FF6B35 !important; }
-        .bg-nature-500 { background-color: #00C9A7 !important; }
-        .bg-sky-500 { background-color: #1B4965 !important; }
-        .bg-sun-500 { background-color: #FFB800 !important; }
-        .text-primary-500 { color: #FF6B35 !important; }
-        .text-nature-400 { color: #00C9A7 !important; }
-        .text-sky-400 { color: #3D8EAF !important; }
-        .text-sun-400 { color: #FFB800 !important; }
+        .bg-primary-500 { background-color: #3A5A40 !important; }
+        .bg-nature-500 { background-color: #A47148 !important; }
+        .bg-sky-500 { background-color: #4E342E !important; }
+        .bg-sun-500 { background-color: #D8CEC2 !important; }
+        .text-primary-500 { color: #3A5A40 !important; }
+        .text-nature-400 { color: #A47148 !important; }
+        .text-sky-400 { color: #4E342E !important; }
+        .text-sun-400 { color: #A3B18A !important; }
     </style>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,11 +58,11 @@
 <body class="font-sans text-white overflow-x-hidden" style="background: linear-gradient(180deg, #141414 0%, #1A1A1A 50%, #1E1E1E 100%);">
     
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 shadow-sm transition-all duration-300" style="background: linear-gradient(180deg, rgba(20,20,20,0.9) 0%, rgba(255,107,53,0.15) 100%); backdrop-filter: blur(12px);">
+    <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 shadow-sm transition-all duration-300" style="background: linear-gradient(180deg, rgba(16,15,12,0.92) 0%, rgba(58,90,64,0.2) 100%); backdrop-filter: blur(12px);">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 md:h-20">
                 <a href="index.html" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg" style="background: linear-gradient(135deg, #FF6B35, #E85A24); box-shadow: 0 10px 15px -3px rgba(255,107,53,0.4);">
+                    <div class="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg" style="background: linear-gradient(135deg, #3A5A40, #4E342E); box-shadow: 0 10px 15px -3px rgba(58,90,64,0.35);">
                         <span class="material-symbols-rounded text-white text-2xl">terrain</span>
                     </div>
                     <div class="hidden sm:block">
@@ -73,14 +74,14 @@
                 </a>
 
                 <nav class="hidden lg:flex items-center gap-8">
-                    <a href="index.html" class="text-sm font-medium text-white/90 transition-colors" onmouseover="this.style.color='#00C9A7'" onmouseout="this.style.color='rgba(255,255,255,0.9)'">Início</a>
-                    <a href="section.html" class="text-sm font-medium text-white/90 transition-colors" onmouseover="this.style.color='#00C9A7'" onmouseout="this.style.color='rgba(255,255,255,0.9)'">Sobre</a>
-                    <a href="gallery.html" class="text-sm font-medium text-white transition-colors" onmouseover="this.style.color='#00C9A7'" onmouseout="this.style.color='#fff'">Galeria</a>
-                    <a href="footer.html" class="text-sm font-medium text-white/90 transition-colors" onmouseover="this.style.color='#00C9A7'" onmouseout="this.style.color='rgba(255,255,255,0.9)'">Contato</a>
+                    <a href="index.html" class="text-sm font-medium text-white/90 transition-colors" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='rgba(255,255,255,0.9)'">Início</a>
+                    <a href="section.html" class="text-sm font-medium text-white/90 transition-colors" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='rgba(255,255,255,0.9)'">Sobre</a>
+                    <a href="gallery.html" class="text-sm font-medium text-white transition-colors" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='#fff'">Galeria</a>
+                    <a href="footer.html" class="text-sm font-medium text-white/90 transition-colors" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='rgba(255,255,255,0.9)'">Contato</a>
                 </nav>
 
                 <div class="flex items-center gap-2 md:gap-3">
-                    <a href="https://wa.me/5535984687353" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-white rounded-xl font-medium shadow-lg transition-all duration-300" style="background: linear-gradient(to right, #FF6B35, #00C9A7);" onmouseover="this.style.background='linear-gradient(to right, #FF8555, #1AD4B5)'" onmouseout="this.style.background='linear-gradient(to right, #FF6B35, #00C9A7)'">
+                    <a href="https://wa.me/5535984687353" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-white rounded-xl font-medium shadow-lg transition-all duration-300" style="background: linear-gradient(to right, #3A5A40, #A47148);" onmouseover="this.style.background='linear-gradient(to right, #588157, #B17F5B)'" onmouseout="this.style.background='linear-gradient(to right, #3A5A40, #A47148)'">
                         <span class="material-symbols-rounded text-xl">chat</span>
                         <span>WhatsApp</span>
                     </a>
@@ -93,7 +94,7 @@
     <section class="pt-32 pb-16 px-4">
         <div class="max-w-7xl mx-auto text-center">
             <h1 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4">
-                Galeria de <span class="text-transparent bg-clip-text" style="background: linear-gradient(to right, #FF6B35, #00C9A7, #FFB800); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 30px rgba(255,107,53,0.4));">Aventuras</span>
+                Galeria de <span class="text-transparent bg-clip-text" style="background: linear-gradient(to right, #3A5A40, #A47148, #A3B18A); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 30px rgba(58,90,64,0.35));">Aventuras</span>
             </h1>
             <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
                 Confira os momentos incríveis registrados nas trilhas de Monte Verde
