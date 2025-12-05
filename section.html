@@ -1,123 +1,165 @@
 <!DOCTYPE html>
-
-<html class="light" lang="pt-br">
-
+<html lang="pt-BR" class="light">
 <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Sobre Nós - Hyguinho Quadriciclos MV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós | Hyguinho Quadriciclos MV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        window.tailwind = window.tailwind || {};
-        window.tailwind.config = {
-            darkMode: "class",
+        tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
-                        // 🎨 Paleta Viva & Emocional
-                        primary: { 300: '#FFB366', 400: '#FF944D', 500: '#FF7A00', 600: '#E66D00', 700: '#CC6100', 800: '#B35500', 900: '#994800' },
-                        nature: { 300: '#5FE89F', 400: '#43E08C', 500: '#27D97A', 600: '#22C46D', 700: '#1DAF60', 800: '#189953', 900: '#148446' },
-                        sky: { 300: '#66D4FF', 400: '#33C5FF', 500: '#00B7FF', 600: '#00A5E6', 700: '#0093CC', 800: '#0081B3', 900: '#006F99' },
-                        sun: { 300: '#FFDE66', 400: '#FFD74D', 500: '#FFD029', 600: '#E6BB25', 700: '#CCA620', 800: '#B3921C', 900: '#997D18' },
-                        base: { 900: '#1E1E1E', 950: '#141414' }
+                        musgo: '#3A5A40',
+                        folha: '#588157',
+                        caramelo: '#A47148',
+                        cafe: '#4E342E',
+                        bege: '#F7F3EE',
+                        begeEscuro: '#E8DFD5'
                     },
-                    fontFamily: { display: ["Plus Jakarta Sans", "sans-serif"] },
-                    borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Poppins', 'Inter', 'system-ui', 'sans-serif']
+                    }
                 }
             }
-        };
+        }
     </script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
-    <!-- 🎨 Paleta Natural (Verde + Marrom) -->
     <style>
         :root {
-            --cor-principal: #3A5A40;      /* Verde musgo */
-            --cor-secundaria: #588157;     /* Verde folha */
-            --cor-terra: #A47148;          /* Marrom caramelo */
-            --cor-cafe: #4E342E;           /* Marrom café */
-            --cor-bege: #F7F3EE;           /* Off-white */
+            --cor-principal: #3A5A40;
+            --cor-secundaria: #588157;
+            --cor-terra: #A47148;
+            --cor-cafe: #4E342E;
+            --cor-bege: #F7F3EE;
+            --cor-bege-escuro: #E8DFD5;
         }
-        
-        .bg-primary-500 { background-color: #3A5A40 !important; }
-        .bg-nature-500 { background-color: #A47148 !important; }
-        .bg-sky-500 { background-color: #4E342E !important; }
-        .bg-sun-500 { background-color: #D8CEC2 !important; }
-        .text-sky-400 { color: #4E342E !important; }
-        .text-primary-500 { color: #3A5A40 !important; }
-        .text-nature-500 { color: #A47148 !important; }
+        body { background: linear-gradient(180deg, #1F1F1B 0%, #2E3028 30%, #1F1F1B 100%); }
+        .text-gradient { background: linear-gradient(120deg, #3A5A40, #A47148, #F7F3EE); -webkit-background-clip: text; color: transparent; }
     </style>
-    
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="css/section.css?v=2.0">
-    <script src="js/section.js"></script>
 </head>
+<body class="min-h-screen text-bege font-sans antialiased">
+    <div class="relative flex flex-col min-h-screen overflow-hidden">
+        <header class="sticky top-0 z-20 backdrop-blur-xl border-b border-white/10" style="background: linear-gradient(120deg, rgba(58,90,64,0.92), rgba(78,52,46,0.9));">
+            <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
+                <a href="index.html" class="flex items-center gap-3 text-bege font-display text-lg font-semibold tracking-tight">
+                    <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl" style="background: radial-gradient(circle at 25% 25%, #A47148, #3A5A40); box-shadow: 0 10px 30px rgba(0,0,0,0.35);">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-7 w-7 text-bege"><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 12h16m-7-7 7 7-7 7"/></svg>
+                    </span>
+                    <span>
+                        <span class="block leading-tight">Hyguinho Quadriciclos</span>
+                        <span class="block text-sm text-bege/80">Monte Verde</span>
+                    </span>
+                </a>
+                <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-bege/90">
+                    <a href="index.html" class="hover:text-bege" aria-label="Início">Início</a>
+                    <a href="gallery.html" class="hover:text-bege" aria-label="Galeria">Galeria</a>
+                    <a href="footer.html" class="hover:text-bege" aria-label="Contato">Contato</a>
+                    <a href="https://wa.me/5535984687353" target="_blank" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 font-semibold text-cafe" style="background: linear-gradient(120deg, #F7F3EE, #C6B199); box-shadow: 0 6px 24px rgba(0,0,0,0.25);">
+                        <span class="material-symbols-outlined text-base">chat</span>
+                        Reservar
+                    </a>
+                </nav>
+                <a href="https://wa.me/5535984687353" target="_blank" class="md:hidden inline-flex items-center justify-center h-11 w-11 rounded-xl" style="background: linear-gradient(135deg, #3A5A40, #A47148); box-shadow: 0 10px 30px rgba(0,0,0,0.28);">
+                    <span class="material-symbols-outlined text-xl text-bege">chat</span>
+                </a>
+            </div>
+        </header>
 
-<body class="bg-base-900 text-white font-display">
-    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-        <!-- Top App Bar -->
-        <div class="sticky top-0 z-10 flex items-center p-4 pb-2 justify-between border-b border-white/10" style="background: linear-gradient(180deg, rgba(16,15,12,0.92) 0%, rgba(58,90,64,0.2) 100%); backdrop-filter: blur(12px);">
-            <button aria-label="Voltar"
-                class="text-gray-800 dark:text-gray-200 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                <span class="material-symbols-outlined text-2xl">arrow_back</span>
-            </button>
-            <h2
-                class="text-gray-900 dark:text-gray-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
-                Sobre Nós</h2>
-            <div class="flex items-center gap-2">
-                <a href="gallery.html" class="text-sm font-medium text-white transition-colors" style="color: #fff;" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='#fff'">Galeria</a>
-                <div class="size-10 shrink-0"></div>
+        <main class="flex-1">
+            <section class="max-w-6xl mx-auto px-4 pt-10 pb-6 grid md:grid-cols-[1.1fr,0.9fr] gap-10 items-center">
+                <div class="space-y-4">
+                    <p class="uppercase tracking-[0.2em] text-xs text-bege/70">Sobre nós</p>
+                    <h1 class="text-4xl md:text-5xl font-display font-semibold leading-[1.05] text-gradient">Aventura segura em paisagens inesquecíveis</h1>
+                    <p class="text-base text-bege/85 leading-relaxed">Nascemos da paixão por Monte Verde e pela sensação de liberdade que só um quadriciclo proporciona. Criamos experiências guiadas que unem adrenalina, segurança e respeito total à natureza.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-3 py-2 rounded-full text-sm font-semibold" style="background: rgba(90, 131, 87, 0.16); color: #C6B199; border: 1px solid rgba(90,131,87,0.35);">Guias certificados</span>
+                        <span class="px-3 py-2 rounded-full text-sm font-semibold" style="background: rgba(164, 113, 72, 0.18); color: #F7F3EE; border: 1px solid rgba(164,113,72,0.38);">Rotas seguras</span>
+                        <span class="px-3 py-2 rounded-full text-sm font-semibold" style="background: rgba(78,52,46,0.2); color: #E8DFD5; border: 1px solid rgba(78,52,46,0.32);">Natureza preservada</span>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://wa.me/5535984687353" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-bege" style="background: linear-gradient(120deg, #3A5A40, #588157, #A47148); box-shadow: 0 16px 36px rgba(0,0,0,0.32);">Agendar agora</a>
+                        <a href="gallery.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold border border-bege/20 text-bege/90 hover:border-bege/40 transition">Ver galeria</a>
+                    </div>
+                </div>
+                <div class="relative rounded-3xl overflow-hidden border border-white/10" style="box-shadow: 0 20px 60px rgba(0,0,0,0.35);">
+                    <img src="img/WhatsApp Image 2025-12-02 at 10.56.38.jpeg" alt="Equipe em trilha de quadriciclo" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/15 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-bege text-sm backdrop-blur-lg rounded-2xl px-4 py-3 border border-white/15" style="background: linear-gradient(120deg, rgba(58,90,64,0.4), rgba(164,113,72,0.3));">
+                        <span class="font-semibold">Guias locais • Equipamentos revisados</span>
+                        <span class="text-bege/75">Monte Verde, MG</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="max-w-6xl mx-auto px-4 pb-12 grid md:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/30" style="box-shadow: 0 14px 38px rgba(0,0,0,0.28);">
+                    <img src="img/WhatsApp Image 2025-12-02 at 10.56.35.jpeg" alt="Equipe pronta para o passeio" class="h-52 w-full object-cover" />
+                    <div class="p-5 space-y-2">
+                        <h3 class="text-lg font-semibold text-bege">Equipe dedicada</h3>
+                        <p class="text-sm text-bege/80 leading-relaxed">Guias treinados para conduzir com segurança e atenção a cada detalhe.</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/30" style="box-shadow: 0 14px 38px rgba(0,0,0,0.28);">
+                    <img src="img/WhatsApp Image 2025-12-02 at 10.56.36.jpeg" alt="Quadriciclos alinhados" class="h-52 w-full object-cover" />
+                    <div class="p-5 space-y-2">
+                        <h3 class="text-lg font-semibold text-bege">Frota revisada</h3>
+                        <p class="text-sm text-bege/80 leading-relaxed">Manutenção constante para garantir desempenho e conforto no trajeto.</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/30" style="box-shadow: 0 14px 38px rgba(0,0,0,0.28);">
+                    <img src="img/WhatsApp Image 2025-12-02 at 10.56.39.jpeg" alt="Saída para a trilha" class="h-52 w-full object-cover" />
+                    <div class="p-5 space-y-2">
+                        <h3 class="text-lg font-semibold text-bege">Roteiros cênicos</h3>
+                        <p class="text-sm text-bege/80 leading-relaxed">Rotas planejadas para valorizar paisagens e pontos fotográficos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-12">
+                <div class="max-w-6xl mx-auto px-4 p-8 rounded-2xl text-bege flex flex-col md:flex-row items-center gap-5 border border-white/10" style="background: linear-gradient(120deg, rgba(58,90,64,0.65), rgba(164,113,72,0.55)); box-shadow: 0 18px 44px rgba(0,0,0,0.34);">
+                    <div class="space-y-2 text-center md:text-left">
+                        <p class="uppercase text-xs tracking-[0.18em] text-bege/75">Pronto para partir?</p>
+                        <h3 class="text-2xl md:text-3xl font-display font-semibold">Reserve seu passeio agora</h3>
+                        <p class="text-bege/85">Horários limitados e grupos reduzidos para uma experiência segura e exclusiva.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
+                        <a href="https://wa.me/5535984687353" target="_blank" class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-xl font-semibold text-cafe" style="background: linear-gradient(120deg, #F7F3EE, #C6B199); box-shadow: 0 12px 32px rgba(0,0,0,0.28);">
+                            <span class="material-symbols-outlined text-base">chat</span>
+                            Falar no WhatsApp
+                        </a>
+                        <a href="gallery.html" class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-xl font-semibold border border-bege/25 text-bege hover:border-bege/45 transition">
+                            <span class="material-symbols-outlined text-base">image</span>
+                            Ver trilhas
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t border-white/10 py-8" style="background: linear-gradient(180deg, rgba(31,31,27,0.9), rgba(46,48,40,0.9));">
+            <div class="max-w-6xl mx-auto px-4 text-sm text-bege/85 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+                <div>
+                    <p class="font-semibold text-bege">Hyguinho Quadriciclos MV</p>
+                    <p class="text-bege/70">Monte Verde • Minas Gerais</p>
+                </div>
+                <div class="flex flex-wrap gap-4 text-bege/80">
+                    <a href="mailto:hygormeendes98@gmail.com" class="hover:text-bege">hygormeendes98@gmail.com</a>
+                    <span class="hidden md:inline text-bege/40">•</span>
+                    <a href="https://wa.me/5535984687353" target="_blank" class="hover:text-bege">(35) 98468-7353</a>
+                    <span class="hidden md:inline text-bege/40">•</span>
+                    <a href="gallery.html" class="hover:text-bege">Instagram: @HyguinhoQuadriciclosMv</a>
+                </div>
+                <p class="text-xs text-bege/60">© 2024 Hyguinho Quadriciclos MV. Todos os direitos reservados.</p>
             </div>
-        </div>
-        <!-- Header Image -->
-        <div class="@container px-4 pt-4">
-            <div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-80"
-                data-alt="Equipe e trilhas de Monte Verde" style='background-image:url("img/WhatsApp Image 2025-12-02 at 10.56.38.jpeg");'>
-            </div>
-        </div>
-        <!-- Headline: Nossa História -->
-        <h1
-            class="text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-8">
-            Nossa História</h1>
-        <!-- Body Text: Nossa História -->
-        <p class="text-white/80 text-base font-normal leading-relaxed pb-3 pt-1 px-4">
-            Nascemos da paixão por aventura e pela beleza natural de Monte Verde. Hyguinho Quadriciclos MV foi fundada
-            para compartilhar experiências inesquecíveis, combinando a emoção off-road com o respeito pela natureza.
-        </p>
-        <!DOCTYPE html>
-        <html lang="pt-BR">
-            <head>
-                <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>Sobre Nós - Hyguinho Quadriciclos MV</title>
-                <script>
-                    tailwind = {
-                        darkMode: 'class',
-                        theme: {
-                            extend: {
-                                colors: {
-                                    primary: {
-                                        50: '#fff7ed',
-                                        100: '#ffedd5',
-                                        200: '#fed7aa',
-                                        300: '#fdba74',
-                                        400: '#fb923c',
-                                        500: '#f97316',
-                                        600: '#ea580c',
-                                        700: '#c2410c',
-                                        800: '#9a3412',
-                                        900: '#7c2d12'
-                                    }
-                                },
-                                fontFamily: {
-                                    sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
-                                }
-                            }
+        </footer>
+    </div>
+</body>
+</html>
                         }
                     }
                 </script>
