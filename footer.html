@@ -1,196 +1,187 @@
 <!DOCTYPE html>
-
 <html class="light" lang="pt-BR">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Contato e Localização - Hyguinho Quadriciclos MV</title>
-    <script>
-        window.tailwind = window.tailwind || {};
-        window.tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        primary: { 300: '#FFB366', 400: '#FF944D', 500: '#FF7A00', 600: '#E66D00', 700: '#CC6100', 800: '#B35500', 900: '#994800' },
-                        nature: { 300: '#5FE89F', 400: '#43E08C', 500: '#27D97A', 600: '#22C46D', 700: '#1DAF60', 800: '#189953', 900: '#148446' },
-                        sky: { 300: '#66D4FF', 400: '#33C5FF', 500: '#00B7FF', 600: '#00A5E6', 700: '#0093CC', 800: '#0081B3', 900: '#006F99' },
-                        sun: { 300: '#FFDE66', 400: '#FFD74D', 500: '#FFD029', 600: '#E6BB25', 700: '#CCA620', 800: '#B3921C', 900: '#997D18' },
-                        base: { 900: '#1E1E1E', 950: '#141414' }
-                    },
-                    fontFamily: { sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'] }
-                }
-            }
+    <script> window.tailwind = window.tailwind || {}; window.tailwind.config = { darkMode: "class", theme: { extend: { colors: { primary: { 300: '#FFB366', 400: '#FF944D', 500: '#FF7A00', 600: '#E66D00', 700: '#CC6100', 800: '#B35500', 900: '#994800' }, nature: { 300: '#5FE89F', 400: '#43E08C', 500: '#27D97A', 600: '#22C46D', 700: '#1DAF60', 800: '#189953', 900: '#148446' }, sky: { 300: '#66D4FF', 400: '#33C5FF', 500: '#00B7FF', 600: '#00A5E6', 700: '#0093CC', 800: '#0081B3', 900: '#006F99' }, sun: { 300: '#FFDE66', 400: '#FFD74D', 500: '#FFD029', 600: '#E6BB25', 700: '#CCA620', 800: '#B3921C', 900: '#997D18' }, base: { 900: '#1E1E1E', 950: '#141414' } }, fontFamily: { sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'] } } } } </script>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- 🎨 Paleta Natural (Verde + Marrom) -->
+    <style>
+        :root {
+            --cor-principal: #3A5A40;
+            --cor-secundaria: #588157;
+            --cor-terra: #A47148;
+            --cor-cafe: #4E342E;
+            --cor-bege: #F7F3EE;
         }
-    </script>
-                    <script src="https://cdn.tailwindcss.com"></script>
-                    
-                    <!-- 🎨 Paleta Natural (Verde + Marrom) -->
-                    <style>
-                        :root {
-                            --cor-principal: #3A5A40;
-                            --cor-secundaria: #588157;
-                            --cor-terra: #A47148;
-                            --cor-cafe: #4E342E;
-                            --cor-bege: #F7F3EE;
-                        }
-                        .bg-primary-500 { background-color: #3A5A40 !important; }
-                        .bg-nature-500 { background-color: #A47148 !important; }
-                        .bg-sky-500 { background-color: #4E342E !important; }
-                        .bg-sun-500 { background-color: #D8CEC2 !important; }
-                        .text-sky-400 { color: #4E342E !important; }
-                        .text-primary-600 { color: #3A5A40 !important; }
-                        .text-nature-500 { color: #A47148 !important; }
-                    </style>
-                    
-                    <link rel="preconnect" href="https://fonts.googleapis.com" />
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-                    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,0" rel="stylesheet" />
-                    <link rel="stylesheet" href="css/index.css?v=2.0" />
-                </head>
-                <body class="font-sans bg-base-900 text-white">
-                    <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10" style="background: linear-gradient(180deg, rgba(16,15,12,0.92) 0%, rgba(58,90,64,0.2) 100%); backdrop-filter: blur(12px);">
-                        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-                            <a href="index.html" class="flex items-center gap-2">
-                                <span class="material-symbols-outlined" style="color: #3A5A40;">terrain</span>
-                                <span class="font-semibold">Hyguinho Quadriciclos MV</span>
-                            </a>
-                            <nav class="hidden md:flex items-center gap-6">
-                                <a href="index.html" class="transition-colors" style="color: #fff;" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='#fff'">Início</a>
-                                <a href="section.html" class="transition-colors" style="color: #fff;" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='#fff'">Sobre</a>
-                                <a href="footer.html" class="transition-colors" style="color: #fff;" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='#fff'">Contato</a>
-                                <a href="gallery.html" class="transition-colors" style="color: #fff;" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='#fff'">Galeria</a>
-                                <a href="https://wa.me/5535984687353" target="_blank" class="inline-flex items-center gap-2 text-white px-3 py-2 rounded-lg transition" style="background: linear-gradient(to right, #3A5A40, #A47148);" onmouseover="this.style.background='linear-gradient(to right, #588157, #B17F5B)'" onmouseout="this.style.background='linear-gradient(to right, #3A5A40, #A47148)'">
-                                    <span class="material-symbols-outlined">chat</span>
-                                    Reservar WhatsApp
-                                </a>
-                            </nav>
-                            <button id="menu-toggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 dark:border-gray-700">
-                                <span class="material-symbols-outlined">menu</span>
-                            </button>
-                        </div>
-                        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-800">
-                            <div class="px-4 py-3 space-y-2">
-                                <a href="index.html" class="block py-2">Início</a>
-                                <a href="section.html" class="block py-2">Sobre</a>
-                                <a href="footer.html" class="block py-2">Contato</a>
-                                <a href="gallery.html" class="block py-2">Galeria</a>
-                                <a href="https://wa.me/5535984687353" target="_blank" class="block py-2 text-primary-600">Reservar WhatsApp</a>
-                            </div>
-                        </div>
-                    </header>
 
-                    <main class="max-w-6xl mx-auto px-4 py-24">
-                        <h1 class="text-2xl md:text-3xl font-bold">Contato</h1>
-                        <p class="mt-2 text-gray-700 dark:text-gray-300">Fale com a gente para tirar dúvidas ou reservar seu passeio.</p>
-                        <div class="mt-6 grid md:grid-cols-3 gap-6">
-                            <a href="https://wa.me/5535984687353" target="_blank" class="p-6 rounded-xl inline-flex items-center gap-2 text-white transition-all" style="border: 2px solid rgba(58,90,64,0.45); background: rgba(255,255,255,0.08);" onmouseover="this.style.background='rgba(58,90,64,0.18)'; this.style.borderColor='#3A5A40'" onmouseout="this.style.background='rgba(255,255,255,0.08)'; this.style.borderColor='rgba(58,90,64,0.45)'">
-                                <span class="material-symbols-outlined" style="color: #3A5A40;">chat</span>
-                                WhatsApp (35) 98468-7353
-                            </a>
-                            <a href="tel:+5535998793419" class="p-6 rounded-xl inline-flex items-center gap-2 text-white transition-all" style="border: 2px solid rgba(164,113,72,0.45); background: rgba(255,255,255,0.08);" onmouseover="this.style.background='rgba(164,113,72,0.18)'; this.style.borderColor='#A47148'" onmouseout="this.style.background='rgba(255,255,255,0.08)'; this.style.borderColor='rgba(164,113,72,0.45)'">
-                                <span class="material-symbols-outlined" style="color: #A47148;">call</span>
-                                Telefone (35) 99879-3419
-                            </a>
-                            <a href="mailto:hygormeendes98@gmail.com" class="p-6 rounded-xl inline-flex items-center gap-2 text-white transition-all" style="border: 2px solid rgba(78,52,46,0.45); background: rgba(255,255,255,0.08);" onmouseover="this.style.background='rgba(78,52,46,0.24)'; this.style.borderColor='#4E342E'" onmouseout="this.style.background='rgba(255,255,255,0.08)'; this.style.borderColor='rgba(78,52,46,0.45)'">
-                                <span class="material-symbols-outlined" style="color: #4E342E;">mail</span>
-                                Email
-                            </a>
-                        </div>
+        .bg-primary-500 {
+            background-color: #3A5A40 !important;
+        }
 
-                        <div class="mt-8">
-                            <h2 class="font-semibold">Redes sociais</h2>
-                            <a href="https://instagram.com/HyguinhoQuadriciclosMv" target="_blank" class="mt-3 inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-white/20 hover:bg-white/10">
-                                <span class="material-symbols-outlined">camera</span>
-                                Instagram
-                            </a>
-                        </div>
+        .bg-nature-500 {
+            background-color: #A47148 !important;
+        }
 
-                        <!-- CTA Consistente -->
-                        <section class="py-12">
-                            <div class="max-w-6xl mx-auto px-4 p-8 rounded-2xl bg-gradient-to-r from-primary-500 via-sky-500 via-nature-500 to-sun-500 text-white flex flex-col md:flex-row items-center justify-between gap-4">
-                                <div>
-                                    <h3 class="text-2xl font-bold">Pronto para reservar?</h3>
-                                    <p class="mt-1 text-white/90">Chame no WhatsApp e garanta seu passeio.</p>
-                                </div>
-                                <a href="https://wa.me/5535984687353" target="_blank" class="inline-flex items-center gap-2 bg-white text-primary-700 px-5 py-3 rounded-xl hover:bg-white/90">
-                                    <span class="material-symbols-outlined">chat</span>
-                                    Reservar no WhatsApp
-                                </a>
-                            </div>
-                        </section>
-                    </main>
+        .bg-sky-500 {
+            background-color: #4E342E !important;
+        }
 
-                    <script src="js/index.js"></script>
+        .bg-sun-500 {
+            background-color: #D8CEC2 !important;
+        }
 
-                    <footer class="border-t border-white/10 py-10">
-                        <div class="max-w-6xl mx-auto px-4 text-sm text-white/80">Email: hygormeendes98@gmail.com • WhatsApp: (35) 98468-7353 • Instagram: HyguinhoQuadriciclosMv</div>
-                    </footer>
-                </body>
-            </html>
-                <div class="grid grid-cols-3 gap-4">
-                    <a class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
-                        href="https://wa.me/5535984687353" target="_blank">
-                        <svg class="h-6 w-6 text-green-500" fill="currentColor" viewbox="0 0 24 24">
-                            <path
-                                d="M16.75 13.96c.25.13.41.38.41.66v2.51c0 .41-.33.74-.74.74C11.93 17.65 8 13.56 8 8.7c0-.41.33-.74.74-.74h2.51c.28 0 .53.16.66.41l1.11 2.22a.75.75 0 01-.19.85l-1.42 1.42a.5.5 0 00-.11.59c.56 1.43 1.76 2.63 3.19 3.19a.5.5 0 00.59-.11l1.42-1.42a.75.75 0 01.85-.19l2.22 1.11zM12 2a10 10 0 100 20 10 10 0 000-20zm0 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17z">
-                            </path>
-                        </svg>
-                        <span class="text-xs font-medium text-gray-700 dark:text-gray-300">WhatsApp</span>
-                    </a>
-                    <a class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
-                        href="tel:+5535998793419">
-                        <span class="material-symbols-outlined text-blue-500" style="font-size: 24px;">call</span>
-                        <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Ligar</span>
-                    </a>
-                    <a class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
-                        href="https://instagram.com/HyguinhoQuadriciclosMv" target="_blank">
-                        <svg class="h-6 w-6 text-pink-500" fill="currentColor" viewbox="0 0 24 24">
-                            <path clip-rule="evenodd"
-                                d="M12 2.75a9.25 9.25 0 100 18.5 9.25 9.25 0 000-18.5zM1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12 17.937 22.75 12 22.75 1.25 17.937 1.25 12z"
-                                fill-rule="evenodd"></path>
-                            <path
-                                d="M16 8.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15a3 3 0 100-6 3 3 0 000 6zm-5 3a5 5 0 1010 0 5 5 0 00-10 0z">
-                            </path>
-                        </svg>
-                        <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Instagram</span>
-                    </a>
-                </div>
+        .text-sky-400 {
+            color: #4E342E !important;
+        }
+
+        .text-primary-600 {
+            color: #3A5A40 !important;
+        }
+
+        .text-nature-500 {
+            color: #A47148 !important;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,0"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css?v=2.0" />
+</head>
+
+<body class="font-sans bg-base-900 text-white">
+    <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10"
+        style="background: linear-gradient(180deg, rgba(16,15,12,0.92) 0%, rgba(58,90,64,0.2) 100%); backdrop-filter: blur(12px);">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"> <a href="index.html"
+                class="flex items-center gap-2"> <span class="material-symbols-outlined"
+                    style="color: #3A5A40;">terrain</span> <span class="font-semibold">Hyguinho Quadriciclos MV</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6"> <a href="index.html" class="transition-colors"
+                    style="color: #fff;" onmouseover="this.style.color='#A3B18A'"
+                    onmouseout="this.style.color='#fff'">Início</a> <a href="section.html" class="transition-colors"
+                    style="color: #fff;" onmouseover="this.style.color='#A3B18A'"
+                    onmouseout="this.style.color='#fff'">Sobre</a> <a href="footer.html" class="transition-colors"
+                    style="color: #fff;" onmouseover="this.style.color='#A3B18A'"
+                    onmouseout="this.style.color='#fff'">Contato</a> <a href="gallery.html" class="transition-colors"
+                    style="color: #fff;" onmouseover="this.style.color='#A3B18A'"
+                    onmouseout="this.style.color='#fff'">Galeria</a> <a href="https://wa.me/5535984687353"
+                    target="_blank" class="inline-flex items-center gap-2 text-white px-3 py-2 rounded-lg transition"
+                    style="background: linear-gradient(to right, #3A5A40, #A47148);"
+                    onmouseover="this.style.background='linear-gradient(to right, #588157, #B17F5B)'"
+                    onmouseout="this.style.background='linear-gradient(to right, #3A5A40, #A47148)'"> <span
+                        class="material-symbols-outlined">chat</span> Reservar WhatsApp </a> </nav> <button
+                id="menu-toggle"
+                class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 dark:border-gray-700">
+                <span class="material-symbols-outlined">menu</span> </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-800">
+            <div class="px-4 py-3 space-y-2"> <a href="index.html" class="block py-2">Início</a> <a href="section.html"
+                    class="block py-2">Sobre</a> <a href="footer.html" class="block py-2">Contato</a> <a
+                    href="gallery.html" class="block py-2">Galeria</a> <a href="https://wa.me/5535984687353"
+                    target="_blank" class="block py-2 text-primary-600">Reservar WhatsApp</a> </div>
+        </div>
+    </header>
+    <main class="max-w-6xl mx-auto px-4 py-24">
+        <h1 class="text-2xl md:text-3xl font-bold">Contato</h1>
+        <p class="mt-2 text-gray-700 dark:text-gray-300">Fale com a gente para tirar dúvidas ou reservar seu passeio.
+        </p>
+        <div class="mt-6 grid md:grid-cols-3 gap-6"> <a href="https://wa.me/5535984687353" target="_blank"
+                class="p-6 rounded-xl inline-flex items-center gap-2 text-white transition-all"
+                style="border: 2px solid rgba(58,90,64,0.45); background: rgba(255,255,255,0.08);"
+                onmouseover="this.style.background='rgba(58,90,64,0.18)'; this.style.borderColor='#3A5A40'"
+                onmouseout="this.style.background='rgba(255,255,255,0.08)'; this.style.borderColor='rgba(58,90,64,0.45)'">
+                <span class="material-symbols-outlined" style="color: #3A5A40;">chat</span> WhatsApp (35) 98468-7353
+            </a> <a href="tel:+5535998793419"
+                class="p-6 rounded-xl inline-flex items-center gap-2 text-white transition-all"
+                style="border: 2px solid rgba(164,113,72,0.45); background: rgba(255,255,255,0.08);"
+                onmouseover="this.style.background='rgba(164,113,72,0.18)'; this.style.borderColor='#A47148'"
+                onmouseout="this.style.background='rgba(255,255,255,0.08)'; this.style.borderColor='rgba(164,113,72,0.45)'">
+                <span class="material-symbols-outlined" style="color: #A47148;">call</span> Telefone (35) 99879-3419
+            </a> <a href="mailto:hygormeendes98@gmail.com"
+                class="p-6 rounded-xl inline-flex items-center gap-2 text-white transition-all"
+                style="border: 2px solid rgba(78,52,46,0.45); background: rgba(255,255,255,0.08);"
+                onmouseover="this.style.background='rgba(78,52,46,0.24)'; this.style.borderColor='#4E342E'"
+                onmouseout="this.style.background='rgba(255,255,255,0.08)'; this.style.borderColor='rgba(78,52,46,0.45)'">
+                <span class="material-symbols-outlined" style="color: #4E342E;">mail</span> Email </a> </div>
+        <div class="mt-8">
+            <h2 class="font-semibold">Redes sociais</h2> <a href="https://instagram.com/HyguinhoQuadriciclosMv"
+                target="_blank"
+                class="mt-3 inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-white/20 hover:bg-white/10">
+                <span class="material-symbols-outlined">camera</span> Instagram </a>
+        </div> <!-- CTA Consistente -->
+        <section class="py-12">
+            <div
+                class="max-w-6xl mx-auto px-4 p-8 rounded-2xl bg-gradient-to-r from-primary-500 via-sky-500 via-nature-500 to-sun-500 text-white flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                    <h3 class="text-2xl font-bold">Pronto para reservar?</h3>
+                    <p class="mt-1 text-white/90">Chame no WhatsApp e garanta seu passeio.</p>
+                </div> <a href="https://wa.me/5535984687353" target="_blank"
+                    class="inline-flex items-center gap-2 bg-white text-primary-700 px-5 py-3 rounded-xl hover:bg-white/90">
+                    <span class="material-symbols-outlined">chat</span> Reservar no WhatsApp </a>
             </div>
-        </main>
-        <!-- Footer -->
-        <footer
-            class="bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 mt-8 px-4 py-6">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a class="text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200" href="#">
-                    <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
-                        <path clip-rule="evenodd"
-                            d="M12 2.75a9.25 9.25 0 100 18.5 9.25 9.25 0 000-18.5zM1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12 17.937 22.75 12 22.75 1.25 17.937 1.25 12z"
-                            fill-rule="evenodd"></path>
-                        <path
-                            d="M16 8.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15a3 3 0 100-6 3 3 0 000 6zm-5 3a5 5 0 1010 0 5 5 0 00-10 0z">
-                        </path>
-                    </svg>
-                </a>
-                <a class="text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200" href="#">
-                    <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
-                        <path
-                            d="M22.675 0h-21.35C.59 0 0 .59 0 1.325v21.35C0 23.41.59 24 1.325 24H12.82v-9.29H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h5.698C23.41 24 24 23.41 24 22.675V1.325C24 .59 23.41 0 22.675 0z">
-                        </path>
-                    </svg>
-                </a>
-            </div>
-            <div class="flex justify-center space-x-4 text-xs font-medium text-gray-600 dark:text-gray-400 mb-4">
-                <span>Hyguinho Quadriciclos MV • Fazenda Adrenalina</span>
-                <span>•</span>
-                <a class="hover:text-primary" href="mailto:hygormeendes98@gmail.com">hygormeendes98@gmail.com</a>
-            </div>
-            <p class="text-center text-xs text-gray-500 dark:text-gray-500">© 2024 Hyguinho Quadriciclos MV. Todos os
-                direitos reservados.</p>
-        </footer>
-    </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+    <footer class="border-t border-white/10 py-10">
+        <div class="max-w-6xl mx-auto px-4 text-sm text-white/80">Email: hygormeendes98@gmail.com • WhatsApp: (35)
+            98468-7353 • Instagram: HyguinhoQuadriciclosMv</div>
+    </footer>
+</body>
+
+</html>
+<div class="grid grid-cols-3 gap-4"> <a
+        class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
+        href="https://wa.me/5535984687353" target="_blank"> <svg class="h-6 w-6 text-green-500" fill="currentColor"
+            viewbox="0 0 24 24">
+            <path
+                d="M16.75 13.96c.25.13.41.38.41.66v2.51c0 .41-.33.74-.74.74C11.93 17.65 8 13.56 8 8.7c0-.41.33-.74.74-.74h2.51c.28 0 .53.16.66.41l1.11 2.22a.75.75 0 01-.19.85l-1.42 1.42a.5.5 0 00-.11.59c.56 1.43 1.76 2.63 3.19 3.19a.5.5 0 00.59-.11l1.42-1.42a.75.75 0 01.85-.19l2.22 1.11zM12 2a10 10 0 100 20 10 10 0 000-20zm0 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17z">
+            </path>
+        </svg> <span class="text-xs font-medium text-gray-700 dark:text-gray-300">WhatsApp</span> </a> <a
+        class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
+        href="tel:+5535998793419"> <span class="material-symbols-outlined text-blue-500"
+            style="font-size: 24px;">call</span> <span
+            class="text-xs font-medium text-gray-700 dark:text-gray-300">Ligar</span> </a> <a
+        class="flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors space-y-2"
+        href="https://instagram.com/HyguinhoQuadriciclosMv" target="_blank"> <svg class="h-6 w-6 text-pink-500"
+            fill="currentColor" viewbox="0 0 24 24">
+            <path clip-rule="evenodd"
+                d="M12 2.75a9.25 9.25 0 100 18.5 9.25 9.25 0 000-18.5zM1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12 17.937 22.75 12 22.75 1.25 17.937 1.25 12z"
+                fill-rule="evenodd"></path>
+            <path
+                d="M16 8.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15a3 3 0 100-6 3 3 0 000 6zm-5 3a5 5 0 1010 0 5 5 0 00-10 0z">
+            </path>
+        </svg> <span class="text-xs font-medium text-gray-700 dark:text-gray-300">Instagram</span> </a> </div>
+</div>
+</main> <!-- Footer -->
+<footer
+    class="bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 mt-8 px-4 py-6">
+    <div class="flex justify-center space-x-6 mb-4"> <a
+            class="text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200" href="#"> <svg
+                class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                <path clip-rule="evenodd"
+                    d="M12 2.75a9.25 9.25 0 100 18.5 9.25 9.25 0 000-18.5zM1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12 17.937 22.75 12 22.75 1.25 17.937 1.25 12z"
+                    fill-rule="evenodd"></path>
+                <path
+                    d="M16 8.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15a3 3 0 100-6 3 3 0 000 6zm-5 3a5 5 0 1010 0 5 5 0 00-10 0z">
+                </path>
+            </svg> </a> <a class="text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
+            href="#"> <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                <path
+                    d="M22.675 0h-21.35C.59 0 0 .59 0 1.325v21.35C0 23.41.59 24 1.325 24H12.82v-9.29H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h5.698C23.41 24 24 23.41 24 22.675V1.325C24 .59 23.41 0 22.675 0z">
+                </path>
+            </svg> </a> </div>
+    <div class="flex justify-center space-x-4 text-xs font-medium text-gray-600 dark:text-gray-400 mb-4"> <span>Hyguinho
+            Quadriciclos MV • Fazenda Adrenalina</span> <span>•</span> <a class="hover:text-primary"
+            href="mailto:hygormeendes98@gmail.com">hygormeendes98@gmail.com</a> </div>
+    <p class="text-center text-xs text-gray-500 dark:text-gray-500">© 2024 Hyguinho Quadriciclos MV. Todos os direitos
+        reservados.</p>
+</footer>
+</div>
 </body>
 
 </html>
