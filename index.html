@@ -123,7 +123,7 @@
     <link rel="stylesheet" href="css/index.css?v=2.0">
 </head>
 
-<body class="bg-base-900 text-white font-sans overflow-x-hidden">
+<body class="bg-base-900 text-white font-sans overflow-x-hidden" style="background: linear-gradient(180deg, #1B4D2E 0%, #2A6B47 50%, #1B4D2E 100%);">
     
     <!-- Header Moderno e Minimalista -->
     <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-white/10 shadow-sm transition-all duration-300" id="main-header" style="background: linear-gradient(180deg, rgba(16,15,12,0.92) 0%, rgba(58,90,64,0.22) 100%);">
@@ -312,6 +312,233 @@
                 </div>
             </div>
         </div>
+
+        <!-- SEÇÃO DE PASSEIOS DISPONÍVEIS -->
+        <section class="py-20 bg-gradient-to-b from-base-950 via-base-900 to-base-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Header da Seção -->
+                <div class="text-center mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full backdrop-blur-md text-white text-sm font-bold shadow-xl" style="background: linear-gradient(to right, #1B8F3A, #C62828); border: 2px solid rgba(79, 208, 104, 0.4);">
+                        <span class="w-2 h-2 rounded-full animate-pulse" style="background: #4FD068;"></span>
+                        <span>Nossos Passeios</span>
+                    </div>
+                    
+                    <h2 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4">
+                        Escolha Sua <span class="text-transparent bg-clip-text" style="background: linear-gradient(to right, #1B8F3A, #4FD068); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Aventura</span>
+                    </h2>
+                    <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+                        Tres opções incríveis para explorar a beleza de Monte Verde
+                    </p>
+                </div>
+
+                <!-- Grid de Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    
+                    <!-- CARD 1: Passeio no Pôr do Sol -->
+                    <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/12 to-white/5 backdrop-blur-xl border border-white/20 hover:border-white/40 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20 h-full flex flex-col">
+                        <!-- Imagem com gradient overlay -->
+                        <div class="relative h-64 md:h-72 overflow-hidden bg-gradient-to-br from-amber-600/40 to-red-900/40">
+                            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" 
+                                 style="background-image: url('img/WhatsApp Image 2025-12-02 at 10.56.38.jpeg');"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                            
+                            <!-- Badge Premium -->
+                            <div class="absolute top-4 right-4 z-10">
+                                <span class="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-amber-500 to-red-600 text-white rounded-full font-bold text-xs shadow-lg hover:scale-105 transition-transform">
+                                    <span class="material-symbols-rounded text-sm">star</span>
+                                    Popular
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo do Card -->
+                        <div class="p-6 md:p-8 flex flex-col flex-grow">
+                            <!-- Título -->
+                            <h3 class="font-display font-bold text-2xl md:text-3xl text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-amber-400 group-hover:to-red-400 transition-all duration-300">
+                                Pôr do Sol
+                            </h3>
+                            
+                            <!-- Descrição -->
+                            <p class="text-white/85 text-sm md:text-base leading-relaxed mb-6">
+                                Passeio especial no pôr do sol com trilha exclusiva, inclui vinho e marshmallow para aquele momento perfeito.
+                            </p>
+
+                            <!-- Detalhes em Cards Pequenos -->
+                            <div class="grid grid-cols-1 gap-3 mb-6">
+                                <div class="bg-white/8 backdrop-blur rounded-lg p-3 border border-white/10 group-hover:border-amber-400/40 group-hover:bg-amber-500/10 transition-all">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="material-symbols-rounded text-amber-300 text-base">schedule</span>
+                                        <span class="text-xs text-white/70">Duração</span>
+                                    </div>
+                                    <span class="text-sm font-bold text-white">60-90 min</span>
+                                </div>
+                            </div>
+
+                            <!-- Preço -->
+                            <div class="pb-6 mb-6 border-b border-white/20">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-xs text-white/60">A partir de</span>
+                                    <p class="font-display font-black text-3xl text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-red-500">R$ 300</p>
+                                </div>
+                            </div>
+
+                            <!-- Botão (flex-grow para ficar no final) -->
+                            <div class="mt-auto space-y-3">
+                                <a href="https://wa.me/5535999879419" target="_blank" 
+                                   class="flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-amber-500 to-red-600 hover:from-amber-400 hover:to-red-500 text-white rounded-xl font-bold shadow-lg hover:shadow-xl hover:shadow-red-500/40 hover:scale-105 transition-all duration-300">
+                                    <span class="material-symbols-rounded text-lg">chat</span>
+                                    <span>Agendar Agora</span>
+                                </a>
+                                <a href="tel:+5535999879419" 
+                                   class="flex items-center justify-center gap-2 w-full px-6 py-3 bg-white/15 hover:bg-white/25 backdrop-blur border border-white/20 hover:border-white/40 text-white rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300">
+                                    <span class="material-symbols-rounded text-lg">call</span>
+                                    <span>Ligar Agora</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2: Passeio pela Manhã -->
+                    <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/12 to-white/5 backdrop-blur-xl border border-white/20 hover:border-white/40 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/20 h-full flex flex-col">
+                        <!-- Imagem com gradient overlay -->
+                        <div class="relative h-64 md:h-72 overflow-hidden bg-gradient-to-br from-emerald-600/40 to-green-900/40">
+                            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" 
+                                 style="background-image: url('img/WhatsApp Image 2025-12-02 at 10.56.36.jpeg');"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                            
+                            <!-- Badge -->
+                            <div class="absolute top-4 right-4 z-10">
+                                <span class="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-full font-bold text-xs shadow-lg hover:scale-105 transition-transform">
+                                    <span class="material-symbols-rounded text-sm">eco</span>
+                                    Leve
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo do Card -->
+                        <div class="p-6 md:p-8 flex flex-col flex-grow">
+                            <!-- Título -->
+                            <h3 class="font-display font-bold text-2xl md:text-3xl text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-emerald-400 group-hover:to-green-400 transition-all duration-300">
+                                Passeio Matinal
+                            </h3>
+                            
+                            <!-- Descrição -->
+                            <p class="text-white/85 text-sm md:text-base leading-relaxed mb-6">
+                                Passeio pela manhã com trilha leve e visual panorâmico. Ideal para quem busca tranquilidade e paisagens refrescantes.
+                            </p>
+
+                            <!-- Detalhes em Cards Pequenos -->
+                            <div class="grid grid-cols-1 gap-3 mb-6">
+                                <div class="bg-white/8 backdrop-blur rounded-lg p-3 border border-white/10 group-hover:border-emerald-400/40 group-hover:bg-emerald-500/10 transition-all">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="material-symbols-rounded text-emerald-300 text-base">schedule</span>
+                                        <span class="text-xs text-white/70">Duração</span>
+                                    </div>
+                                    <span class="text-sm font-bold text-white">40-50 min</span>
+                                </div>
+                            </div>
+
+                            <!-- Preço -->
+                            <div class="pb-6 mb-6 border-b border-white/20">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-xs text-white/60">A partir de</span>
+                                    <p class="font-display font-black text-3xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-500">R$ 160</p>
+                                </div>
+                            </div>
+
+                            <!-- Botão -->
+                            <div class="mt-auto space-y-3">
+                                <a href="https://wa.me/5535999879419" target="_blank" 
+                                   class="flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white rounded-xl font-bold shadow-lg hover:shadow-xl hover:shadow-green-500/40 hover:scale-105 transition-all duration-300">
+                                    <span class="material-symbols-rounded text-lg">chat</span>
+                                    <span>Agendar Agora</span>
+                                </a>
+                                <a href="tel:+5535999879419" 
+                                   class="flex items-center justify-center gap-2 w-full px-6 py-3 bg-white/15 hover:bg-white/25 backdrop-blur border border-white/20 hover:border-white/40 text-white rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300">
+                                    <span class="material-symbols-rounded text-lg">call</span>
+                                    <span>Ligar Agora</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3: Passeio pela Tarde -->
+                    <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/12 to-white/5 backdrop-blur-xl border border-white/20 hover:border-white/40 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 h-full flex flex-col">
+                        <!-- Imagem com gradient overlay -->
+                        <div class="relative h-64 md:h-72 overflow-hidden bg-gradient-to-br from-blue-600/40 to-indigo-900/40">
+                            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" 
+                                 style="background-image: url('img/WhatsApp Image 2025-12-02 at 10.56.37.jpeg');"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                            
+                            <!-- Badge -->
+                            <div class="absolute top-4 right-4 z-10">
+                                <span class="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-bold text-xs shadow-lg hover:scale-105 transition-transform">
+                                    <span class="material-symbols-rounded text-sm">camera</span>
+                                    Fotos
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo do Card -->
+                        <div class="p-6 md:p-8 flex flex-col flex-grow">
+                            <!-- Título -->
+                            <h3 class="font-display font-bold text-2xl md:text-3xl text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-indigo-400 transition-all duration-300">
+                                Passeio Vespertino
+                            </h3>
+                            
+                            <!-- Descrição -->
+                            <p class="text-white/85 text-sm md:text-base leading-relaxed mb-6">
+                                Passeio pela tarde com roteiro intermediário e paradas estratégicas para fotos incríveis. Perfeito para capturar momentos.
+                            </p>
+
+                            <!-- Detalhes em Cards Pequenos -->
+                            <div class="grid grid-cols-1 gap-3 mb-6">
+                                <div class="bg-white/8 backdrop-blur rounded-lg p-3 border border-white/10 group-hover:border-blue-400/40 group-hover:bg-blue-500/10 transition-all">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="material-symbols-rounded text-blue-300 text-base">schedule</span>
+                                        <span class="text-xs text-white/70">Duração</span>
+                                    </div>
+                                    <span class="text-sm font-bold text-white">50-70 min</span>
+                                </div>
+                            </div>
+
+                            <!-- Preço -->
+                            <div class="pb-6 mb-6 border-b border-white/20">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-xs text-white/60">A partir de</span>
+                                    <p class="font-display font-black text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">R$ 180</p>
+                                </div>
+                            </div>
+
+                            <!-- Botão -->
+                            <div class="mt-auto space-y-3">
+                                <a href="https://wa.me/5535999879419" target="_blank" 
+                                   class="flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 text-white rounded-xl font-bold shadow-lg hover:shadow-xl hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300">
+                                    <span class="material-symbols-rounded text-lg">chat</span>
+                                    <span>Agendar Agora</span>
+                                </a>
+                                <a href="tel:+5535999879419" 
+                                   class="flex items-center justify-center gap-2 w-full px-6 py-3 bg-white/15 hover:bg-white/25 backdrop-blur border border-white/20 hover:border-white/40 text-white rounded-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300">
+                                    <span class="material-symbols-rounded text-lg">call</span>
+                                    <span>Ligar Agora</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CTA Principal -->
+                <div class="text-center py-12">
+                    <p class="text-white/80 text-lg mb-6">Não encontrou o passeio ideal? Personalizamos roteiros sob demanda!</p>
+                    <a href="https://wa.me/5535999879419" target="_blank" 
+                       class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-green-600 to-red-600 hover:from-green-500 hover:to-red-500 text-white rounded-2xl font-bold text-lg shadow-2xl hover:shadow-green-500/40 hover:scale-105 transition-all duration-300">
+                        <span class="material-symbols-rounded text-2xl">chat_bubble</span>
+                        <span>Fale com a Gente</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <!-- Passeio em Destaque -->
         <section class="py-20 bg-gradient-to-b from-base-900 via-primary-900/50 to-nature-900/40">
@@ -583,7 +810,7 @@
                         <span class="material-symbols-rounded text-2xl">chat</span>
                         <span>Falar no WhatsApp</span>
                     </a>
-                    <a href="tel:+5535998793419" 
+                    <a href="tel:+5535999879419" 
                        class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-white/20 hover:bg-white/30 backdrop-blur-md border-2 border-white/40 hover:border-white/60 text-white rounded-2xl font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300">
                         <span class="material-symbols-rounded text-2xl">call</span>
                         <span>(35) 99879-3419</span>
@@ -634,7 +861,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="tel:+5535998793419" class="flex items-center gap-2 text-slate-400 hover:text-sky-400 transition-colors">
+                                <a href="tel:+5535999879419" class="flex items-center gap-2 text-slate-400 hover:text-sky-400 transition-colors">
                                     <span class="material-symbols-rounded text-lg">call</span>
                                     <span>(35) 99879-3419</span>
                                 </a>
