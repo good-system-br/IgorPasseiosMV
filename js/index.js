@@ -187,7 +187,8 @@
         // Adiciona classe reveal automaticamente em cards, sections, etc
         const autoReveal = document.querySelectorAll('section > div > div, .grid > div');
         autoReveal.forEach(el => {
-            if (!el.classList.contains('reveal')) {
+            // Exclui itens da galeria da animação reveal
+            if (!el.classList.contains('reveal') && !el.classList.contains('gallery-item')) {
                 el.classList.add('reveal');
                 observer.observe(el);
             }
