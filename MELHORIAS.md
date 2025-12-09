@@ -193,7 +193,7 @@ O site foi **completamente remodelado** seguindo as mais modernas tendências de
 - Bounce no scroll indicator
 
 ### CTAs de Conversão
-- WhatsApp: +55 35 98468-7353
+- WhatsApp: +55 35 99879-3419
 - Telefone: (35) 99879-3419
 - Email: hygormeendes98@gmail.com
 - Instagram: @HyguinhoQuadriciclosMv
@@ -316,7 +316,7 @@ npx http-server -p 8080
 
 ## 📱 Contatos do Site
 
-- **WhatsApp**: [+55 35 98468-7353](https://wa.me/5535984687353)
+- **WhatsApp**: [+55 35 99879-3419](https://wa.me/5535998793419)
 - **Telefone**: [(35) 99879-3419](tel:+5535998793419)
 - **Email**: [hygormeendes98@gmail.com](mailto:hygormeendes98@gmail.com)
 - **Instagram**: [@HyguinhoQuadriciclosMv](https://instagram.com/HyguinhoQuadriciclosMv)
