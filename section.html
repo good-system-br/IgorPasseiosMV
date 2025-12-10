@@ -57,16 +57,14 @@
     </style>
 </head>
 
-<body class="min-h-screen text-bege font-sans antialiased" style="background: linear-gradient(180deg, #1B4D2E 0%, #2A6B47 50%, #1B4D2E 100%);">
+<body class="min-h-screen font-sans antialiased bg-[#3A5A40] text-white">
 
     <!-- HEADER -->
-    <header class="sticky top-0 z-20 backdrop-blur-xl border-b border-white/10"
-        style="background: linear-gradient(120deg, rgba(58,90,64,0.92), rgba(78,52,46,0.9));">
+    <header class="sticky top-0 z-20 backdrop-blur-xl border-b border-white/10 bg-[#3A5A40]">
         <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
 
-            <a href="index.html" class="flex items-center gap-3 text-bege font-display text-lg font-semibold tracking-tight">
-                <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl"
-                    style="background: radial-gradient(circle at 25% 25%, #A47148, #3A5A40); box-shadow: 0 10px 30px rgba(0,0,0,0.35);">
+            <a href="index.html" class="flex items-center gap-3 text-[#A47148] font-display text-lg font-semibold tracking-tight">
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#A47148] shadow-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                         class="h-7 w-7 text-bege">
                         <path stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
@@ -79,37 +77,24 @@
                 </span>
             </a>
 
-            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-bege/90">
-                <a href="index.html" class="hover:text-bege">Início</a>
-                <a href="gallery.html" class="hover:text-bege">Galeria</a>
-                <a href="footer.html" class="hover:text-bege">Contato</a>
-
-                <a href="https://wa.me/5535998793419" target="_blank"
-                    class="inline-flex items-center gap-2 rounded-xl px-4 py-2 font-semibold text-cafe"
-                    style="background: linear-gradient(120deg, #F7F3EE, #C6B199); box-shadow: 0 6px 24px rgba(0,0,0,0.25);">
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-white">
+                <a href="index.html" class="hover:text-[#A47148]">Início</a>
+                <a href="gallery.html" class="hover:text-[#A47148]">Galeria</a>
+                <a href="footer.html" class="hover:text-[#A47148]">Contato</a>
+                <a href="https://wa.me/5535998793419" target="_blank" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 font-semibold bg-[#A47148] text-white shadow-lg">
                     <span class="material-symbols-outlined text-base">chat</span>
                     Reservar
                 </a>
             </nav>
 
-<<<<<<< HEAD
-            <a href="https://wa.me/5535998793419" target="_blank"
-                class="md:hidden inline-flex items-center justify-center h-11 w-11 rounded-xl"
-                style="background: linear-gradient(135deg, #3A5A40, #A47148); box-shadow: 0 10px 30px rgba(0,0,0,0.28);">
-                <span class="material-symbols-outlined text-xl text-bege">chat</span>
-            </a>
-=======
             <div class="md:hidden flex items-center gap-2">
-                <a href="https://wa.me/5535998793419" target="_blank"
-                    class="inline-flex items-center justify-center h-11 w-11 rounded-xl"
-                    style="background: linear-gradient(135deg, #3A5A40, #A47148); box-shadow: 0 10px 30px rgba(0,0,0,0.28);">
-                    <span class="material-symbols-outlined text-xl text-bege">chat</span>
+                <a href="https://wa.me/5535998793419" target="_blank" class="inline-flex items-center justify-center h-11 w-11 rounded-xl bg-[#A47148] shadow-lg">
+                    <span class="material-symbols-outlined text-xl text-white">chat</span>
                 </a>
-                <button id="menu-toggle" aria-label="Menu" class="inline-flex items-center justify-center h-11 w-11 rounded-xl hover:bg-white/10 transition-colors">
-                    <span class="material-symbols-outlined text-2xl text-bege">menu</span>
+                <button id="menu-toggle" aria-label="Menu" class="inline-flex items-center justify-center h-11 w-11 rounded-xl hover:bg-[#A47148]/20 transition-colors">
+                    <span class="material-symbols-outlined text-2xl text-white">menu</span>
                 </button>
             </div>
->>>>>>> 97d7bf8d6599dd10d9f1a9bd182a168b1deb8e2d
 
         </div>
     </header>
@@ -117,34 +102,34 @@
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu" class="fixed inset-0 z-40 md:hidden opacity-0 invisible transition-all duration-300">
         <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" id="menu-backdrop"></div>
-        <nav class="absolute top-0 right-0 h-full w-80 max-w-full shadow-2xl transform translate-x-full transition-transform duration-300" id="menu-panel" style="background: linear-gradient(180deg, #1B4D2E 0%, #2A6B47 100%);">
+        <nav class="absolute top-0 right-0 h-full w-80 max-w-full shadow-2xl transform translate-x-full transition-transform duration-300 bg-[#3A5A40]" id="menu-panel">
             <div class="flex flex-col h-full">
                 <div class="flex items-center justify-between p-6 border-b border-white/10">
-                    <h2 class="font-display font-bold text-lg text-bege">Menu</h2>
+                    <h2 class="font-display font-bold text-lg text-white">Menu</h2>
                     <button id="menu-close" aria-label="Fechar menu" class="p-2 rounded-lg hover:bg-white/10 transition-colors">
                         <span class="material-symbols-outlined text-2xl text-bege">close</span>
                     </button>
                 </div>
                 <div class="flex-1 overflow-y-auto py-6">
-                    <a href="index.html" class="flex items-center gap-3 px-6 py-4 text-bege/90 hover:bg-white/10 transition-colors">
-                        <span class="material-symbols-outlined" style="color: #3A5A40;">home</span>
+                    <a href="index.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
+                        <span class="material-symbols-outlined" style="color: #A47148;">home</span>
                         <span class="font-medium">Início</span>
                     </a>
-                    <a href="section.html" class="flex items-center gap-3 px-6 py-4 text-bege hover:bg-white/10 transition-colors">
+                    <a href="section.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
                         <span class="material-symbols-outlined" style="color: #A47148;">info</span>
                         <span class="font-medium">Sobre</span>
                     </a>
-                    <a href="gallery.html" class="flex items-center gap-3 px-6 py-4 text-bege/90 hover:bg-white/10 transition-colors">
-                        <span class="material-symbols-outlined" style="color: #A3B18A;">photo_library</span>
+                    <a href="gallery.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
+                        <span class="material-symbols-outlined" style="color: #A47148;">photo_library</span>
                         <span class="font-medium">Galeria</span>
                     </a>
-                    <a href="footer.html" class="flex items-center gap-3 px-6 py-4 text-bege/90 hover:bg-white/10 transition-colors">
-                        <span class="material-symbols-outlined" style="color: #4E342E;">contact_mail</span>
+                    <a href="footer.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
+                        <span class="material-symbols-outlined" style="color: #A47148;">contact_mail</span>
                         <span class="font-medium">Contato</span>
                     </a>
                 </div>
                 <div class="p-6 border-t border-white/10">
-                    <a href="https://wa.me/5535998793419" target="_blank" class="flex items-center justify-center gap-2 w-full px-6 py-3 text-cafe rounded-xl font-semibold shadow-lg transition-all" style="background: linear-gradient(120deg, #F7F3EE, #C6B199);">
+                    <a href="https://wa.me/5535998793419" target="_blank" class="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-xl font-semibold shadow-lg transition-all bg-[#A47148] text-white">
                         <span class="material-symbols-outlined text-lg">chat</span>
                         <span>Falar no WhatsApp</span>
                     </a>
@@ -312,32 +297,24 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t border-white/10 py-8"
-        style="background: linear-gradient(180deg, rgba(31,31,27,0.9), rgba(46,48,40,0.9));">
+    <footer class="border-t border-white/10 py-8 bg-[#A47148]">
 
         <div
-            class="max-w-6xl mx-auto px-4 text-sm text-bege/85 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
-
+            class="max-w-6xl mx-auto px-4 text-sm text-white flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
             <div>
-                <p class="font-semibold text-bege">Hyguinho Quadriciclos MV</p>
-                <p class="text-bege/70">Monte Verde • Minas Gerais</p>
+                <p class="font-semibold text-white">Hyguinho Quadriciclos MV</p>
+                <p class="text-white/80">Monte Verde • Minas Gerais</p>
             </div>
-
-            <div class="flex flex-wrap gap-4 text-bege/80">
-                <a href="mailto:hygormeendes98@gmail.com" class="hover:text-bege">hygormeendes98@gmail.com</a>
-                <span class="hidden md:inline text-bege/40">•</span>
-<<<<<<< HEAD
-                <a href="https://wa.me/5535998793419" target="_blank" class="hover:text-bege">(35) 99879-3419</a>
-=======
-                <a href="https://wa.me/5535998793419" target="_blank" class="hover:text-bege">(35) 98468-7353</a>
->>>>>>> 97d7bf8d6599dd10d9f1a9bd182a168b1deb8e2d
-                <span class="hidden md:inline text-bege/40">•</span>
-                <a href="gallery.html" class="hover:text-bege">
+            <div class="flex flex-wrap gap-4 text-white/80">
+                <a href="mailto:hygormeendes98@gmail.com" class="hover:text-[#3A5A40]">hygormeendes98@gmail.com</a>
+                <span class="hidden md:inline text-white/40">•</span>
+                <a href="https://wa.me/5535998793419" target="_blank" class="hover:text-[#3A5A40]">(35) 99879-3419</a>
+                <span class="hidden md:inline text-white/40">•</span>
+                <a href="gallery.html" class="hover:text-[#3A5A40]">
                     Instagram: @HyguinhoQuadriciclosMv
                 </a>
             </div>
-
-            <p class="text-xs text-bege/60">© 2024 Hyguinho Quadriciclos MV. Todos os direitos reservados.</p>
+            <p class="text-xs text-white/60">© 2024 Hyguinho Quadriciclos MV. Todos os direitos reservados.</p>
         </div>
     </footer>
 

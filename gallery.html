@@ -169,14 +169,14 @@
     </style>
 </head>
 
-<body class="font-sans text-white overflow-x-hidden" style="background: linear-gradient(180deg, #1B4D2E 0%, #2A6B47 50%, #1B4D2E 100%);">
+<body class="font-sans text-white overflow-x-hidden bg-[#3A5A40]">
     
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 shadow-sm transition-all duration-300" style="background: linear-gradient(180deg, rgba(16,15,12,0.92) 0%, rgba(58,90,64,0.2) 100%); backdrop-filter: blur(12px);">
+    <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 shadow-sm transition-all duration-300 bg-[#3A5A40] backdrop-filter backdrop-blur-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 md:h-20">
                 <a href="index.html" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg" style="background: linear-gradient(135deg, #3A5A40, #4E342E); box-shadow: 0 10px 15px -3px rgba(58,90,64,0.35);">
+                    <div class="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg bg-[#A47148]">
                         <span class="material-symbols-rounded text-white text-2xl">terrain</span>
                     </div>
                     <div class="hidden sm:block">
@@ -188,14 +188,14 @@
                 </a>
 
                 <nav class="hidden lg:flex items-center gap-8">
-                    <a href="index.html" class="text-sm font-medium text-white/90 transition-colors" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='rgba(255,255,255,0.9)'">Início</a>
-                    <a href="section.html" class="text-sm font-medium text-white/90 transition-colors" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='rgba(255,255,255,0.9)'">Sobre</a>
-                    <a href="gallery.html" class="text-sm font-medium text-white transition-colors" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='#fff'">Galeria</a>
-                    <a href="footer.html" class="text-sm font-medium text-white/90 transition-colors" onmouseover="this.style.color='#A3B18A'" onmouseout="this.style.color='rgba(255,255,255,0.9)'">Contato</a>
+                    <a href="index.html" class="text-sm font-medium text-white/90 transition-colors hover:text-[#A47148]">Início</a>
+                    <a href="section.html" class="text-sm font-medium text-white/90 transition-colors hover:text-[#A47148]">Sobre</a>
+                    <a href="gallery.html" class="text-sm font-medium text-white transition-colors hover:text-[#A47148]">Galeria</a>
+                    <a href="footer.html" class="text-sm font-medium text-white/90 transition-colors hover:text-[#A47148]">Contato</a>
                 </nav>
 
                 <div class="flex items-center gap-2 md:gap-3">
-                    <a href="https://wa.me/5535998793419" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-white rounded-xl font-medium shadow-lg transition-all duration-300" style="background: linear-gradient(to right, #3A5A40, #A47148);" onmouseover="this.style.background='linear-gradient(to right, #588157, #B17F5B)'" onmouseout="this.style.background='linear-gradient(to right, #3A5A40, #A47148)'">
+                    <a href="https://wa.me/5535998793419" target="_blank" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-white rounded-xl font-medium shadow-lg transition-all duration-300 bg-[#A47148]">
                         <span class="material-symbols-rounded text-xl">chat</span>
                         <span>WhatsApp</span>
                     </a>
@@ -210,7 +210,7 @@
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden opacity-0 invisible transition-all duration-300">
         <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" id="menu-backdrop"></div>
-        <nav class="absolute top-0 right-0 h-full w-80 max-w-full shadow-2xl transform translate-x-full transition-transform duration-300" id="menu-panel" style="background: linear-gradient(180deg, #1B4D2E 0%, #2A6B47 100%);">
+        <nav class="absolute top-0 right-0 h-full w-80 max-w-full shadow-2xl transform translate-x-full transition-transform duration-300 bg-[#3A5A40]" id="menu-panel">
             <div class="flex flex-col h-full">
                 <div class="flex items-center justify-between p-6 border-b border-white/10">
                     <h2 class="font-display font-bold text-lg text-white">Menu</h2>
@@ -219,25 +219,25 @@
                     </button>
                 </div>
                 <div class="flex-1 overflow-y-auto py-6">
-                    <a href="index.html" class="flex items-center gap-3 px-6 py-4 text-white/90 hover:bg-white/10 transition-colors">
-                        <span class="material-symbols-rounded" style="color: #3A5A40;">home</span>
+                    <a href="index.html" class="flex items-center gap-3 px-6 py-4 text-white/90 hover:bg-[#A47148]/20 transition-colors">
+                        <span class="material-symbols-rounded" style="color: #A47148;">home</span>
                         <span class="font-medium">Início</span>
                     </a>
-                    <a href="section.html" class="flex items-center gap-3 px-6 py-4 text-white/90 hover:bg-white/10 transition-colors">
+                    <a href="section.html" class="flex items-center gap-3 px-6 py-4 text-white/90 hover:bg-[#A47148]/20 transition-colors">
                         <span class="material-symbols-rounded" style="color: #A47148;">info</span>
                         <span class="font-medium">Sobre</span>
                     </a>
-                    <a href="gallery.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-white/10 transition-colors">
-                        <span class="material-symbols-rounded" style="color: #A3B18A;">photo_library</span>
+                    <a href="gallery.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
+                        <span class="material-symbols-rounded" style="color: #A47148;">photo_library</span>
                         <span class="font-medium">Galeria</span>
                     </a>
-                    <a href="footer.html" class="flex items-center gap-3 px-6 py-4 text-white/90 hover:bg-white/10 transition-colors">
-                        <span class="material-symbols-rounded" style="color: #4E342E;">contact_mail</span>
+                    <a href="footer.html" class="flex items-center gap-3 px-6 py-4 text-white/90 hover:bg-[#A47148]/20 transition-colors">
+                        <span class="material-symbols-rounded" style="color: #A47148;">contact_mail</span>
                         <span class="font-medium">Contato</span>
                     </a>
                 </div>
                 <div class="p-6 border-t border-white/10">
-                    <a href="https://wa.me/5535998793419" target="_blank" class="flex items-center justify-center gap-2 w-full px-6 py-3 text-white rounded-xl font-semibold shadow-lg transition-all" style="background: linear-gradient(to right, #3A5A40, #A47148);">
+                    <a href="https://wa.me/5535998793419" target="_blank" class="flex items-center justify-center gap-2 w-full px-6 py-3 text-white rounded-xl font-semibold shadow-lg transition-all bg-[#A47148]">
                         <span class="material-symbols-rounded text-lg">chat</span>
                         <span>Falar no WhatsApp</span>
                     </a>
@@ -384,7 +384,7 @@
     <!-- CTA Section -->
     <section class="py-16 px-4">
         <div class="max-w-4xl mx-auto">
-            <div class="p-8 md:p-12 rounded-3xl bg-gradient-to-r from-primary-500 via-sky-500 via-nature-500 to-sun-500 text-center shadow-2xl">
+            <div class="p-8 md:p-12 rounded-3xl bg-[#A47148]/30 text-center shadow-2xl">
                 <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-4">
                     Quer fazer parte da próxima aventura?
                 </h2>
@@ -393,12 +393,12 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="https://wa.me/5535998793419" target="_blank" 
-                       class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-500 to-sun-500 hover:from-primary-400 hover:to-sun-400 text-white rounded-xl font-bold text-lg shadow-lg shadow-primary-500/40 hover:shadow-xl hover:shadow-sun-500/60 hover:scale-105 transition-all duration-300">
+                       class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#A47148] text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <span class="material-symbols-rounded text-2xl">chat</span>
                         <span>Reservar no WhatsApp</span>
                     </a>
                     <a href="index.html" 
-                       class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-sky-500 to-nature-500 hover:from-sky-400 hover:to-nature-400 text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                       class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#A47148] text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <span class="material-symbols-rounded text-2xl">home</span>
                         <span>Voltar ao Início</span>
                     </a>
@@ -408,12 +408,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-white/10 py-16 px-4">
+    <footer class="border-t border-white/10 py-16 px-4 bg-[#A47148]">
         <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
+            <div class="grid md:grid-cols-4 gap-12 mb-12 text-white">
                 <div class="md:col-span-1">
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center shadow-lg shadow-primary-500/30">
+                        <div class="w-12 h-12 bg-[#3A5A40] rounded-xl flex items-center justify-center shadow-lg">
                             <span class="material-symbols-rounded text-white text-2xl">terrain</span>
                         </div>
                         <div>
@@ -429,10 +429,10 @@
                 <div>
                     <h4 class="font-bold text-white mb-4">Navegação</h4>
                     <ul class="space-y-3 text-sm text-white/70">
-                        <li><a href="index.html" class="hover:text-primary-400 transition-colors">Início</a></li>
-                        <li><a href="section.html" class="hover:text-primary-400 transition-colors">Sobre</a></li>
-                        <li><a href="gallery.html" class="hover:text-primary-400 transition-colors">Galeria</a></li>
-                        <li><a href="footer.html" class="hover:text-primary-400 transition-colors">Contato</a></li>
+                        <li><a href="index.html" class="hover:text-[#3A5A40] transition-colors">Início</a></li>
+                        <li><a href="section.html" class="hover:text-[#3A5A40] transition-colors">Sobre</a></li>
+                        <li><a href="gallery.html" class="hover:text-[#3A5A40] transition-colors">Galeria</a></li>
+                        <li><a href="footer.html" class="hover:text-[#3A5A40] transition-colors">Contato</a></li>
                     </ul>
                 </div>
 
@@ -440,19 +440,19 @@
                     <h4 class="font-bold text-white mb-4">Contato</h4>
                     <ul class="space-y-3 text-sm">
                         <li>
-                            <a href="https://wa.me/5535998793419" target="_blank" class="flex items-center gap-2 text-white/70 hover:text-nature-400 transition-colors">
+                            <a href="https://wa.me/5535998793419" target="_blank" class="flex items-center gap-2 text-white/70 hover:text-[#3A5A40] transition-colors">
                                 <span class="material-symbols-rounded text-lg">chat</span>
                                 <span>(35) 99879-3419</span>
                             </a>
                         </li>
                         <li>
-                            <a href="tel:+5535999879419" class="flex items-center gap-2 text-white/70 hover:text-primary-400 transition-colors">
+                            <a href="tel:+5535999879419" class="flex items-center gap-2 text-white/70 hover:text-[#3A5A40] transition-colors">
                                 <span class="material-symbols-rounded text-lg">call</span>
                                 <span>(35) 99879-3419</span>
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:hygormeendes98@gmail.com" class="flex items-center gap-2 text-white/70 hover:text-primary-400 transition-colors">
+                            <a href="mailto:hygormeendes98@gmail.com" class="flex items-center gap-2 text-white/70 hover:text-[#3A5A40] transition-colors">
                                 <span class="material-symbols-rounded text-lg">mail</span>
                                 <span>hygormeendes98@gmail.com</span>
                             </a>
@@ -464,18 +464,18 @@
                     <h4 class="font-bold text-white mb-4">Redes Sociais</h4>
                     <div class="flex gap-3">
                         <a href="https://instagram.com/HyguinhoQuadriciclosMv" target="_blank" 
-                           class="w-12 h-12 bg-white/10 hover:bg-gradient-to-br hover:from-primary-500 hover:to-primary-600 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-primary-500/50">
+                           class="w-12 h-12 bg-[#3A5A40] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg">
                             <span class="material-symbols-rounded text-white">photo_camera</span>
                         </a>
                         <a href="https://wa.me/5535998793419" target="_blank" 
-                           class="w-12 h-12 bg-white/10 hover:bg-gradient-to-br hover:from-nature-500 hover:to-sky-500 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-nature-500/50">
+                           class="w-12 h-12 bg-[#A47148] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg">
                             <span class="material-symbols-rounded text-white">chat</span>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="pt-8 border-t border-white/10 text-center text-sm text-white/70">
+            <div class="pt-8 border-t border-[#3A5A40] text-center text-sm text-white/70">
                 <p>© 2025 Hyguinho Quadriciclos MV — Todos os direitos reservados.</p>
             </div>
         </div>
