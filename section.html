@@ -20,12 +20,14 @@
             theme: {
                 extend: {
                     colors: {
-                        musgo: '#3A5A40',
-                        folha: '#588157',
-                        caramelo: '#A47148',
-                        cafe: '#4E342E',
-                        bege: '#F7F3EE',
-                        begeEscuro: '#E8DFD5'
+                        verde: '#31a252',
+                        verdeLimao: '#6ecf42',
+                        roxo: '#6b456c',
+                        roxoClaro: '#7a5a7e',
+                        amarelo: '#dffda7',
+                        amareloClaro: '#ffffe5',
+                        cinza: '#d0d0d0',
+                        cinzaEscuro: '#303030'
                     },
                     fontFamily: {
                         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -38,10 +40,11 @@
 
     <style>
         body {
-            background: linear-gradient(180deg, #1F1F1B 0%, #2E3028 30%, #1F1F1B 100%);
+            background: linear-gradient(135deg, #ffffe5 0%, #dffda7 25%, #e8f5e9 50%, #f0f4ff 75%, #f5e6ff 100%);
+            background-attachment: fixed;
         }
         .text-gradient {
-            background: linear-gradient(120deg, #3A5A40, #A47148, #F7F3EE);
+            background: linear-gradient(120deg, #31a252, #6ecf42, #dffda7);
             -webkit-background-clip: text;
             color: transparent;
         }
@@ -57,6 +60,7 @@
     </style>
 </head>
 
+<<<<<<< HEAD
 <body class="min-h-screen font-sans antialiased bg-[#3A5A40] text-white">
 
     <!-- HEADER -->
@@ -65,15 +69,27 @@
 
             <a href="index.html" class="flex items-center gap-3 text-[#A47148] font-display text-lg font-semibold tracking-tight">
                 <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#A47148] shadow-lg">
+=======
+<body class="min-h-screen text-verde font-sans antialiased" style="background: linear-gradient(135deg, #ffffe5 0%, #dffda7 25%, #e8f5e9 50%, #f0f4ff 75%, #f5e6ff 100%); background-attachment: fixed;">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-20 backdrop-blur-xl border-b border-primary-400/30"
+        style="background: linear-gradient(120deg, rgba(49,162,82,0.92), rgba(107,69,108,0.9));">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
+
+            <a href="index.html" class="flex items-center gap-3 text-white font-display text-lg font-semibold tracking-tight">
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl"
+                    style="background: linear-gradient(135deg, #6ecf42, #31a252); box-shadow: 0 10px 30px rgba(49,162,82,0.35);">
+>>>>>>> c6bf7ff581e1dfc90330ba9f697f1b233ac71c1c
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        class="h-7 w-7 text-bege">
+                        class="h-7 w-7 text-white">
                         <path stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                             stroke-linejoin="round" d="M4 12h16m-7-7 7 7-7 7" />
                     </svg>
                 </span>
                 <span>
                     <span class="block leading-tight">Hyguinho Quadriciclos</span>
-                    <span class="block text-sm text-bege/80">Monte Verde</span>
+                    <span class="block text-sm text-white/80">Monte Verde</span>
                 </span>
             </a>
 

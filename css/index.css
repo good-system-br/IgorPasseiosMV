@@ -11,42 +11,42 @@
 }
 
 :root {
-    /* 🎨 PALETA NATURAL (VERDE + MARROM) 2024/2025 */
-    /* Verdes: frescor, natureza, confiança */
-    --primary-300: #A3B18A; /* Verde claro natural */
-    --primary-400: #588157; /* Verde folha */
-    --primary-500: #3A5A40; /* Verde musgo – principal */
-    --primary-600: #314C36;
-    --primary-700: #283F2D;
-    --primary-900: #1E3123;
+    /* 🎨 NOVA PALETA VIBRANTE 2025 - Verde + Roxo Moderno */
+    /* Verdes principais - energia e natureza */
+    --primary-300: #dffda7; /* Verde limão claro */
+    --primary-400: #6ecf42; /* Verde vibrante */
+    --primary-500: #31a252; /* Verde escuro principal */
+    --primary-600: #2a8a44;
+    --primary-700: #237038;
+    --primary-900: #1a502a;
 
-    /* Marrons: terra, aconchego, estabilidade */
-    --nature-300: #C4956E; /* caramelo claro */
-    --nature-400: #B17F5B;
-    --nature-500: #A47148; /* marrom terra/caramelo */
-    --nature-600: #8F603C;
-    --nature-700: #744D30;
-    --nature-900: #4E342E; /* marrom café profundo */
+    /* Roxo/Violeta - sofisticação e profundidade */
+    --nature-300: #8b6b8f; /* Roxo claro */
+    --nature-400: #7a5a7e; /* Roxo médio */
+    --nature-500: #6b456c; /* Roxo principal */
+    --nature-600: #5a3a5b;
+    --nature-700: #4a2a4b;
+    --nature-900: #3a1a3b;
 
-    /* Acento escuro (usando café para contrastes) */
-    --sky-300: #6A4A43;
-    --sky-400: #5A3F38;
-    --sky-500: #4E342E; /* Café */
-    --sky-600: #3D2926;
-    --sky-700: #2E1F1D;
-    --sky-900: #201513;
+    /* Neutros elegantes */
+    --sky-300: #f5f5f5;
+    --sky-400: #e8e8e8;
+    --sky-500: #d0d0d0; /* Cinza claro */
+    --sky-600: #b0b0b0;
+    --sky-700: #808080;
+    --sky-900: #303030;
 
-    /* Destaques suaves / off-white */
-    --sun-300: #F7F3EE; /* Bege leve */
-    --sun-400: #E9E1D7;
-    --sun-500: #D8CEC2; /* Fundo claro elegante */
-    --sun-600: #C8BAAB;
-    --sun-700: #B3A08A;
-    --sun-900: #8F7B66;
+    /* Amarelos suaves / backgrounds claros */
+    --sun-300: #ffffe5; /* Amarelo muito claro */
+    --sun-400: #ffffc8;
+    --sun-500: #dffda7; /* Amarelo/verde limão */
+    --sun-600: #c8e68f;
+    --sun-700: #b0cf77;
+    --sun-900: #6ecf42;
 
     /* Neutros Modernos */
-    --neutral-warm: #F5F5F5; /* Branco quente */
-    --neutral-graphite: #2A2A2A; /* Grafite moderno */
+    --neutral-warm: #ffffe5; /* Fundo claro elegante */
+    --neutral-graphite: #2A2A2A; /* Grafite escuro */
 
     /* Bases (fundos confortáveis) */
     --base-900: #161512; /* Escuro quente */
@@ -75,36 +75,100 @@ body {
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
     overflow-x: hidden;
-    /* 🎨 Fundo moderno com gradiente natural (quente e acolhedor) */
-    background: linear-gradient(180deg, #0F0E0C 0%, #161512 40%, #1C1A16 100%);
+    /* 🎨 Fundo moderno com gradiente vibrante (Verde + Roxo + Amarelo) */
+    background: linear-gradient(135deg, #ffffe5 0%, #dffda7 25%, #e8f5e9 50%, #f0f4ff 75%, #f5e6ff 100%);
+    background-attachment: fixed;
 }
 
-/* 🎨 FORÇAR CORES DA NOVA PALETA (VERDE + MARROM) */
+/* 🎨 FORÇAR CORES DA NOVA PALETA (VERDE + ROXO) */
 .bg-primary-500,
 *[class*="bg-primary-500"] {
-    background: #3A5A40 !important; /* verde musgo */
+    background: #31a252 !important; /* verde principal */
+}
+
+.bg-primary-400,
+*[class*="bg-primary-400"] {
+    background: #6ecf42 !important; /* verde vibrante */
 }
 
 .bg-nature-500,
 *[class*="bg-nature-500"] {
-    background: #A47148 !important; /* marrom caramelo */
+    background: #6b456c !important; /* roxo principal */
 }
 
-.bg-sky-500,
-*[class*="bg-sky-500"] {
-    background: #4E342E !important; /* café profundo */
+.bg-nature-400,
+*[class*="bg-nature-400"] {
+    background: #7a5a7e !important; /* roxo médio */
 }
 
-.bg-sun-500,
-*[class*="bg-sun-500"] {
-    background: #D8CEC2 !important; /* bege neutro */
+.bg-sun-300,
+*[class*="bg-sun-300"] {
+    background: #ffffe5 !important; /* amarelo muito claro */
+}
+
+.bg-sun-400,
+*[class*="bg-sun-400"] {
+    background: #dffda7 !important; /* amarelo/verde limão */
 }
 
 /* Cores de texto */
-.text-primary-500 { color: #3A5A40 !important; }
-.text-nature-400, .text-nature-500 { color: #A47148 !important; }
-.text-sky-400, .text-sky-500 { color: #4E342E !important; }
-.text-sun-400, .text-sun-500 { color: #A3B18A !important; }
+.text-primary-500 { color: #31a252 !important; }
+.text-primary-400 { color: #6ecf42 !important; }
+.text-nature-400, .text-nature-500 { color: #6b456c !important; }
+.text-sky-400, .text-sky-500 { color: #d0d0d0 !important; }
+.text-sun-400, .text-sun-500 { color: #dffda7 !important; }
+
+/* =========================================
+   ESTILOS DE BOTÕES E ELEMENTOS INTERATIVOS
+   Com as novas cores vibrantes
+   ========================================= */
+
+/* Botões primários - Verde vibrante */
+button[class*="primary"], 
+.btn-primary,
+a[class*="from-primary"],
+a[class*="to-primary"] {
+    background: linear-gradient(135deg, #6ecf42, #31a252) !important;
+    color: #fff !important;
+    transition: all 0.3s ease;
+}
+
+button[class*="primary"]:hover,
+.btn-primary:hover,
+a[class*="from-primary"]:hover,
+a[class*="to-primary"]:hover {
+    box-shadow: 0 10px 30px rgba(49, 162, 82, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Botões secundários - Roxo sofisticado */
+button[class*="nature"],
+.btn-secondary,
+a[class*="from-nature"],
+a[class*="to-nature"] {
+    background: linear-gradient(135deg, #7a5a7e, #6b456c) !important;
+    color: #fff !important;
+    transition: all 0.3s ease;
+}
+
+button[class*="nature"]:hover,
+.btn-secondary:hover {
+    box-shadow: 0 10px 30px rgba(107, 69, 108, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Badges com cores novas */
+.badge-primary {
+    background: linear-gradient(135deg, #dffda7, #6ecf42);
+    color: #1a502a;
+    font-weight: bold;
+}
+
+.badge-secondary {
+    background: linear-gradient(135deg, #ffffe5, #dffda7);
+    color: #31a252;
+    font-weight: bold;
+}
 
 /* Force dark backgrounds for structure to avoid white gaps */
 main {
