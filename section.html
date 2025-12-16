@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="light">
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,44 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400&display=swap" rel="stylesheet" />
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        verde: '#31a252',
-                        verdeLimao: '#6ecf42',
-                        roxo: '#6b456c',
-                        roxoClaro: '#7a5a7e',
-                        amarelo: '#dffda7',
-                        amareloClaro: '#ffffe5',
-                        cinza: '#d0d0d0',
-                        cinzaEscuro: '#303030'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                        display: ['Poppins', 'Inter', 'system-ui', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-
     <style>
-        body {
-            background: linear-gradient(135deg, #ffffe5 0%, #dffda7 25%, #e8f5e9 50%, #f0f4ff 75%, #f5e6ff 100%);
-            background-attachment: fixed;
-        }
-        .text-gradient {
-            background: linear-gradient(120deg, #31a252, #6ecf42, #dffda7);
-            -webkit-background-clip: text;
-            color: transparent;
+        :root {
+            --cor-principal: #3A5A40;
+            --cor-terra: #A47148;
+            --cor-bege: #F7F3EE;
+            --cor-folha: #A3B18A;
         }
         
         /* Menu Mobile */
@@ -60,32 +33,15 @@
     </style>
 </head>
 
-<<<<<<< HEAD
 <body class="min-h-screen font-sans antialiased bg-[#3A5A40] text-white">
 
     <!-- HEADER -->
     <header class="sticky top-0 z-20 backdrop-blur-xl border-b border-white/10 bg-[#3A5A40]">
         <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
 
-            <a href="index.html" class="flex items-center gap-3 text-[#A47148] font-display text-lg font-semibold tracking-tight">
-                <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#A47148] shadow-lg">
-=======
-<body class="min-h-screen text-verde font-sans antialiased" style="background: linear-gradient(135deg, #ffffe5 0%, #dffda7 25%, #e8f5e9 50%, #f0f4ff 75%, #f5e6ff 100%); background-attachment: fixed;">
-
-    <!-- HEADER -->
-    <header class="sticky top-0 z-20 backdrop-blur-xl border-b border-primary-400/30"
-        style="background: linear-gradient(120deg, rgba(49,162,82,0.92), rgba(107,69,108,0.9));">
-        <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
-
             <a href="index.html" class="flex items-center gap-3 text-white font-display text-lg font-semibold tracking-tight">
-                <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl"
-                    style="background: linear-gradient(135deg, #6ecf42, #31a252); box-shadow: 0 10px 30px rgba(49,162,82,0.35);">
->>>>>>> c6bf7ff581e1dfc90330ba9f697f1b233ac71c1c
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        class="h-7 w-7 text-white">
-                        <path stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                            stroke-linejoin="round" d="M4 12h16m-7-7 7 7-7 7" />
-                    </svg>
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#A47148] shadow-lg">
+                    <span class="material-symbols-rounded text-white text-2xl">terrain</span>
                 </span>
                 <span>
                     <span class="block leading-tight">Hyguinho Quadriciclos</span>
@@ -94,21 +50,22 @@
             </a>
 
             <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-white">
-                <a href="index.html" class="hover:text-[#A47148]">Início</a>
-                <a href="gallery.html" class="hover:text-[#A47148]">Galeria</a>
-                <a href="footer.html" class="hover:text-[#A47148]">Contato</a>
-                <a href="https://wa.me/5535998793419" target="_blank" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 font-semibold bg-[#A47148] text-white shadow-lg">
-                    <span class="material-symbols-outlined text-base">chat</span>
+                <a href="index.html" class="hover:text-[#A47148] transition-colors">Início</a>
+                <a href="section.html" class="text-[#A47148]">Sobre</a>
+                <a href="gallery.html" class="hover:text-[#A47148] transition-colors">Galeria</a>
+                <a href="footer.html" class="hover:text-[#A47148] transition-colors">Contato</a>
+                <a href="https://wa.me/5535998793419" target="_blank" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 font-semibold bg-[#A47148] text-white shadow-lg hover:bg-[#B8835A] transition-all">
+                    <span class="material-symbols-rounded text-base">chat</span>
                     Reservar
                 </a>
             </nav>
 
             <div class="md:hidden flex items-center gap-2">
                 <a href="https://wa.me/5535998793419" target="_blank" class="inline-flex items-center justify-center h-11 w-11 rounded-xl bg-[#A47148] shadow-lg">
-                    <span class="material-symbols-outlined text-xl text-white">chat</span>
+                    <span class="material-symbols-rounded text-xl text-white">chat</span>
                 </a>
                 <button id="menu-toggle" aria-label="Menu" class="inline-flex items-center justify-center h-11 w-11 rounded-xl hover:bg-[#A47148]/20 transition-colors">
-                    <span class="material-symbols-outlined text-2xl text-white">menu</span>
+                    <span class="material-symbols-rounded text-2xl text-white">menu</span>
                 </button>
             </div>
 
@@ -123,30 +80,30 @@
                 <div class="flex items-center justify-between p-6 border-b border-white/10">
                     <h2 class="font-display font-bold text-lg text-white">Menu</h2>
                     <button id="menu-close" aria-label="Fechar menu" class="p-2 rounded-lg hover:bg-white/10 transition-colors">
-                        <span class="material-symbols-outlined text-2xl text-bege">close</span>
+                        <span class="material-symbols-rounded text-2xl text-white">close</span>
                     </button>
                 </div>
                 <div class="flex-1 overflow-y-auto py-6">
                     <a href="index.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
-                        <span class="material-symbols-outlined" style="color: #A47148;">home</span>
+                        <span class="material-symbols-rounded" style="color: #A47148;">home</span>
                         <span class="font-medium">Início</span>
                     </a>
-                    <a href="section.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
-                        <span class="material-symbols-outlined" style="color: #A47148;">info</span>
+                    <a href="section.html" class="flex items-center gap-3 px-6 py-4 text-white bg-[#A47148]/20">
+                        <span class="material-symbols-rounded" style="color: #A47148;">info</span>
                         <span class="font-medium">Sobre</span>
                     </a>
                     <a href="gallery.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
-                        <span class="material-symbols-outlined" style="color: #A47148;">photo_library</span>
+                        <span class="material-symbols-rounded" style="color: #A47148;">photo_library</span>
                         <span class="font-medium">Galeria</span>
                     </a>
                     <a href="footer.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
-                        <span class="material-symbols-outlined" style="color: #A47148;">contact_mail</span>
+                        <span class="material-symbols-rounded" style="color: #A47148;">contact_mail</span>
                         <span class="font-medium">Contato</span>
                     </a>
                 </div>
                 <div class="p-6 border-t border-white/10">
                     <a href="https://wa.me/5535998793419" target="_blank" class="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-xl font-semibold shadow-lg transition-all bg-[#A47148] text-white">
-                        <span class="material-symbols-outlined text-lg">chat</span>
+                        <span class="material-symbols-rounded text-lg">chat</span>
                         <span>Falar no WhatsApp</span>
                     </a>
                 </div>
@@ -158,122 +115,128 @@
     <main class="flex-1">
 
         <!-- HERO SECTION -->
-        <section class="max-w-6xl mx-auto px-4 pt-10 pb-6 grid md:grid-cols-[1.1fr,0.9fr] gap-10 items-center">
+        <section class="max-w-6xl mx-auto px-3 sm:px-4 pt-8 sm:pt-12 md:pt-16 pb-6 sm:pb-10 grid md:grid-cols-[1.1fr,0.9fr] gap-6 sm:gap-10 items-center">
 
-            <div class="space-y-4">
-                <p class="uppercase tracking-[0.2em] text-xs text-bege/70">Sobre nós</p>
-
-                <h1 class="text-4xl md:text-5xl font-display font-semibold leading-[1.05] text-gradient">
-                    Aventura segura em paisagens inesquecíveis
-                </h1>
-
-                <p class="text-base text-bege/85 leading-relaxed">
-                    Nascemos da paixão por Monte Verde e pela sensação de liberdade que só um quadriciclo proporciona.
-                    Criamos experiências guiadas que unem adrenalina, segurança e respeito total à natureza.
-                </p>
-
-                <div class="flex flex-wrap gap-3">
-                    <span class="px-3 py-2 rounded-full text-sm font-semibold"
-                        style="background: rgba(90, 131, 87, 0.16); color: #C6B199; border: 1px solid rgba(90,131,87,0.35);">
-                        Guias certificados
-                    </span>
-
-                    <span class="px-3 py-2 rounded-full text-sm font-semibold"
-                        style="background: rgba(164, 113, 72, 0.18); color: #F7F3EE; border: 1px solid rgba(164,113,72,0.38);">
-                        Rotas seguras
-                    </span>
-
-                    <span class="px-3 py-2 rounded-full text-sm font-semibold"
-                        style="background: rgba(78,52,46,0.2); color: #E8DFD5; border: 1px solid rgba(78,52,46,0.32);">
-                        Natureza preservada
-                    </span>
+            <div class="space-y-4 sm:space-y-5">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#A47148]/20 border border-[#A47148]/40 text-[#F7F3EE]">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#A47148] animate-pulse"></span>
+                    Sobre nós
                 </div>
 
-                <div class="flex flex-wrap gap-3">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-[1.1] text-[#F7F3EE]">
+                    Sua <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#A47148] to-[#C6B199]">aventura de quadriciclo</span> começa aqui
+                </h1>
+
+                <p class="text-sm sm:text-base md:text-lg text-[#F7F3EE]/90 leading-relaxed">
+                    Somos especialistas em passeios de quadriciclo em <strong class="text-[#A47148]">Monte Verde</strong>. 
+                    Oferecemos experiências inesquecíveis com trilhas exclusivas, guias experientes e equipamentos de primeira linha. 
+                    Sua segurança e diversão são nossa prioridade.
+                </p>
+
+                <div class="flex flex-wrap gap-2 sm:gap-3 pt-2">
+                    <div class="flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-semibold text-xs sm:text-sm bg-[#3A5A40]/30 border border-[#3A5A40]/50 text-[#F7F3EE] hover:bg-[#3A5A40]/40 transition-all">
+                        <span class="material-symbols-rounded text-base sm:text-lg text-[#A3B18A]">verified</span>
+                        Guias certificados
+                    </div>
+
+                    <div class="flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-semibold text-xs sm:text-sm bg-[#A47148]/30 border border-[#A47148]/50 text-[#F7F3EE] hover:bg-[#A47148]/40 transition-all">
+                        <span class="material-symbols-rounded text-base sm:text-lg text-[#C6B199]">shield</span>
+                        Rotas seguras
+                    </div>
+
+                    <div class="flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl font-semibold text-xs sm:text-sm bg-[#4E342E]/30 border border-[#4E342E]/50 text-[#F7F3EE] hover:bg-[#4E342E]/40 transition-all">
+                        <span class="material-symbols-rounded text-base sm:text-lg text-[#A3B18A]">eco</span>
+                        Natureza preservada
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3 sm:gap-4 pt-2">
                     <a href="https://wa.me/5535998793419" target="_blank"
-                        class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-bege"
-                        style="background: linear-gradient(120deg, #3A5A40, #588157, #A47148); box-shadow: 0 16px 36px rgba(0,0,0,0.32);">
+                        class="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl font-bold text-sm sm:text-base text-white shadow-[0_8px_24px_rgba(164,113,72,0.4)] hover:shadow-[0_12px_32px_rgba(164,113,72,0.5)] hover:scale-105 transition-all duration-300 bg-gradient-to-r from-[#B8835A] to-[#A47148]">
+                        <span class="material-symbols-rounded text-lg sm:text-xl">chat</span>
                         Agendar agora
                     </a>
 
                     <a href="gallery.html"
-                        class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold border border-bege/20 text-bege/90 hover:border-bege/40 transition">
+                        class="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl font-bold text-sm sm:text-base border-2 border-[#F7F3EE]/30 text-[#F7F3EE] hover:border-[#A47148] hover:bg-[#A47148]/10 transition-all duration-300">
+                        <span class="material-symbols-rounded text-lg sm:text-xl">photo_library</span>
                         Ver galeria
                     </a>
                 </div>
             </div>
 
-            <div class="relative rounded-3xl overflow-hidden border border-white/10"
-                style="box-shadow: 0 20px 60px rgba(0,0,0,0.35);">
+            <div class="relative rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-[#A47148]/40 shadow-[0_20px_60px_rgba(0,0,0,0.4)] hover:border-[#A47148]/60 transition-all duration-300">
                 <img src="img/WhatsApp Image 2025-12-02 at 10.56.38.jpeg" alt="Equipe em trilha de quadriciclo"
-                    class="w-full h-full object-cover" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/15 to-transparent"></div>
+                    class="w-full h-full object-cover aspect-[4/3] md:aspect-[3/4]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
-                <div
-                    class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-bege text-sm backdrop-blur-lg rounded-2xl px-4 py-3 border border-white/15"
-                    style="background: linear-gradient(120deg, rgba(58,90,64,0.4), rgba(164,113,72,0.3));">
-                    <span class="font-semibold">Guias locais • Equipamentos revisados</span>
-                    <span class="text-bege/75">Monte Verde, MG</span>
+                <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4">
+                    <div class="backdrop-blur-xl rounded-xl sm:rounded-2xl px-3 sm:px-4 py-2 sm:py-3 border border-white/20 bg-gradient-to-r from-[#3A5A40]/80 to-[#A47148]/70 shadow-xl">
+                        <div class="flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-rounded text-[#F7F3EE] text-base sm:text-lg">location_on</span>
+                                <span class="text-[#F7F3EE] font-bold text-xs sm:text-sm">Monte Verde, MG</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 px-2 sm:px-3 py-1 rounded-lg bg-[#A47148]/80">
+                                <span class="material-symbols-rounded text-[#F7F3EE] text-sm">verified</span>
+                                <span class="text-[#F7F3EE] font-semibold text-xs">5+ anos</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </section>
 
         <!-- CARDS -->
-        <section class="max-w-6xl mx-auto px-4 pb-12 grid md:grid-cols-3 gap-6">
+        <section class="max-w-6xl mx-auto px-3 sm:px-4 pb-8 sm:pb-12 grid md:grid-cols-3 gap-4 sm:gap-6">
 
-            <div class="group rounded-2xl overflow-hidden border border-white/10 bg-black/30 transition-all hover:border-folha/50 hover:shadow-2xl"
-                style="box-shadow: 0 14px 38px rgba(0,0,0,0.28);">
-                <div class="relative h-40 md:h-52 w-full overflow-hidden">
+            <div class="group rounded-2xl overflow-hidden border border-[#A47148]/20 bg-[#2D4A33]/50 hover:bg-[#2D4A33]/70 transition-all hover:border-[#A47148]/40 shadow-xl">
+                <div class="relative h-36 sm:h-40 md:h-52 w-full overflow-hidden">
                     <img src="img/WhatsApp Image 2025-12-02 at 10.56.35.jpeg" alt="Equipe pronta para o passeio"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                    <div class="absolute top-4 right-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl"
-                        style="background: linear-gradient(135deg, #3A5A40, #588157); box-shadow: 0 8px 24px rgba(58,90,64,0.4);">
-                        <span class="material-symbols-outlined text-3xl text-bege">group</span>
+                    <div class="absolute top-3 sm:top-4 right-3 sm:right-4 inline-flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#3A5A40] to-[#588157] shadow-lg">
+                        <span class="material-symbols-rounded text-2xl sm:text-3xl text-[#F7F3EE]">group</span>
                     </div>
                 </div>
-                <div class="p-6 space-y-2">
-                    <h3 class="text-lg font-semibold text-bege group-hover:text-folha transition">Equipe dedicada</h3>
-                    <p class="text-sm text-bege/80 leading-relaxed">
+                <div class="p-4 sm:p-6 space-y-2">
+                    <h3 class="text-base sm:text-lg font-semibold text-[#F7F3EE]">Equipe dedicada</h3>
+                    <p class="text-xs sm:text-sm text-[#F7F3EE]/80 leading-relaxed">
                         Guias treinados para conduzir com segurança e atenção a cada detalhe.
                     </p>
                 </div>
             </div>
 
-            <div class="group rounded-2xl overflow-hidden border border-white/10 bg-black/30 transition-all hover:border-caramelo/50 hover:shadow-2xl"
-                style="box-shadow: 0 14px 38px rgba(0,0,0,0.28);">
-                <div class="relative h-40 md:h-52 w-full overflow-hidden">
+            <div class="group rounded-2xl overflow-hidden border border-[#A47148]/20 bg-[#2D4A33]/50 hover:bg-[#2D4A33]/70 transition-all hover:border-[#A47148]/40 shadow-xl">
+                <div class="relative h-36 sm:h-40 md:h-52 w-full overflow-hidden">
                     <img src="img/WhatsApp Image 2025-12-02 at 10.56.36.jpeg" alt="Quadriciclos alinhados"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                    <div class="absolute top-4 right-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl"
-                        style="background: linear-gradient(135deg, #A47148, #C6B199); box-shadow: 0 8px 24px rgba(164,113,72,0.4);">
-                        <span class="material-symbols-outlined text-3xl text-cafe">construction</span>
+                    <div class="absolute top-3 sm:top-4 right-3 sm:right-4 inline-flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#A47148] to-[#C6B199] shadow-lg">
+                        <span class="material-symbols-rounded text-2xl sm:text-3xl text-[#4E342E]">construction</span>
                     </div>
                 </div>
-                <div class="p-6 space-y-2">
-                    <h3 class="text-lg font-semibold text-bege group-hover:text-caramelo transition">Frota revisada</h3>
-                    <p class="text-sm text-bege/80 leading-relaxed">
+                <div class="p-4 sm:p-6 space-y-2">
+                    <h3 class="text-base sm:text-lg font-semibold text-[#F7F3EE]">Frota revisada</h3>
+                    <p class="text-xs sm:text-sm text-[#F7F3EE]/80 leading-relaxed">
                         Manutenção constante para garantir desempenho e conforto no trajeto.
                     </p>
                 </div>
             </div>
 
-            <div class="group rounded-2xl overflow-hidden border border-white/10 bg-black/30 transition-all hover:border-cafe/50 hover:shadow-2xl"
-                style="box-shadow: 0 14px 38px rgba(0,0,0,0.28);">
-                <div class="relative h-40 md:h-52 w-full overflow-hidden">
+            <div class="group rounded-2xl overflow-hidden border border-[#A47148]/20 bg-[#2D4A33]/50 hover:bg-[#2D4A33]/70 transition-all hover:border-[#A47148]/40 shadow-xl">
+                <div class="relative h-36 sm:h-40 md:h-52 w-full overflow-hidden">
                     <img src="img/WhatsApp Image 2025-12-02 at 10.56.39.jpeg" alt="Saída para a trilha"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                    <div class="absolute top-4 right-4 inline-flex h-16 w-16 items-center justify-center rounded-2xl"
-                        style="background: linear-gradient(135deg, #4E342E, #6B4C44); box-shadow: 0 8px 24px rgba(78,52,46,0.4);">
-                        <span class="material-symbols-outlined text-3xl text-bege">landscape</span>
+                    <div class="absolute top-3 sm:top-4 right-3 sm:right-4 inline-flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#4E342E] to-[#6B4C44] shadow-lg">
+                        <span class="material-symbols-rounded text-2xl sm:text-3xl text-[#F7F3EE]">landscape</span>
                     </div>
                 </div>
-                <div class="p-6 space-y-2">
-                    <h3 class="text-lg font-semibold text-bege group-hover:text-cafe transition">Roteiros cênicos</h3>
-                    <p class="text-sm text-bege/80 leading-relaxed">
+                <div class="p-4 sm:p-6 space-y-2">
+                    <h3 class="text-base sm:text-lg font-semibold text-[#F7F3EE]">Roteiros cênicos</h3>
+                    <p class="text-xs sm:text-sm text-[#F7F3EE]/80 leading-relaxed">
                         Rotas planejadas para valorizar paisagens e pontos fotográficos.
                     </p>
                 </div>
@@ -282,27 +245,25 @@
         </section>
 
         <!-- CTA -->
-        <section class="py-12">
-            <div class="max-w-6xl mx-auto px-4 p-8 rounded-2xl text-bege flex flex-col md:flex-row items-center gap-5 border border-white/10"
-                style="background: linear-gradient(120deg, rgba(58,90,64,0.65), rgba(164,113,72,0.55)); box-shadow: 0 18px 44px rgba(0,0,0,0.34);">
+        <section class="py-12 px-3 sm:px-4">
+            <div class="max-w-6xl mx-auto p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl text-white flex flex-col md:flex-row items-center gap-5 sm:gap-8 border-2 border-[#A47148]/30 bg-gradient-to-r from-[#3A5A40]/80 to-[#A47148]/60 shadow-2xl">
 
-                <div class="space-y-2 text-center md:text-left">
-                    <p class="uppercase text-xs tracking-[0.18em] text-bege/75">Pronto para partir?</p>
-                    <h3 class="text-2xl md:text-3xl font-display font-semibold">Reserve seu passeio agora</h3>
-                    <p class="text-bege/85">Horários limitados e grupos reduzidos para uma experiência segura.</p>
+                <div class="space-y-2 sm:space-y-3 text-center md:text-left flex-1">
+                    <p class="uppercase text-xs tracking-[0.18em] text-[#F7F3EE]/75">Pronto para partir?</p>
+                    <h3 class="text-xl sm:text-2xl md:text-3xl font-display font-bold text-[#F7F3EE]">Reserve seu passeio agora</h3>
+                    <p class="text-sm sm:text-base text-[#F7F3EE]/85">Horários limitados e grupos reduzidos para uma experiência segura.</p>
                 </div>
 
                 <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
                     <a href="https://wa.me/5535998793419" target="_blank"
-                        class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-xl font-semibold text-cafe"
-                        style="background: linear-gradient(120deg, #F7F3EE, #C6B199); box-shadow: 0 12px 32px rgba(0,0,0,0.28);">
-                        <span class="material-symbols-outlined text-base">chat</span>
+                        class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-sm sm:text-base bg-gradient-to-r from-[#F7F3EE] to-[#C6B199] text-[#3A5A40] shadow-xl hover:scale-105 transition-all">
+                        <span class="material-symbols-rounded text-lg">chat</span>
                         Falar no WhatsApp
                     </a>
 
                     <a href="gallery.html"
-                        class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-xl font-semibold border border-bege/25 text-bege hover:border-bege/45 transition">
-                        <span class="material-symbols-outlined text-base">image</span>
+                        class="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-sm sm:text-base border-2 border-[#F7F3EE]/40 text-[#F7F3EE] hover:border-[#F7F3EE] hover:bg-white/10 transition-all">
+                        <span class="material-symbols-rounded text-lg">image</span>
                         Ver trilhas
                     </a>
                 </div>
@@ -313,26 +274,44 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t border-white/10 py-8 bg-[#A47148]">
-
-        <div
-            class="max-w-6xl mx-auto px-4 text-sm text-white flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+    <footer class="border-t border-white/10 py-8 sm:py-12 bg-[#A47148]">
+        <div class="max-w-6xl mx-auto px-4 text-sm text-white flex flex-col md:flex-row items-start md:items-center justify-between gap-4 sm:gap-6">
             <div>
-                <p class="font-semibold text-white">Hyguinho Quadriciclos MV</p>
+                <p class="font-semibold text-white text-base">Hyguinho Quadriciclos MV</p>
                 <p class="text-white/80">Monte Verde • Minas Gerais</p>
             </div>
-            <div class="flex flex-wrap gap-4 text-white/80">
-                <a href="mailto:hygormeendes98@gmail.com" class="hover:text-[#3A5A40]">hygormeendes98@gmail.com</a>
+            <div class="flex flex-wrap gap-3 sm:gap-4 text-white/80 text-xs sm:text-sm">
+                <a href="mailto:hygormeendes98@gmail.com" class="hover:text-[#3A5A40] transition-colors">hygormeendes98@gmail.com</a>
                 <span class="hidden md:inline text-white/40">•</span>
-                <a href="https://wa.me/5535998793419" target="_blank" class="hover:text-[#3A5A40]">(35) 99879-3419</a>
+                <a href="https://wa.me/5535998793419" target="_blank" class="hover:text-[#3A5A40] transition-colors">(35) 99879-3419</a>
                 <span class="hidden md:inline text-white/40">•</span>
-                <a href="gallery.html" class="hover:text-[#3A5A40]">
+                <a href="https://instagram.com/HyguinhoQuadriciclosMv" target="_blank" class="hover:text-[#3A5A40] transition-colors">
                     Instagram: @HyguinhoQuadriciclosMv
                 </a>
             </div>
-            <p class="text-xs text-white/60">© 2024 Hyguinho Quadriciclos MV. Todos os direitos reservados.</p>
+            <p class="text-xs text-white/60">© 2024 Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        // Menu Mobile
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuBackdrop = document.getElementById('menu-backdrop');
+
+        function openMenu() {
+            mobileMenu.classList.add('active');
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.remove('active');
+        }
+
+        menuToggle.addEventListener('click', openMenu);
+        menuClose.addEventListener('click', closeMenu);
+        menuBackdrop.addEventListener('click', closeMenu);
+    </script>
 
 </body>
 </html>

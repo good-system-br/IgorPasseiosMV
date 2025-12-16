@@ -104,7 +104,7 @@
         .gallery-item {
             position: relative;
             width: 100%;
-            height: 280px;
+            height: 200px;
             overflow: hidden;
             border-radius: 1rem;
             background-color: #2a2a2a;
@@ -117,7 +117,19 @@
             transform: none !important;
         }
         
+        @media (min-width: 480px) {
+            .gallery-item {
+                height: 240px;
+            }
+        }
+        
         @media (min-width: 640px) {
+            .gallery-item {
+                height: 280px;
+            }
+        }
+        
+        @media (min-width: 768px) {
             .gallery-item {
                 height: 320px;
             }
@@ -150,11 +162,17 @@
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 1.5rem;
+            padding: 1rem 1.5rem;
             background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
             opacity: 0;
             transition: opacity 0.3s ease;
             pointer-events: none;
+        }
+        
+        @media (min-width: 640px) {
+            .gallery-overlay {
+                padding: 1.5rem;
+            }
         }
         
         .gallery-item:hover .gallery-overlay {
@@ -164,7 +182,13 @@
         .gallery-overlay span {
             color: white;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.875rem;
+        }
+        
+        @media (min-width: 640px) {
+            .gallery-overlay span {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -247,19 +271,19 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-16 px-4">
+    <section class="pt-24 sm:pt-32 pb-12 sm:pb-16 px-3 sm:px-4">
         <div class="max-w-7xl mx-auto text-center">
-            <h1 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4">
+            <h1 class="font-display font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white mb-3 sm:mb-4">
                 Galeria de <span class="text-transparent bg-clip-text" style="background: linear-gradient(to right, #3A5A40, #A47148, #A3B18A); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 30px rgba(58,90,64,0.35));">Aventuras</span>
             </h1>
-            <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+            <p class="text-sm sm:text-base md:text-lg lg:text-xl text-white/80 max-w-2xl mx-auto px-2">
                 Confira os momentos incríveis registrados nas trilhas de Monte Verde
             </p>
         </div>
     </section>
 
     <!-- Gallery Grid -->
-    <section class="pb-20 px-4">
+    <section class="pb-12 sm:pb-20 px-3 sm:px-4">
         <div class="max-w-7xl mx-auto">
             <div class="gallery-grid">
                 
@@ -382,24 +406,24 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 px-4">
+    <section class="py-12 sm:py-16 px-3 sm:px-4">
         <div class="max-w-4xl mx-auto">
-            <div class="p-8 md:p-12 rounded-3xl bg-[#A47148]/30 text-center shadow-2xl">
-                <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-4">
+            <div class="p-6 sm:p-8 md:p-12 rounded-3xl bg-[#A47148]/30 text-center shadow-2xl">
+                <h2 class="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-white mb-3 sm:mb-4">
                     Quer fazer parte da próxima aventura?
                 </h2>
-                <p class="text-lg text-white/90 mb-8">
+                <p class="text-sm sm:text-base md:text-lg text-white/90 mb-6 sm:mb-8 px-2">
                     Reserve seu passeio agora e garanta momentos inesquecíveis nas trilhas de Monte Verde
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                     <a href="https://wa.me/5535998793419" target="_blank" 
-                       class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#A47148] text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                        <span class="material-symbols-rounded text-2xl">chat</span>
+                       class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#A47148] text-white rounded-xl font-bold text-base sm:text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        <span class="material-symbols-rounded text-xl sm:text-2xl">chat</span>
                         <span>Reservar no WhatsApp</span>
                     </a>
                     <a href="index.html" 
-                       class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#A47148] text-white rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                        <span class="material-symbols-rounded text-2xl">home</span>
+                       class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#A47148] text-white rounded-xl font-bold text-base sm:text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        <span class="material-symbols-rounded text-xl sm:text-2xl">home</span>
                         <span>Voltar ao Início</span>
                     </a>
                 </div>
@@ -408,9 +432,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-white/10 py-16 px-4 bg-[#A47148]">
+    <footer class="border-t border-white/10 py-12 sm:py-16 px-3 sm:px-4 bg-[#A47148]">
         <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-4 gap-12 mb-12 text-white">
+            <div class="grid md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12 text-white">
                 <div class="md:col-span-1">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-12 h-12 bg-[#3A5A40] rounded-xl flex items-center justify-center shadow-lg">

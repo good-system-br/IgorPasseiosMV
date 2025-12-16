@@ -5,27 +5,22 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Contato e Localização - Hyguinho Quadriciclos MV</title>
-    <script> window.tailwind = window.tailwind || {}; window.tailwind.config = { darkMode: "class", theme: { extend: { colors: { primary: { 300: '#dffda7', 400: '#6ecf42', 500: '#31a252', 600: '#2a8a44', 700: '#237038', 800: '#1a5030', 900: '#0f3020' }, nature: { 300: '#8b6b8f', 400: '#7a5a7e', 500: '#6b456c', 600: '#5a3a5b', 700: '#4a2a4b', 800: '#3a1a3b', 900: '#2a0a2b' }, sky: { 300: '#f5f5f5', 400: '#e8e8e8', 500: '#d0d0d0', 600: '#b0b0b0', 700: '#808080', 800: '#505050', 900: '#303030' }, sun: { 300: '#ffffe5', 400: '#ffffc8', 500: '#dffda7', 600: '#c8e68f', 700: '#b0cf77', 800: '#9eb860', 900: '#6ecf42' }, base: { 900: '#1E1E1E', 950: '#141414' } }, fontFamily: { sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'] } } } } </script>
+    
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,0"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="css/index.css?v=2.0" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400&display=swap" rel="stylesheet" />
+    
     <style>
         .contact-card {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 2px solid transparent;
         }
         .contact-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
-        }
-        .contact-card:focus-within {
-            box-shadow: 0 0 0 3px rgba(255,255,255,0.1), 0 0 0 5px currentColor;
         }
         
         /* Menu Mobile */
@@ -39,37 +34,27 @@
     </style>
 </head>
 
-<<<<<<< HEAD
 <body class="font-sans bg-[#3A5A40] text-white">
+    <!-- HEADER -->
     <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#3A5A40] backdrop-filter backdrop-blur-lg">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-2">
-                <span class="material-symbols-outlined" style="color: #A47148;">terrain</span>
-                <span class="font-semibold text-[#A47148]">Hyguinho Quadriciclos MV</span>
-=======
-<body class="font-sans bg-base-900 text-white" style="background: linear-gradient(135deg, #ffffe5 0%, #dffda7 25%, #e8f5e9 50%, #f0f4ff 75%, #f5e6ff 100%); background-attachment: fixed;">
-    <header class="fixed top-0 left-0 right-0 z-50 border-b border-primary-400/30"
-        style="background: linear-gradient(180deg, rgba(49,162,82,0.92) 0%, rgba(107,69,108,0.2) 100%); backdrop-filter: blur(12px);">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-white">terrain</span>
+                <span class="material-symbols-rounded text-[#A47148] text-2xl">terrain</span>
                 <span class="font-semibold text-white">Hyguinho Quadriciclos MV</span>
->>>>>>> c6bf7ff581e1dfc90330ba9f697f1b233ac71c1c
             </a>
-            <nav class="hidden md:flex items-center gap-6">
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
                 <a href="index.html" class="transition-colors text-white hover:text-[#A47148]">Início</a>
                 <a href="section.html" class="transition-colors text-white hover:text-[#A47148]">Sobre</a>
-                <a href="footer.html" class="transition-colors text-white hover:text-[#A47148]">Contato</a>
+                <a href="footer.html" class="text-[#A47148]">Contato</a>
                 <a href="gallery.html" class="transition-colors text-white hover:text-[#A47148]">Galeria</a>
                 <a href="https://wa.me/5535998793419" target="_blank"
-                    class="inline-flex items-center gap-2 text-white px-3 py-2 rounded-lg transition hover:shadow-lg bg-[#A47148]">
-                    <span class="material-symbols-outlined">chat</span>
-                    Reservar WhatsApp
+                    class="inline-flex items-center gap-2 text-white px-4 py-2 rounded-lg transition hover:shadow-lg bg-[#A47148]">
+                    <span class="material-symbols-rounded">chat</span>
+                    Reservar
                 </a>
             </nav>
-            <button id="menu-toggle"
-                class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 dark:border-gray-700">
-                <span class="material-symbols-outlined">menu</span>
+            <button id="menu-toggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg">
+                <span class="material-symbols-rounded text-white text-2xl">menu</span>
             </button>
         </div>
     </header>
@@ -82,30 +67,30 @@
                 <div class="flex items-center justify-between p-6 border-b border-white/10">
                     <h2 class="font-display font-bold text-lg text-white">Menu</h2>
                     <button id="menu-close" aria-label="Fechar menu" class="p-2 rounded-lg hover:bg-white/10 transition-colors">
-                        <span class="material-symbols-outlined text-2xl text-white">close</span>
+                        <span class="material-symbols-rounded text-2xl text-white">close</span>
                     </button>
                 </div>
                 <div class="flex-1 overflow-y-auto py-6">
-                    <a href="index.html" class="flex items-center gap-3 px-6 py-4 text-white/90 hover:bg-[#A47148]/20 transition-colors">
-                        <span class="material-symbols-outlined" style="color: #A47148;">home</span>
+                    <a href="index.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
+                        <span class="material-symbols-rounded" style="color: #A47148;">home</span>
                         <span class="font-medium">Início</span>
                     </a>
-                    <a href="section.html" class="flex items-center gap-3 px-6 py-4 text-white/90 hover:bg-[#A47148]/20 transition-colors">
-                        <span class="material-symbols-outlined" style="color: #A47148;">info</span>
+                    <a href="section.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
+                        <span class="material-symbols-rounded" style="color: #A47148;">info</span>
                         <span class="font-medium">Sobre</span>
                     </a>
-                    <a href="gallery.html" class="flex items-center gap-3 px-6 py-4 text-white/90 hover:bg-[#A47148]/20 transition-colors">
-                        <span class="material-symbols-outlined" style="color: #A47148;">photo_library</span>
+                    <a href="gallery.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
+                        <span class="material-symbols-rounded" style="color: #A47148;">photo_library</span>
                         <span class="font-medium">Galeria</span>
                     </a>
-                    <a href="footer.html" class="flex items-center gap-3 px-6 py-4 text-white hover:bg-[#A47148]/20 transition-colors">
-                        <span class="material-symbols-outlined" style="color: #A47148;">contact_mail</span>
+                    <a href="footer.html" class="flex items-center gap-3 px-6 py-4 text-white bg-[#A47148]/20">
+                        <span class="material-symbols-rounded" style="color: #A47148;">contact_mail</span>
                         <span class="font-medium">Contato</span>
                     </a>
                 </div>
                 <div class="p-6 border-t border-white/10">
                     <a href="https://wa.me/5535998793419" target="_blank" class="flex items-center justify-center gap-2 w-full px-6 py-3 text-white rounded-xl font-semibold shadow-lg transition-all bg-[#A47148]">
-                        <span class="material-symbols-outlined text-lg">chat</span>
+                        <span class="material-symbols-rounded text-lg">chat</span>
                         <span>Falar no WhatsApp</span>
                     </a>
                 </div>
@@ -113,60 +98,57 @@
         </nav>
     </div>
 
-    <main class="max-w-6xl mx-auto px-4 py-32">
+    <main class="max-w-6xl mx-auto px-3 sm:px-4 md:px-6 py-20 sm:py-32">
         <!-- Título Section -->
-        <div class="mb-16">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-3">Contato</h1>
-            <p class="text-lg text-gray-300">Fale com a gente para tirar dúvidas ou reservar seu passeio.</p>
+        <div class="mb-12 sm:mb-16">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-3">Contato</h1>
+            <p class="text-base sm:text-lg text-white/80">Fale com a gente para tirar dúvidas ou reservar seu passeio.</p>
         </div>
 
-        <!-- Cartões de Contato com Melhor Layout -->
-        <section class="mb-16">
-            <div class="grid md:grid-cols-3 gap-6">
+        <!-- Cartões de Contato -->
+        <section class="mb-12 sm:mb-16">
+            <div class="grid md:grid-cols-3 gap-4 sm:gap-6">
                 <!-- WhatsApp Card -->
                 <a href="https://wa.me/5535998793419" target="_blank"
-                    class="contact-card rounded-2xl p-8 bg-[#A47148]/20 border border-[#A47148] hover:border-[#A47148]/80 group"
-                    style="color: inherit;">
-                    <div class="flex items-start gap-4">
+                    class="contact-card rounded-2xl p-6 sm:p-8 bg-[#2D4A33]/50 border-2 border-[#A47148]/30 hover:border-[#A47148]/70 group">
+                    <div class="flex items-start gap-3 sm:gap-4">
                         <div class="p-3 rounded-xl bg-[#A47148]/30 group-hover:bg-[#A47148]/50 transition">
-                            <span class="material-symbols-outlined text-2xl text-[#A47148]">chat</span>
+                            <span class="material-symbols-rounded text-2xl sm:text-3xl text-[#A47148]">chat</span>
                         </div>
                         <div class="flex-1">
-                            <h3 class="font-semibold text-white mb-1">WhatsApp</h3>
-                            <p class="text-[#A47148] font-mono text-sm">(35) 99879-3419</p>
-                            <p class="text-gray-400 text-xs mt-2">Resposta rápida</p>
+                            <h3 class="font-bold text-white mb-1 text-base sm:text-lg">WhatsApp</h3>
+                            <p class="text-[#A47148] font-mono text-xs sm:text-sm">(35) 99879-3419</p>
+                            <p class="text-white/60 text-xs mt-2">Resposta rápida</p>
                         </div>
                     </div>
                 </a>
 
                 <!-- Telefone Card -->
                 <a href="tel:+5535999879419"
-                    class="contact-card rounded-2xl p-8 bg-[#A47148]/20 border border-[#A47148] hover:border-[#A47148]/80 group"
-                    style="color: inherit;">
-                    <div class="flex items-start gap-4">
+                    class="contact-card rounded-2xl p-6 sm:p-8 bg-[#2D4A33]/50 border-2 border-[#A47148]/30 hover:border-[#A47148]/70 group">
+                    <div class="flex items-start gap-3 sm:gap-4">
                         <div class="p-3 rounded-xl bg-[#A47148]/30 group-hover:bg-[#A47148]/50 transition">
-                            <span class="material-symbols-outlined text-2xl text-[#A47148]">call</span>
+                            <span class="material-symbols-rounded text-2xl sm:text-3xl text-[#A47148]">call</span>
                         </div>
                         <div class="flex-1">
-                            <h3 class="font-semibold text-white mb-1">Telefone</h3>
-                            <p class="text-[#A47148] font-mono text-sm">(35) 99879-3419</p>
-                            <p class="text-gray-400 text-xs mt-2">Ligação direta</p>
+                            <h3 class="font-bold text-white mb-1 text-base sm:text-lg">Telefone</h3>
+                            <p class="text-[#A47148] font-mono text-xs sm:text-sm">(35) 99879-3419</p>
+                            <p class="text-white/60 text-xs mt-2">Ligação direta</p>
                         </div>
                     </div>
                 </a>
 
                 <!-- Email Card -->
                 <a href="mailto:hygormeendes98@gmail.com"
-                    class="contact-card rounded-2xl p-8 bg-[#A47148]/20 border border-[#A47148] hover:border-[#A47148]/80 group"
-                    style="color: inherit;">
-                    <div class="flex items-start gap-4">
+                    class="contact-card rounded-2xl p-6 sm:p-8 bg-[#2D4A33]/50 border-2 border-[#A47148]/30 hover:border-[#A47148]/70 group">
+                    <div class="flex items-start gap-3 sm:gap-4">
                         <div class="p-3 rounded-xl bg-[#A47148]/30 group-hover:bg-[#A47148]/50 transition">
-                            <span class="material-symbols-outlined text-2xl text-[#A47148]">mail</span>
+                            <span class="material-symbols-rounded text-2xl sm:text-3xl text-[#A47148]">mail</span>
                         </div>
                         <div class="flex-1">
-                            <h3 class="font-semibold text-white mb-1">Email</h3>
-                            <p class="text-[#A47148] font-mono text-xs break-all">hygormeendes98@gmail.com</p>
-                            <p class="text-gray-400 text-xs mt-2">Mais detalhes</p>
+                            <h3 class="font-bold text-white mb-1 text-base sm:text-lg">Email</h3>
+                            <p class="text-[#A47148] font-mono text-xs sm:text-sm break-all">hygormeendes98@gmail.com</p>
+                            <p class="text-white/60 text-xs mt-2">Mais detalhes</p>
                         </div>
                     </div>
                 </a>
@@ -174,92 +156,89 @@
         </section>
 
         <!-- Redes Sociais -->
-        <section class="mb-16">
-            <h2 class="text-xl font-semibold text-white mb-4">Redes Sociais</h2>
+        <section class="mb-12 sm:mb-16">
+            <h2 class="text-lg sm:text-xl font-bold text-white mb-4">Redes Sociais</h2>
             <a href="https://instagram.com/HyguinhoQuadriciclosMv" target="_blank"
-                class="inline-flex items-center gap-3 px-6 py-3 rounded-xl border-2 border-[#A47148] hover:border-[#A47148]/80 hover:bg-[#A47148]/10 transition group">
-                <span class="material-symbols-outlined text-[#A47148]">camera</span>
-                <span class="font-semibold text-white group-hover:text-[#A47148] transition">@HyguinhoQuadriciclosMv</span>
+                class="inline-flex items-center gap-3 px-5 sm:px-6 py-3 rounded-xl border-2 border-[#A47148]/30 hover:border-[#A47148] hover:bg-[#A47148]/10 transition group font-semibold text-white">
+                <span class="material-symbols-rounded text-[#A47148] text-2xl">camera</span>
+                <span>@HyguinhoQuadriciclosMv</span>
             </a>
         </section>
 
-        <!-- CTA com Formulário Inteligente -->
-        <section class="py-12 px-0">
-            <div class="rounded-3xl p-8 md:p-12 text-white bg-[#A47148]/30 shadow-xl">
+        <!-- CTA com Formulário -->
+        <section class="py-8 sm:py-12">
+            <div class="rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 text-white bg-gradient-to-r from-[#3A5A40]/80 to-[#A47148]/60 border-2 border-[#A47148]/30 shadow-xl">
 
-                <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="grid md:grid-cols-2 gap-6 sm:gap-10 items-start">
                     <div>
-                        <h2 class="text-3xl md:text-4xl font-bold mb-3">Pronto para embarcar?</h2>
-                        <p class="text-gray-100 text-lg leading-relaxed">Deixe seus dados que entraremos em contato ou abra uma conversa direta no WhatsApp com todas as informações da sua reserva.</p>
+                        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-white">Pronto para embarcar?</h2>
+                        <p class="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">Deixe seus dados que entraremos em contato ou abra uma conversa direta no WhatsApp com todas as informações da sua reserva.</p>
                     </div>
 
                     <form class="space-y-4" id="contact-form" onsubmit="handleContactForm(event)">
                         <div>
-                            <label for="name" class="block text-sm font-semibold mb-2 text-gray-100">Seu Nome</label>
+                            <label for="name" class="block text-sm font-semibold mb-2 text-white">Seu Nome</label>
                             <input type="text" id="name" name="name" placeholder="João Silva"
-                                class="w-full px-4 py-3 rounded-lg bg-white/95 text-[#3A5A40] placeholder-[#A47148] focus:outline-none focus:ring-2 focus:ring-[#A47148] transition"
-                                required>
+                                class="w-full px-4 py-3 rounded-lg bg-white/95 text-[#3A5A40] placeholder-[#A47148] focus:outline-none focus:ring-2 focus:ring-[#A47148] transition" required>
                         </div>
 
                         <div>
-                            <label for="phone" class="block text-sm font-semibold mb-2 text-gray-100">Telefone/WhatsApp</label>
+                            <label for="phone" class="block text-sm font-semibold mb-2 text-white">Telefone/WhatsApp</label>
                             <input type="tel" id="phone" name="phone" placeholder="(35) 99879-3419"
-                                class="w-full px-4 py-3 rounded-lg bg-white/95 text-[#3A5A40] placeholder-[#A47148] focus:outline-none focus:ring-2 focus:ring-[#A47148] transition"
-                                required>
+                                class="w-full px-4 py-3 rounded-lg bg-white/95 text-[#3A5A40] placeholder-[#A47148] focus:outline-none focus:ring-2 focus:ring-[#A47148] transition" required>
                         </div>
 
                         <div>
-                            <label for="message" class="block text-sm font-semibold mb-2 text-gray-100">Mensagem (Opcional)</label>
+                            <label for="message" class="block text-sm font-semibold mb-2 text-white">Mensagem (Opcional)</label>
                             <textarea id="message" name="message" placeholder="Gostaria de agendar um passeio..."
-                                class="w-full px-4 py-3 rounded-lg bg-white/95 text-[#3A5A40] placeholder-[#A47148] focus:outline-none focus:ring-2 focus:ring-[#A47148] transition resize-none h-24"
-                            ></textarea>
+                                class="w-full px-4 py-3 rounded-lg bg-white/95 text-[#3A5A40] placeholder-[#A47148] focus:outline-none focus:ring-2 focus:ring-[#A47148] transition resize-none h-24"></textarea>
                         </div>
 
                         <div class="flex gap-3 pt-4">
                             <button type="submit"
-                                class="flex-1 inline-flex items-center justify-center gap-2 bg-[#A47148] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A47148]/80 focus:outline-none focus:ring-2 focus:ring-[#A47148] transition">
-                                <span class="material-symbols-outlined">check_circle</span>
+                                class="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#F7F3EE] to-[#C6B199] text-[#3A5A40] px-6 py-3 rounded-lg font-bold text-sm sm:text-base hover:shadow-lg hover:scale-105 transition-all">
+                                <span class="material-symbols-rounded">check_circle</span>
                                 Confirmar & WhatsApp
                             </button>
                         </div>
 
-                        <p class="text-xs text-gray-200 text-center">Clique para abrir conversa no WhatsApp com seus dados.</p>
+                        <p class="text-xs text-white/80 text-center">Clique para abrir conversa no WhatsApp com seus dados.</p>
                     </form>
                 </div>
             </div>
         </section>
 
         <!-- FAQ Rápido -->
-        <section class="mt-16">
-            <h2 class="text-2xl font-bold text-white mb-6">Dúvidas Frequentes</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="p-6 rounded-xl bg-[#A47148]/20 border border-[#A47148] hover:border-[#A47148]/80 transition">
-                    <h3 class="font-semibold text-white mb-2 flex items-center gap-2">
-                        <span class="material-symbols-outlined text-[#A47148]">schedule</span>
+        <section class="mt-12 sm:mt-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-white mb-6">Dúvidas Frequentes</h2>
+            <div class="grid md:grid-cols-2 gap-4 sm:gap-6">
+                <div class="p-4 sm:p-6 rounded-xl bg-[#2D4A33]/50 border-2 border-[#A47148]/30 hover:border-[#A47148]/70 transition">
+                    <h3 class="font-bold text-white mb-2 flex items-center gap-2 text-base sm:text-lg">
+                        <span class="material-symbols-rounded text-[#A47148] text-xl">schedule</span>
                         Qual é o horário?
                     </h3>
-                    <p class="text-[#A47148] text-sm">Segunda a domingo, das 7h às 17h. Agendamentos conforme disponibilidade.</p>
+                    <p class="text-[#A47148] text-xs sm:text-sm">Segunda a domingo, das 7h às 17h. Agendamentos conforme disponibilidade.</p>
                 </div>
-                <div class="p-6 rounded-xl bg-[#A47148]/20 border border-[#A47148] hover:border-[#A47148]/80 transition">
-                    <h3 class="font-semibold text-white mb-2 flex items-center gap-2">
-                        <span class="material-symbols-outlined text-[#A47148]">groups</span>
+                <div class="p-4 sm:p-6 rounded-xl bg-[#2D4A33]/50 border-2 border-[#A47148]/30 hover:border-[#A47148]/70 transition">
+                    <h3 class="font-bold text-white mb-2 flex items-center gap-2 text-base sm:text-lg">
+                        <span class="material-symbols-rounded text-[#A47148] text-xl">groups</span>
                         Qual é o tamanho do grupo?
                     </h3>
-                    <p class="text-[#A47148] text-sm">Grupos de até 6 pessoas para melhor experiência e segurança.</p>
+                    <p class="text-[#A47148] text-xs sm:text-sm">Grupos de até 6 pessoas para melhor experiência e segurança.</p>
                 </div>
-                <div class="p-6 rounded-xl bg-[#A47148]/20 border border-[#A47148] hover:border-[#A47148]/80 transition">
-                    <h3 class="font-semibold text-white mb-2 flex items-center gap-2">
-                        <span class="material-symbols-outlined text-[#A47148]">location_on</span>
-                        Onde vocês ficam?
+                <div class="p-4 sm:p-6 rounded-xl bg-[#2D4A33]/50 border-2 border-[#A47148]/30 hover:border-[#A47148]/70 transition">
+                    <h3 class="font-bold text-white mb-2 flex items-center gap-2 text-base sm:text-lg">
+                        <span class="material-symbols-rounded text-[#A47148] text-xl">trending_up</span>
+                        Qual é o nível de dificuldade?
                     </h3>
-                    <p class="text-[#A47148] text-sm">Monte Verde, Minas Gerais. Saída no centro da cidade.</p>
+                    <p class="text-[#A47148] text-xs sm:text-sm">Temos trilhas para iniciantes até avançados. Você escolhe o nível.</p>
                 </div>
-                <div class="p-6 rounded-xl bg-[#A47148]/20 border border-[#A47148] hover:border-[#A47148]/80 transition">
-                    <h3 class="font-semibold text-white mb-2 flex items-center gap-2">
-                        <span class="material-symbols-outlined text-[#A47148]">verified_user</span>
-                        É seguro?
+                <div class="p-4 sm:p-6 rounded-xl bg-[#2D4A33]/50 border-2 border-[#A47148]/30 hover:border-[#A47148]/70 transition">
+                    <h3 class="font-bold text-white mb-2 flex items-center gap-2 text-base sm:text-lg">
+                        <span class="material-symbols-rounded text-[#A47148] text-xl">card_giftcard</span>
+                        Vocês oferecem gift card?
                     </h3>
-                    <p class="text-[#A47148] text-sm">100% seguro! Guias certificados, equipamentos revisados, rastreamento sempre.</p>
+                    <p class="text-[#A47148] text-xs sm:text-sm">Sim! Temos gift cards disponíveis. Entre em contato para detalhes.</p>
                 </div>
             </div>
         </section>
@@ -267,60 +246,57 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t border-white/10 py-12 mt-16 bg-[#A47148]">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <h4 class="font-semibold text-white mb-2">Hyguinho Quadriciclos MV</h4>
-                    <p class="text-gray-400 text-sm">Monte Verde • Minas Gerais</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-white mb-3">Contato Rápido</h4>
-                    <div class="space-y-2 text-sm">
-                        <a href="https://wa.me/5535998793419" class="text-white hover:text-[#3A5A40] flex items-center gap-2">
-                            <span class="material-symbols-outlined text-xs">chat</span> WhatsApp
-                        </a>
-                        <a href="tel:+5535999879419" class="text-white hover:text-[#3A5A40] flex items-center gap-2">
-                            <span class="material-symbols-outlined text-xs">call</span> (35) 99879-3419
-                        </a>
-                        <a href="mailto:hygormeendes98@gmail.com" class="text-white hover:text-[#3A5A40] flex items-center gap-2">
-                            <span class="material-symbols-outlined text-xs">mail</span> Email
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-white mb-3">Redes Sociais</h4>
-                    <a href="https://instagram.com/HyguinhoQuadriciclosMv" target="_blank" class="text-white hover:text-[#3A5A40] flex items-center gap-2 text-sm">
-                        <span class="material-symbols-outlined text-xs">camera</span> Instagram
-                    </a>
-                </div>
+    <footer class="border-t border-white/10 py-8 sm:py-12 bg-[#A47148]">
+        <div class="max-w-6xl mx-auto px-4 text-sm text-white flex flex-col md:flex-row items-start md:items-center justify-between gap-4 sm:gap-6">
+            <div>
+                <p class="font-bold text-base">Hyguinho Quadriciclos MV</p>
+                <p class="text-white/80 text-sm">Monte Verde • Minas Gerais</p>
             </div>
-
-            <div class="border-t border-[#3A5A40] pt-8">
-                <p class="text-center text-xs text-white">© 2024 Hyguinho Quadriciclos MV. Todos os direitos reservados.</p>
+            <div class="flex flex-wrap gap-3 sm:gap-4 text-white/80 text-xs sm:text-sm">
+                <a href="mailto:hygormeendes98@gmail.com" class="hover:text-white transition-colors">hygormeendes98@gmail.com</a>
+                <span class="hidden md:inline text-white/40">•</span>
+                <a href="https://wa.me/5535998793419" target="_blank" class="hover:text-white transition-colors">(35) 99879-3419</a>
+                <span class="hidden md:inline text-white/40">•</span>
+                <a href="https://instagram.com/HyguinhoQuadriciclosMv" target="_blank" class="hover:text-white transition-colors">
+                    Instagram: @HyguinhoQuadriciclosMv
+                </a>
             </div>
+            <p class="text-xs text-white/60">© 2024 Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <script>
-        function handleContactForm(e) {
-            e.preventDefault();
+        // Menu Mobile
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuBackdrop = document.getElementById('menu-backdrop');
+
+        function openMenu() {
+            mobileMenu.classList.add('active');
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.remove('active');
+        }
+
+        menuToggle.addEventListener('click', openMenu);
+        menuClose.addEventListener('click', closeMenu);
+        menuBackdrop.addEventListener('click', closeMenu);
+
+        // Contact Form
+        function handleContactForm(event) {
+            event.preventDefault();
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
             const message = document.getElementById('message').value;
             
-            let text = `Olá! Meu nome é ${name}, telefone: ${phone}.`;
-            if (message) text += ` ${message}`;
+            const text = `Olá! Meu nome é ${name}. ${message ? message : 'Gostaria de agendar um passeio.'}`;
+            const whatsappUrl = `https://wa.me/5535998793419?text=${encodeURIComponent(text)}`;
             
-            const url = `https://wa.me/5535998793419?text=${encodeURIComponent(text)}`;
-            window.open(url, '_blank');
-            
-            // Limpar formulário
-            document.getElementById('contact-form').reset();
+            window.open(whatsappUrl, '_blank');
         }
     </script>
 
-    <script src="js/index.js"></script>
 </body>
-
 </html>
