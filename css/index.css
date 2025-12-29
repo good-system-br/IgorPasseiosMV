@@ -75,8 +75,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
     overflow-x: hidden;
-    /* 🎨 Fundo moderno com gradiente vibrante (Verde + Roxo + Amarelo) */
-    background: linear-gradient(135deg, #ffffe5 0%, #dffda7 25%, #e8f5e9 50%, #f0f4ff 75%, #f5e6ff 100%);
+    /* 🎨 Fundo verde natural */
+    background: linear-gradient(135deg, #3A5A40 0%, #4A7C52 25%, #2D5A3D 50%, #3A5A40 75%, #1E3A28 100%);
     background-attachment: fixed;
 }
 
